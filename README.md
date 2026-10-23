@@ -27,6 +27,8 @@ python scripts/test_data.py
 
 ## 可用功能
 
+`workflow-templates/` 中的两个 Actions 文件目前**未启用**：发布凭据没有 `workflow` scope。将其复制到 `.github/workflows/` 并以具备相应权限的身份提交后才能使用。当前公开页面由 GitHub Pages 的 main 分支直接部署，采集脚本可在本地正常运行。
+
 - 三方向研究卡片、方法与限制、逐条页码出处、替代方案。
 - 功能型产业链图谱；上下游CR5缺失时明确未知。
 - 可编辑客户数、年费、渗透率和增长率的情景测算。
