@@ -2,7 +2,7 @@
 
 [在线 DEMO](https://lancewang1.github.io/freeride-frontier-radar/) · [完整深研](SYNTHETIC_DEEPDIVE.md) · [论文复核台账](synthetic-evidence.json)
 
-当前 v0.5 聚焦合成数据。此前三个案例已撤出当前版本；Git 历史保留旧提交。中国/全球四象限仍可交互对照，默认选择合成数据。客户材料与下载论文全文未发布。
+首页从中国/全球四象限进入合成数据行业研究。[客户讲解稿](CLIENT_BRIEF.md)按六步呈现分析、发现和结论；[技术附录](SYNTHETIC_DEEPDIVE.md)保留逐篇论文核查。此前三个案例已撤出当前版本；Git历史保留旧提交。客户材料与下载论文全文未发布。
 
 ## 本轮交付
 

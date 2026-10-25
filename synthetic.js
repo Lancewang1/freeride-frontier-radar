@@ -22,7 +22,7 @@ if(typeof document!=='undefined'){
  document.querySelector('#market-region').onchange=preset;document.querySelector('#market-scenario').onchange=preset;
  document.querySelector('#export-market').onclick=()=>{if(fields.some(id=>!document.getElementById(id).checkValidity()||document.getElementById(id).value===''))return;const u=URL.createObjectURL(new Blob([JSON.stringify({status:'analyst_assumptions_not_market_facts',region:document.querySelector('#market-region').value,inputs:inputs(),outputs:marketCalc(inputs())},null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=u;a.download='synthetic-market-scenario.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);};
  preset();
- Promise.all([fetch('synthetic-report.html').then(r=>{if(!r.ok)throw Error('报告加载失败');return r.text();}),fetch('synthetic-evidence.json').then(r=>{if(!r.ok)throw Error('台账加载失败');return r.json();})]).then(([html,e])=>{
+ Promise.all([fetch('client-brief.html').then(r=>{if(!r.ok)throw Error('报告加载失败');return r.text();}),fetch('synthetic-evidence.json').then(r=>{if(!r.ok)throw Error('台账加载失败');return r.json();})]).then(([html,e])=>{
   document.querySelector('#deep-report').innerHTML=html;
   const heads=[...document.querySelectorAll('#deep-report h2')];document.querySelector('#report-index').innerHTML=heads.map(h=>`<a href="#${h.id}">${se(h.textContent)}</a>`).join('');
   document.querySelector('#reading-summary').textContent=`原有40条地域记录 → ${e.unique_records}篇去重记录完成标题归类；8篇核心章节研究，其中2篇来自原名单、6篇补充；0篇独立复现。`;

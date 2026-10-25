@@ -40,7 +40,7 @@ with sync_playwright() as p:
     page.locator('#radar-topic').select_option('science');page.locator('#radar-strict').check()
     assert page.locator('.evidence-point.chosen').count()==0
     page.locator('#radar-strict').uncheck()
-    page.locator('#ledger-scope').select_option('excluded');assert page.locator('.funding-row').count()==3
+    page.locator('#funding-evidence > summary').click();page.locator('#ledger-scope').select_option('excluded');assert page.locator('.funding-row').count()==3
     page.locator('#ledger-scope').select_option('all');page.locator('#ledger-search').fill('Mem0');assert page.locator('.funding-row').count()==1
     page.locator('#ledger-search').fill('');
     with page.expect_download() as event:page.locator('#download-ledger').click()

@@ -42,4 +42,6 @@ ledger={'as_of':'2026-10-25','raw_regional_records':40,'unique_records':len(reco
 report=(ROOT/'SYNTHETIC_DEEPDIVE.md').read_text(encoding='utf8')
 html=markdown.markdown(report,extensions=['tables','toc'])
 (ROOT/'synthetic-report.html').write_text(html,encoding='utf8')
+brief=(ROOT/'CLIENT_BRIEF.md').read_text(encoding='utf8')
+(ROOT/'client-brief.html').write_text(markdown.markdown(brief,extensions=['tables','toc']),encoding='utf8')
 print(f'{len(records)} unique triaged records, {len(papers)} core fulltext reviews, 0 reproductions')
