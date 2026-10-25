@@ -1,5 +1,5 @@
 'use strict';
-let landscape, selectedTopic='evaluation', radarMetric='amount', radarDrop=false, radarStrict=false;
+let landscape, selectedTopic='synthetic', radarMetric='amount', radarDrop=false, radarStrict=false;
 const rx=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const rn=(n,d=0)=>n===null?'未知':n.toLocaleString('zh-CN',{maximumFractionDigits:d});
 const ra=(url,label)=>`<a href="${rx(url)}" target="_blank" rel="noopener">${rx(label)} ↗</a>`;

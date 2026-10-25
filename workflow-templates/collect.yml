@@ -10,8 +10,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python scripts/collect.py
+      - run: python scripts/refresh_landscape.py
       - uses: actions/upload-artifact@v4
         with:
           name: pending-research
-          path: pending.json
+          path: private/landscape-pending.json

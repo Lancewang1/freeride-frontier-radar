@@ -1,74 +1,39 @@
-# FREERIDE Frontier Radar
+# FREERIDE AI · 合成数据投资研究工作台
 
-**[打开在线 DEMO](https://lancewang1.github.io/freeride-frontier-radar/)** · **[本轮研究报告](LANDSCAPE_REPORT.md)** · **[融资台账 CSV](funding-ledger.csv)** · **[证据快照 JSON](landscape.json)**
+[在线 DEMO](https://lancewang1.github.io/freeride-frontier-radar/) · [完整深研](SYNTHETIC_DEEPDIVE.md) · [论文复核台账](synthetic-evidence.json)
 
-v0.4 · 2026-10-25。面向一级市场基金的技术—资本研究工具：先比较中国与全球的同一技术领域，再查看证据、分类边界与验证问题。
+当前 v0.5 聚焦合成数据。此前三个案例已撤出当前版本；Git 历史保留旧提交。中国/全球四象限仍可交互对照，默认选择合成数据。客户材料与下载论文全文未发布。
 
 ## 本轮交付
 
-- 8个候选领域，中国 / 全球（含中国）联动四象限。
-- 16组真实OpenAlex检索请求、最多20条/组代表记录及机构信息。
-- 22条融资与观察记录：19条已完成融资报道，另有洽谈、混合新老股和相邻业务排除记录。
-- 12项会议或技术讨论旁证：8个NeurIPS workshop详情、4项中国企业技术材料/访谈；不把覆盖不完整的讨论强行打分。
-- 融资金额/公告事件数切换、精确披露模式、剔除最大一笔敏感性检查。
-- 逐条来源、有限原文引句、来源哈希、原币金额、汇率、估值口径与排除原因；CSV / JSON下载。
-- 保留早期三方向深研案例、浏览器本地复核与备忘录导出，明确标为历史研究而非最新筛选结果。
+- 8篇核心论文的方法、结果、反证、投资含义和验证实验；2篇来自原检索名单，6篇补充机制/反证。均未独立复现，也未逐项审查全部补充材料和证明。
+- 原合成数据40条地域记录，去重38篇，全部完成标题级归类；不把其余记录冒充精读。
+- 中国/全球TAM与CAGR来源对照，明确第三方预测及同页口径差异；分离宽市场与窄产品。
+- 可编辑TAM/SAM/SOM计算器、交付容量上限、数量/单价增长敏感性及JSON导出。所有输入为假设，非采购普查。
+- 产业链图、竞争与平台替代、上下游CR5定义和数据缺口、单位经济性及30天验证方案。
 
-## 结论与边界
+研究判断：优先验证工业视觉任务中的生成＋真实验收闭环，机器人迁移验证次之。尚未证明低拥挤或商业成立。CR5缺少细分收入与总市场分母，保留未知；不以五个公司名字或融资份额代替。
 
-**这是一版完整可运行、可审计的公开样本工具，不是全市场普查或投资级排名。** 主图已删除虚构坐标。融资是人工检索核验样本，未收录不代表零。技术轴暂用论文检索量代理，未声称已经量化所有研讨会、访谈与采用情况。基础模型查询发现误匹配，主动退出技术评分，保留融资参照。
-
-合成数据在当前两地样本中进入目标区域，但剔除最大融资后数据不足，不能确认低拥挤；推理服务有明显资本跟进；评测、记忆、实验室和身份安全均已有融资。详细结果、原始指标与下一步验证工作包见报告。
-
-窗口为2025-10-01至2026-09-30；读取日2026-10-25。中国论文指至少一个机构country_code=CN，融资按企业主要经营地。全球包含中国。主图分别计算当地有效领域百分位，分母可见；相同分数不代表相同绝对规模。
-
-市场容量、真实CAGR与CR5不能从融资金额推导，未编造这些数值。研究由当前助手完成，未接外部模型API。没有后台自动推理或已启用的定时任务。
-
-## 本地运行
-
-Python 3.10+；运行应用不需要安装依赖或提供密钥。
+## 运行与更新
 
 ```sh
-python -m http.server 8000 --bind 127.0.0.1
+python -m http.server 8000
 ```
 
-打开 http://localhost:8000 。不要直接双击HTML，浏览器会限制JSON加载。
+打开 localhost:8000。无外部模型API、无账号后端、无后台自动研究。当前助手承担研究工作；页面展示已审阅公开快照。
+
+`landscape.json`是原四象限快照；`SYNTHETIC_DEEPDIVE.md`是本轮研究源文件；`synthetic-evidence.json`是公开阅读台账。`synthetic-report.html`由Markdown生成，用于浏览器展示。重新生成需`pip install markdown`后运行`python scripts/build_synthetic.py`，公开checkout可使用已有台账中的来源哈希，不需要私有PDF。
+
+`python scripts/refresh_landscape.py`只更新待审文件，遇限流停止；`python scripts/build_landscape.py`生成原四象限报告和融资CSV，不替代本轮深研。原统计窗口2025-10-01至2026-09-30，本轮补充历史论文不计入该窗口热度。会议/访谈覆盖不对称，尚未纳入技术分数。
+
+## 检查
 
 ```sh
-# 导出已审阅台账与本轮报告
-python scripts/build_landscape.py
-# 新论文统计进入private/landscape-pending.json，不覆盖已审阅快照
-python scripts/refresh_landscape.py
-# arXiv 新信号，进入待研队列
-python scripts/collect.py
-```
-
-刷新脚本遇到429会停止，不绕过限流、不把失败记作零。2026-10-25本轮补充OpenAlex查询已遇到429。Wind接口返回余额不足，因此本轮使用公开新闻，并未冒充Wind数据库结果。
-
-## 验证
-
-```sh
-python scripts/test_data.py
 python scripts/test_landscape.py
 node scripts/test_landscape.js
+node scripts/test_synthetic.js
+node --check synthetic.js
+python scripts/test_browser.py
 ```
 
-页面通过Edge / Playwright验证双图联动、敏感性开关、未知值、台账筛选、导出、旧研究视图及移动端布局。详见 [验证记录](VALIDATION.md)。
-
-可选复跑UI测试：安装Python `playwright`，在已有Edge的机器启动本地8000端口服务，再运行 `python scripts/test_browser.py`。可通过环境变量 `FR_DEMO_URL` 指定测试地址；下载与截图写入已忽略的 `test-results/`。
-
-`workflow-templates/` 是未启用的可选Actions模板；当前发布凭据没有workflow scope。GitHub Pages直接发布main分支。自动化采集与自动发布是不同动作，新的材料必须复核。
-
-## 文件与来源
-
-- `landscape.json`：本轮原始检索结果、融资事件、来源指纹、FX与讨论旁证。
-- `radar-core.js`：缺失值处理、计分、估值去重与敏感性逻辑。
-- `landscape-ui.js`：地图、来源台账、筛选与下载。
-- `data.json` / `app.js`：2026-10-23早期研究案例。
-- `pending.json`：独立arXiv待研材料，不直接进入已审阅地图。
-
-不含客户原始材料、基金配置、本机数据库、下载论文或密钥。公开快照不包含完整新闻正文。复核记录仅存当前浏览器，不自动上传。
-
-## 许可
-
-原创代码使用MIT。研究说明引用时注明FREERIDE AI；第三方论文、有限引句、新闻和元数据的权利归原作者，MIT不授予这些第三方材料的权利。OpenAlex元数据采用其CC0政策，查询覆盖与解析质量仍需复核。
+浏览器测试需Playwright和本机Edge；默认localhost:8000，可用`FR_DEMO_URL`覆盖。检查论文台账、计算器零值/无效输入/地域切换、下载、四象限与移动端。源码MIT；第三方论文和商业报告版权归原作者，本仓库仅发布原创分析与链接。

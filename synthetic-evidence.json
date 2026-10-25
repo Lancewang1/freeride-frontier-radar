@@ -1,0 +1,932 @@
+{
+  "as_of": "2026-10-25",
+  "raw_regional_records": 40,
+  "unique_records": 38,
+  "reviewed_papers": [
+    {
+      "id": "P1",
+      "title": "Self-Instruct",
+      "url": "https://arxiv.org/pdf/2212.10560",
+      "sha256": "1f14747af9bb8faee2221965449d7685174da18f3421efd4f38ef9bc57d6944e",
+      "locators": "3–5, 8",
+      "status": "全文核心章节核读，未独立复现",
+      "supplement": "未逐项核查所有补充材料与证明",
+      "origin": "本轮补充机制/反证；不计入热度窗口"
+    },
+    {
+      "id": "P2",
+      "title": "Textbooks Are All You Need",
+      "url": "https://arxiv.org/pdf/2306.11644",
+      "sha256": "f2d7bc256626c20439601bccd12adbb4b4457763bc75ccda4509f00b4809cd89",
+      "locators": "4–7, 11–14",
+      "status": "全文核心章节核读，未独立复现",
+      "supplement": "未逐项核查所有补充材料与证明",
+      "origin": "本轮补充机制/反证；不计入热度窗口"
+    },
+    {
+      "id": "P3",
+      "title": "The Curse of Recursion: Training on Generated Data Makes Models Forget",
+      "url": "https://arxiv.org/pdf/2305.17493",
+      "sha256": "db081e1b85409f99ebc6a017b0fe2851b2c2f689e051529d88a62d0853ee9507",
+      "locators": "3–5, 10–12",
+      "status": "全文核心章节核读，未独立复现",
+      "supplement": "未逐项核查所有补充材料与证明",
+      "origin": "本轮补充机制/反证；不计入热度窗口"
+    },
+    {
+      "id": "P4",
+      "title": "Is Model Collapse Inevitable?",
+      "url": "https://arxiv.org/pdf/2404.01413",
+      "sha256": "fd4f45b2625c119f94e5c2f05cac38cacf1d0bf4f6a09961a9bb968567bf69e7",
+      "locators": "3–7, §3",
+      "status": "全文核心章节核读，未独立复现",
+      "supplement": "未逐项核查所有补充材料与证明",
+      "origin": "本轮补充机制/反证；不计入热度窗口"
+    },
+    {
+      "id": "P5",
+      "title": "Domain Randomization",
+      "url": "https://arxiv.org/pdf/1703.06907",
+      "sha256": "3fc98c5f4cea050686d45858e647e1b704492121fdae80f8fcd5d560c107f11f",
+      "locators": "4–6",
+      "status": "全文核心章节核读，未独立复现",
+      "supplement": "未逐项核查所有补充材料与证明",
+      "origin": "本轮补充机制/反证；不计入热度窗口"
+    },
+    {
+      "id": "P6",
+      "title": "MimicGen",
+      "url": "https://arxiv.org/pdf/2310.17596",
+      "sha256": "7345661fb8e8581981e272e1e043561cbfdaf3f8403d2cb5e28f70797c9bbb16",
+      "locators": "3–8",
+      "status": "全文核心章节核读，未独立复现",
+      "supplement": "未逐项核查所有补充材料与证明",
+      "origin": "本轮补充机制/反证；不计入热度窗口"
+    },
+    {
+      "id": "P7",
+      "title": "SynFER",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/He_SynFER_Towards_Boosting_Facial_Expression_Recognition_with_Synthetic_Data_ICCV_2025_paper.pdf",
+      "sha256": "b9691c7951d9638cea0d055c0499a4f2d0d15f56bb3829188927e6e1382d5a26",
+      "locators": "4–8",
+      "status": "全文核心章节核读，未独立复现",
+      "supplement": "未逐项核查所有补充材料与证明",
+      "origin": "原有检索名单"
+    },
+    {
+      "id": "P8",
+      "title": "Scaling Tumor Segmentation",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_Scaling_Tumor_Segmentation_Best_Lessons_from_Real_and_Synthetic_Data_ICCV_2025_paper.pdf",
+      "sha256": "090b73fe667a7d13a7a2490b9637c401cc047912d1646e9a67e17b6204f0569e",
+      "locators": "3–4, 7–8",
+      "status": "全文核心章节核读，未独立复现",
+      "supplement": "未逐项核查所有补充材料与证明",
+      "origin": "原有检索名单"
+    }
+  ],
+  "triage": [
+    {
+      "id": "https://openalex.org/W7125682377",
+      "title": "Synthetic data augmentation and Integrated prediction framework for low-carbon recycled concrete: Leveraging CTGAN and multiple ML models stacking",
+      "date": "2026-01-26",
+      "url": "https://doi.org/10.1016/j.jclepro.2026.147599",
+      "institutions": [
+        "Zhejiang University",
+        "Southeast University",
+        "Nanjing Tech University",
+        "Tongji University",
+        "Shenyang Jianzhu University"
+      ],
+      "countries": [
+        "CN"
+      ],
+      "regions": [
+        "cn",
+        "global"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W4415828363",
+      "title": "Zoom-Anomaly: Multimodal vision-Language fusion industrial anomaly detection with synthetic data",
+      "date": "2025-11-03",
+      "url": "https://doi.org/10.1016/j.inffus.2025.103910",
+      "institutions": [
+        "Politecnico di Milano",
+        "Yanshan University"
+      ],
+      "countries": [
+        "IT",
+        "CN"
+      ],
+      "regions": [
+        "cn",
+        "global"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W4403570206",
+      "title": "SynFER: Towards Boosting Facial Expression Recognition With Synthetic Data",
+      "date": "2025-10-19",
+      "url": "https://doi.org/10.1109/iccv51701.2025.00949",
+      "institutions": [
+        "Chinese University of Hong Kong",
+        "King Abdullah University of Science and Technology",
+        "Monash University",
+        "Mohamed bin Zayed University of Artificial Intelligence",
+        "Shenzhen University",
+        "University of Exeter"
+      ],
+      "countries": [
+        "SA",
+        "HK",
+        "CN",
+        "AU",
+        "GB",
+        "AE"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "人脸与表情",
+      "status": "已核读全文中的方法、实验与结论；未复现",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7160318567",
+      "title": "A synthetic data generation framework for deep learning-based LiDAR forest structure analysis",
+      "date": "2026-05-02",
+      "url": "https://doi.org/10.1016/j.rse.2026.115436",
+      "institutions": [
+        "Xi'an Jiaotong University"
+      ],
+      "countries": [
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W4416808957",
+      "title": "Real-time synthetic data generation and segmentation of railway fasteners using an attention guided dual-phase diffusion-aided model",
+      "date": "2025-11-29",
+      "url": "https://doi.org/10.1016/j.measurement.2025.119874",
+      "institutions": [
+        "Guangxi Transport Vocational and Technical College",
+        "Central South University",
+        "University of Massachusetts Amherst"
+      ],
+      "countries": [
+        "US",
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W4416529362",
+      "title": "Transfer learning from building information model-based synthetic data for three-dimensional module detection in point clouds of modular-integrated construction hoisting",
+      "date": "2025-11-21",
+      "url": "https://doi.org/10.1016/j.engappai.2025.113243",
+      "institutions": [
+        "Huazhong University of Science and Technology",
+        "University of Hong Kong"
+      ],
+      "countries": [
+        "HK",
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7160047058",
+      "title": "Scaling Tumor Segmentation: Best Lessons from Real and Synthetic Data",
+      "date": "2025-10-19",
+      "url": "https://doi.org/10.1109/iccv51701.2025.02225",
+      "institutions": [
+        "Shanghai Jiao Tong University",
+        "University of Chinese Academy of Sciences",
+        "Qilu Hospital of Shandong University",
+        "Shanghai Artificial Intelligence Laboratory",
+        "University of Cambridge",
+        "Sichuan University",
+        "Westlake University",
+        "Johns Hopkins University"
+      ],
+      "countries": [
+        "GB",
+        "US",
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "医疗与健康",
+      "status": "已核读全文中的方法、实验与结论；未复现",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7160157223",
+      "title": "MR-FIQA: Face Image Quality Assessment with Multi-Reference Representations from Synthetic Data Generation",
+      "date": "2025-10-19",
+      "url": "https://doi.org/10.1109/iccv51701.2025.01200",
+      "institutions": [
+        "City University of Hong Kong",
+        "Nankai University",
+        "Lingnan University"
+      ],
+      "countries": [
+        "HK",
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "人脸与表情",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7125630168",
+      "title": "Deep Learning-Based Denoising of Partial Discharge Measurements: From Synthetic Data to Real-World Validation",
+      "date": "2026-01-23",
+      "url": "https://doi.org/10.1109/tpwrd.2026.3657366",
+      "institutions": [
+        "Northwest University",
+        "Xi'an Jiaotong University",
+        "State Key Laboratory of Electrical Insulation and Power Equipment"
+      ],
+      "countries": [
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7118083742",
+      "title": "Advancing seismic facies analysis and reservoir characterization: A synthetic data-augmented CNN and transfer learning workflow integrated with real seismic data",
+      "date": "2026-01-02",
+      "url": "https://doi.org/10.1016/j.jgsce.2025.205831",
+      "institutions": [
+        "State Key Laboratory of Geomechanics and Geotechnical Engineering",
+        "Research Institute of Petroleum Exploration and Development",
+        "Chinese Academy of Sciences",
+        "Bahria University",
+        "China University of Geosciences",
+        "Institute of Rock and Soil Mechanics",
+        "Yunnan University"
+      ],
+      "countries": [
+        "PK",
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7131785474",
+      "title": "LesionDiff: Synthetic data via lesion information transfer diffusion model facilitates plant disease diagnosis",
+      "date": "2026-02-27",
+      "url": "https://doi.org/10.1016/j.cj.2026.01.011",
+      "institutions": [
+        "University of Peradeniya",
+        "Tsinghua University",
+        "Guizhou University"
+      ],
+      "countries": [
+        "LK",
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7125858724",
+      "title": "Improving small-sample performance in portable LIBS analysis with transfer learning and synthetic data-driven CNN models",
+      "date": "2026-01-01",
+      "url": "https://doi.org/10.1039/d5ja00490j",
+      "institutions": [
+        "Hunan University of Science and Technology"
+      ],
+      "countries": [
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7115932293",
+      "title": "Industrial Camera Calibration Using Synthetic Data Augmentation and FSC-McCNN in Froth Flotation Process",
+      "date": "2025-12-18",
+      "url": "https://doi.org/10.1109/tii.2025.3640684",
+      "institutions": [
+        "Central South University"
+      ],
+      "countries": [
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W4416408323",
+      "title": "PU-Mamba: A point cloud upsampling network to enhance semantic segmentation of MEP scenes using synthetic data",
+      "date": "2025-11-20",
+      "url": "https://doi.org/10.1016/j.aei.2025.104087",
+      "institutions": [
+        "Hohai University"
+      ],
+      "countries": [
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7172522551",
+      "title": "Computer vision-based detection of ship hull coating peeling defects using real-texture-constrained synthetic data",
+      "date": "2026-08-05",
+      "url": "https://doi.org/10.1016/j.oceaneng.2026.127253",
+      "institutions": [
+        "Hunan University",
+        "Shanghai Maritime University"
+      ],
+      "countries": [
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7154834254",
+      "title": "SurfSyn: Domain foundation model for pixel-level surface defect detection driven by synthetic data",
+      "date": "2026-04-18",
+      "url": "https://doi.org/10.1016/j.patcog.2026.113709",
+      "institutions": [
+        "Shanghai University",
+        "Hangzhou Dianzi University"
+      ],
+      "countries": [
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7126053992",
+      "title": "Predicting postoperative delirium after lung cancer resection: the utility of synthetic data and LIME algorithm for model interpretation",
+      "date": "2026-01-29",
+      "url": "https://doi.org/10.1038/s41598-025-24848-1",
+      "institutions": [
+        "First Affiliated Hospital of Zhengzhou University",
+        "Zhengzhou University",
+        "Central People's Hospital of Zhanjiang"
+      ],
+      "countries": [
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "医疗与健康",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7125185968",
+      "title": "Bridging the Sim2Real Gap in UAV Remote Sensing: A High-Fidelity Synthetic Data Framework for Vehicle Detection",
+      "date": "2026-01-21",
+      "url": "https://doi.org/10.3390/rs18020361",
+      "institutions": [
+        "Lanzhou University",
+        "Hangzhou Dianzi University",
+        "Hunan Institute of Science and Technology",
+        "Northwestern Polytechnical University"
+      ],
+      "countries": [
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7147005773",
+      "title": "Layout-Controlled Synthetic Data Generation for Remote Sensing Object Detection",
+      "date": "2026-01-01",
+      "url": "https://doi.org/10.1109/tgrs.2026.3679408",
+      "institutions": [
+        "Chang'an University",
+        "Northwest University"
+      ],
+      "countries": [
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W4417039290",
+      "title": "Synthetic data generation for joint electric vehicle driving and charging events via deep generative networks",
+      "date": "2025-12-05",
+      "url": "https://doi.org/10.1016/j.trc.2025.105481",
+      "institutions": [
+        "Hong Kong Polytechnic University",
+        "New York University Shanghai",
+        "New York University Abu Dhabi",
+        "New York University",
+        "Shanghai Electric (China)"
+      ],
+      "countries": [
+        "US",
+        "HK",
+        "AE",
+        "CN"
+      ],
+      "regions": [
+        "cn"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W4416854221",
+      "title": "Synthetic data, synthetic trust: navigating data challenges in the digital revolution",
+      "date": "2025-11-01",
+      "url": "https://doi.org/10.1016/j.landig.2025.100924",
+      "institutions": [
+        "National Institute on Minority Health and Health Disparities",
+        "National Institutes of Health",
+        "Stanford Medicine",
+        "Stanford University"
+      ],
+      "countries": [
+        "US"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "评论与治理",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "不能作为算法性能或商业采用证据"
+    },
+    {
+      "id": "https://openalex.org/W4414925401",
+      "title": "Synthetic data in medical imaging within the EHDS: a path forward for ethics, regulation, and standards",
+      "date": "2025-10-08",
+      "url": "https://doi.org/10.3389/fdgth.2025.1620270",
+      "institutions": [
+        "Comprehensive Health Research Centre",
+        "Universidade Nova de Lisboa"
+      ],
+      "countries": [
+        "PT"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "医疗与健康",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W4417189962",
+      "title": "Review of generative AI for synthetic data generation: a healthcare perspective",
+      "date": "2025-12-10",
+      "url": "https://doi.org/10.1007/s10462-025-11440-2",
+      "institutions": [
+        "Université Paris-Saclay",
+        "Laboratoire d'Intégration des Systèmes et des Technologies",
+        "University of Warwick",
+        "Commissariat à l'Énergie Atomique et aux Énergies Alternatives",
+        "University of Birmingham"
+      ],
+      "countries": [
+        "GB",
+        "FR"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "医疗与健康",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7125949208",
+      "title": "Synthetic Data for Predictive Maintenance: A Systematic Review and Framework for Industry 4.0 Applications",
+      "date": "2026-01-28",
+      "url": "https://doi.org/10.1007/s10845-026-02795-6",
+      "institutions": [
+        "Lappeenranta-Lahti University of Technology",
+        "Savonia University of Applied Sciences"
+      ],
+      "countries": [
+        "FI"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W4416700663",
+      "title": "Rethinking Privacy in Medical Imaging AI: From Metadata and Pixel-Level Identification Risks to Federated Learning and Synthetic Data Challenges",
+      "date": "2025-11-26",
+      "url": "https://doi.org/10.1148/ryai.250273",
+      "institutions": [
+        "Hellenic Mediterranean University",
+        "FORTH Institute of Computer Science",
+        "Karolinska Institutet",
+        "University of Crete",
+        "Foundation for Research and Technology Hellas",
+        "University Hospital of Heraklion"
+      ],
+      "countries": [
+        "SE",
+        "GR"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "医疗与健康",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W4415961059",
+      "title": "LLMCARE: early detection of cognitive impairment via transformer models enhanced by LLM-generated synthetic data",
+      "date": "2025-11-06",
+      "url": "https://doi.org/10.3389/frai.2025.1669896",
+      "institutions": [
+        "University of Wisconsin–Milwaukee",
+        "Columbia University Irving Medical Center",
+        "Columbia University",
+        "University of Tehran",
+        "University of Florida"
+      ],
+      "countries": [
+        "US",
+        "IR"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "医疗与健康",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W4391421212",
+      "title": "Enhancing EEG Signal-Based Emotion Recognition With Synthetic Data: Diffusion Model Approach",
+      "date": "2025-12-09",
+      "url": "https://doi.org/10.1109/tai.2025.3641576",
+      "institutions": [
+        "Osaka Metropolitan University"
+      ],
+      "countries": [
+        "JP"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "医疗与健康",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7159676202",
+      "title": "Synthetic Data Meets Finance: Generative Models for Privacy Preserving Analytics",
+      "date": "2026-04-21",
+      "url": "https://doi.org/10.55220/2576-6821.v10.928",
+      "institutions": [
+        "University of Southern California",
+        "Carnegie Mellon University"
+      ],
+      "countries": [
+        "US"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "结构化/金融数据",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W4417538946",
+      "title": "A Scoping Review of Synthetic Data Generation by Language Models in Biomedical Research and Application: Data Utility and Quality Perspectives",
+      "date": "2026-02-02",
+      "url": "https://doi.org/10.1007/s41666-026-00229-9",
+      "institutions": [
+        "University of Memphis",
+        "Florida State University",
+        "St. Jude Children's Research Hospital",
+        "University of Illinois Urbana-Champaign"
+      ],
+      "countries": [
+        "US"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "医疗与健康",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7104178883",
+      "title": "An efficient computational approach for generating synthetic data to train neural networks in concrete bridge monitoring",
+      "date": "2025-11-06",
+      "url": "https://doi.org/10.1016/j.compstruc.2025.107995",
+      "institutions": [
+        "Sapienza University of Rome"
+      ],
+      "countries": [
+        "IT"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7130659492",
+      "title": "Synthetic Data Augmentation for Imbalanced Tabular Data: A Comparative Study of Generation Methods",
+      "date": "2026-02-20",
+      "url": "https://doi.org/10.3390/electronics15040883",
+      "institutions": [
+        "Sunchon National University",
+        "Wonkwang University"
+      ],
+      "countries": [
+        "KR"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "结构化/金融数据",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7130753532",
+      "title": "Artificial intelligence-generated synthetic data for cancer research and clinical trials",
+      "date": "2026-02-20",
+      "url": "https://doi.org/10.1038/s41568-026-00912-4",
+      "institutions": [
+        "University Hospital Carl Gustav Carus",
+        "Technische Universität Dresden",
+        "Helmholtz-Zentrum Dresden-Rossendorf",
+        "National Center for Tumor Diseases",
+        "Nationales Centrum für Tumorerkrankungen Dresden",
+        "Center for Scalable Data Analytics and Artificial Intelligence",
+        "Else Kröner Fresenius Center for Digital Health",
+        "German Cancer Research Center",
+        "German Cancer Consortium (DKTK) Dresden",
+        "Fondazione IRCCS Istituto Nazionale dei Tumori"
+      ],
+      "countries": [
+        "DE",
+        "IT"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "医疗与健康",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7117150036",
+      "title": "Synthetic data generation methods for longitudinal and time series health data: a systematic review",
+      "date": "2025-12-24",
+      "url": "https://doi.org/10.1186/s12911-025-03326-8",
+      "institutions": [
+        "Bern University of Applied Sciences"
+      ],
+      "countries": [
+        "CH"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "医疗与健康",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W4416667083",
+      "title": "The Role of Synthetic Data and Generative AI in Breast Imaging: Promise, Pitfalls, and Pathways Forward",
+      "date": "2025-11-25",
+      "url": "https://doi.org/10.3390/diagnostics15232996",
+      "institutions": [
+        "Sapienza University of Rome",
+        "Azienda Ospedaliera Sant'Andrea",
+        "European Institute of Oncology",
+        "Fondazione IRCCS Ca' Granda Ospedale Maggiore Policlinico",
+        "University of Milan"
+      ],
+      "countries": [
+        "IT"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "医疗与健康",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W4416397362",
+      "title": "Synthetic data generation and energy consumption prediction in district building energy modeling",
+      "date": "2025-11-20",
+      "url": "https://doi.org/10.1016/j.enbuild.2025.116716",
+      "institutions": [
+        "Özyeğin University"
+      ],
+      "countries": [
+        "TR"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W4416750745",
+      "title": "Synthetica: Large Scale Synthetic Data Generation for Robot Perception",
+      "date": "2025-10-19",
+      "url": "https://doi.org/10.1109/iros60139.2025.11247126",
+      "institutions": [
+        "University of Toronto",
+        "Nvidia (United Kingdom)",
+        "Nvidia (United States)",
+        "Carnegie Mellon University"
+      ],
+      "countries": [
+        "GB",
+        "CA",
+        "US"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "机器人感知",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7134985483",
+      "title": "Synthetic data-driven deep learning for label-free autonomous atomic force microscopy",
+      "date": "2026-03-10",
+      "url": "https://doi.org/10.1038/s41467-026-70421-3",
+      "institutions": [
+        "Oak Ridge National Laboratory",
+        "Center for Nanophase Materials Sciences",
+        "University of Sheffield"
+      ],
+      "countries": [
+        "GB",
+        "US"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "工业、科学与其他视觉应用",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    },
+    {
+      "id": "https://openalex.org/W7126165319",
+      "title": "Synthetic data in the clinical laboratory: methods, applications, and future prospects",
+      "date": "2026-01-30",
+      "url": "https://doi.org/10.1016/j.cca.2026.120878",
+      "institutions": [
+        "University of Pretoria",
+        "University of Cape Town",
+        "National Health Laboratory Service"
+      ],
+      "countries": [
+        "ZA"
+      ],
+      "regions": [
+        "global"
+      ],
+      "category": "医疗与健康",
+      "status": "标题级归类；未精读，不据此提取效果",
+      "relevance": "属于广义合成数据；不自动属于可外购的AI训练数据产品市场"
+    }
+  ],
+  "commercial_sources": [
+    {
+      "id": "market-gvr",
+      "url": "https://www.grandviewresearch.com/industry-analysis/synthetic-data-generation-market-report",
+      "sha256": "8f664b41be0d54c8c83065a4fd3288a05f2dfe9afd00ae651a330c203af513ec",
+      "retrieved": "2026-10-25",
+      "status": "公开网页已读；不是付费报告或独立产品验收"
+    },
+    {
+      "id": "market-mam",
+      "url": "https://www.marketsandmarkets.com/Market-Reports/synthetic-data-generation-market-24197157.html",
+      "sha256": "c90f31349f9c3ea1877a632f8284fab3d9a88d8a7bc555a1ec6d727ab19f5125",
+      "retrieved": "2026-10-25",
+      "status": "公开网页已读；不是付费报告或独立产品验收"
+    },
+    {
+      "id": "china-market",
+      "url": "https://www.grandviewresearch.com/horizon/outlook/synthetic-data-generation-market/china",
+      "sha256": "2090440374eb3ee2aa0a0dbf6045bd1812c3eee220eafa438b384b2e4bf0193e",
+      "status": "公开网页已读；不是付费报告或独立产品验收"
+    },
+    {
+      "id": "nvidia",
+      "url": "https://developer.nvidia.com/isaac/sim",
+      "sha256": "268668b50fb0923cfa7db3af3b309174e1ca00cb0edbe1c5de86537dc9448d7e",
+      "status": "公开网页已读；不是付费报告或独立产品验收"
+    },
+    {
+      "id": "mostly",
+      "url": "https://mostly.ai/",
+      "sha256": "c842b584f9075df6bbbeeb84066914a778035af904b1ab29bd37f2fa8045b3e1",
+      "status": "公开网页已读；不是付费报告或独立产品验收"
+    },
+    {
+      "id": "tonic",
+      "url": "https://www.tonic.ai/",
+      "sha256": "fe944c8b0c8bc2b0e9ed2b832dc663afdba7b9b90576f3283454c4392d329b70",
+      "status": "公开网页已读；不是付费报告或独立产品验收"
+    },
+    {
+      "id": "lightwheel",
+      "url": "https://www.lightwheel.ai/",
+      "sha256": "db70cc8549ebf18ef7984953bef83b393573be10cb6aa349a5084c1ddca1861a",
+      "status": "公开网页已读；不是付费报告或独立产品验收"
+    }
+  ],
+  "reproduction_count": 0
+}
