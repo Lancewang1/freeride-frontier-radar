@@ -1,0 +1,240 @@
+{
+  "as_of": "2026-10-25",
+  "scope": "公司样本及已核验历史事件；非最新融资普查，不用于推算市场份额",
+  "sources": {
+    "tonic-funding": {
+      "url": "https://www.tonic.ai/press-releases/series-b",
+      "sha256": "0d3377481f7ed5102699c952033f6f8a90ad67f1a41220eabf6a6f9b433392e2",
+      "retrieved_at": "2026-10-25",
+      "read_depth": "网页正文已读"
+    },
+    "mostly-funding": {
+      "url": "https://pulse2.com/mostly-ai-recently-raised-25-million-in-series-b-funding/",
+      "sha256": "fc31119bd9e5d5f120bbdfc4e08908159abfa3bf7df6d32f5f7b3b115393d1ab",
+      "retrieved_at": "2026-10-25",
+      "read_depth": "网页正文已读"
+    },
+    "synthesis-funding": {
+      "url": "https://www.prnewswire.com/news-releases/synthesis-ai-raises-a-17-million-series-a-to-expand-its-synthetic-data-platform-for-computer-vision-ai-301534781.html",
+      "sha256": "a3b2896fd880a04b7f8618a5a032a9a2863cba104b12c5fbeb49ca8663d3ae0d",
+      "retrieved_at": "2026-10-25",
+      "read_depth": "网页正文已读"
+    },
+    "bifrost-funding": {
+      "url": "https://www.prnewswire.com/news-releases/bifrost-raises-8m-to-accelerate-ais-ability-to-solve-problems-in-the-physical-world-302292864.html",
+      "sha256": "7e9e7e563d57c1226e7e81b45a4220213ab1088c9e037a72e09dd15f41c7da64",
+      "retrieved_at": "2026-10-25",
+      "read_depth": "网页正文已读"
+    },
+    "gretel-acquisition": {
+      "url": "https://techcrunch.com/2025/03/19/nvidia-reportedly-acquires-synthetic-data-startup-gretel/",
+      "sha256": "6e4e27c05e603a4f01b86138784c7fa50ff2a462172b43ab5f9af23828f38377",
+      "retrieved_at": "2026-10-25",
+      "read_depth": "网页正文已读"
+    },
+    "bifrost-product": {
+      "url": "https://www.bifrost.ai/",
+      "sha256": "6822e8afa53a14a8f5fcb9c808745bfb98f5b1ce9f80fba685290f22ecc67a03",
+      "retrieved_at": "2026-10-25",
+      "read_depth": "网页正文已读"
+    },
+    "lightwheel": {
+      "url": "https://www.lightwheel.ai/",
+      "sha256": "db70cc8549ebf18ef7984953bef83b393573be10cb6aa349a5084c1ddca1861a",
+      "retrieved_at": "2026-10-25",
+      "read_depth": "网页正文已读"
+    },
+    "mostly": {
+      "url": "https://mostly.ai/",
+      "sha256": "c842b584f9075df6bbbeeb84066914a778035af904b1ab29bd37f2fa8045b3e1",
+      "retrieved_at": "2026-10-25",
+      "read_depth": "网页正文已读"
+    },
+    "tonic": {
+      "url": "https://www.tonic.ai/",
+      "sha256": "fe944c8b0c8bc2b0e9ed2b832dc663afdba7b9b90576f3283454c4392d329b70",
+      "retrieved_at": "2026-10-25",
+      "read_depth": "网页正文已读"
+    },
+    "nvidia": {
+      "url": "https://developer.nvidia.com/isaac/sim",
+      "sha256": "268668b50fb0923cfa7db3af3b309174e1ca00cb0edbe1c5de86537dc9448d7e",
+      "retrieved_at": "2026-10-25",
+      "read_depth": "网页正文已读"
+    },
+    "lightwheel-a": {
+      "url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202603/t20260312_240699.html",
+      "sha256": "a43b77a5878dd59446a903a35071bf4dba0bb91dcdcc16f7363579ce491e87b1",
+      "retrieved_at": "2026-10-25",
+      "read_depth": "网页正文已读"
+    },
+    "dataarc-new": {
+      "url": "https://finance.sina.com.cn/wm/2026-07-13/doc-inihspyr7506463.shtml",
+      "sha256": "bc9155d4a4444180f28fe66af41b33d609b84f807334f8092cb3b7a673f13ba9",
+      "retrieved_at": "2026-10-25",
+      "read_depth": "网页正文已读"
+    }
+  },
+  "companies": [
+    {
+      "company": "数创弧光 DataArc",
+      "segment": "垂直文本与Agent数据",
+      "sources": [
+        "dataarc-new"
+      ],
+      "status": "访谈报道"
+    },
+    {
+      "company": "光轮智能 Lightwheel",
+      "segment": "物理数据与评测",
+      "sources": [
+        "lightwheel",
+        "lightwheel-a"
+      ],
+      "status": "官网及融资报道"
+    },
+    {
+      "company": "MOSTLY AI",
+      "segment": "结构化数据",
+      "sources": [
+        "mostly",
+        "mostly-funding"
+      ],
+      "status": "官网有powered by Syntho标识，主体关系待核查"
+    },
+    {
+      "company": "Tonic.ai",
+      "segment": "企业测试数据",
+      "sources": [
+        "tonic",
+        "tonic-funding"
+      ],
+      "status": "官网与公司公告"
+    },
+    {
+      "company": "Synthesis AI",
+      "segment": "视觉合成",
+      "sources": [
+        "synthesis-funding"
+      ],
+      "status": "2022历史样本；2026官网访问失败，当前状态未核实"
+    },
+    {
+      "company": "Bifrost AI",
+      "segment": "物理场景与机器人评测",
+      "sources": [
+        "bifrost-product",
+        "bifrost-funding"
+      ],
+      "status": "Manifold为Early Access"
+    },
+    {
+      "company": "Gretel",
+      "segment": "合成数据平台",
+      "sources": [
+        "gretel-acquisition"
+      ],
+      "status": "2025年媒体报道被NVIDIA收购，不重复算独立厂商"
+    },
+    {
+      "company": "NVIDIA",
+      "segment": "仿真底座",
+      "sources": [
+        "nvidia",
+        "gretel-acquisition"
+      ],
+      "status": "底座平台，不使用集团收入计算细分市场份额"
+    }
+  ],
+  "events": [
+    {
+      "company": "光轮智能",
+      "date": "2026-03-12",
+      "event_type": "融资",
+      "source": "lightwheel-a",
+      "amount_million": 1000,
+      "currency": "CNY",
+      "amount_kind": "exact",
+      "quote": "光轮智能完成10亿元A++及A+++轮融资",
+      "in_radar_window": true,
+      "note": "两个轮次合并公告，不拆成两个金额/两个公告事件。仿真、数据和评测复合业务，按数据基础设施主标签计一次。"
+    },
+    {
+      "company": "数创弧光 DataArc",
+      "date": "2026-07-13",
+      "event_type": "融资",
+      "source": "dataarc-new",
+      "amount_million": null,
+      "currency": "CNY",
+      "amount_kind": "coarse",
+      "quote": "数千万元 级 新一轮融资",
+      "in_radar_window": true,
+      "note": "金额与估值均只有数量级，不填精确值；文内历史种子轮累计不重复计。"
+    },
+    {
+      "company": "Bifrost AI",
+      "date": "2024-10-31",
+      "event_type": "融资",
+      "round": "A",
+      "source": "bifrost-funding",
+      "amount_million": 8,
+      "currency": "USD",
+      "amount_kind": "exact",
+      "quote": "raised $8 million in Series A funding",
+      "in_radar_window": false,
+      "note": "历史事件；不表示最新融资。MOSTLY日期为报道日。"
+    },
+    {
+      "company": "Synthesis AI",
+      "date": "2022-04-28",
+      "event_type": "融资",
+      "round": "A",
+      "source": "synthesis-funding",
+      "amount_million": 17,
+      "currency": "USD",
+      "amount_kind": "exact",
+      "quote": "closed $17 million in Series A financing",
+      "in_radar_window": false,
+      "note": "历史事件；不表示最新融资。MOSTLY日期为报道日。"
+    },
+    {
+      "company": "MOSTLY AI",
+      "date": "2022-02-04",
+      "event_type": "融资",
+      "round": "B",
+      "source": "mostly-funding",
+      "amount_million": 25,
+      "currency": "USD",
+      "amount_kind": "exact",
+      "quote": "raised a $25M Series B round of funding",
+      "in_radar_window": false,
+      "note": "历史事件；不表示最新融资。MOSTLY日期为报道日。"
+    },
+    {
+      "company": "Tonic.ai",
+      "date": "2021-09-29",
+      "event_type": "融资",
+      "round": "B",
+      "source": "tonic-funding",
+      "amount_million": 35,
+      "currency": "USD",
+      "amount_kind": "exact",
+      "quote": "close of a $35 million Series B investment round",
+      "in_radar_window": false,
+      "note": "历史事件；不表示最新融资。MOSTLY日期为报道日。"
+    },
+    {
+      "company": "Gretel",
+      "date": "2025-03-19",
+      "event_type": "并购报道",
+      "acquirer": "NVIDIA",
+      "source": "gretel-acquisition",
+      "amount_million": null,
+      "currency": "USD",
+      "amount_kind": "undisclosed",
+      "quote": "Terms of the acquisition are unknown.",
+      "in_radar_window": false,
+      "note": "报道日；3.2亿美元是报道引用的最近估值，不是精确对价。不得计入融资金额。"
+    }
+  ]
+}
