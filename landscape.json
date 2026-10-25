@@ -1,0 +1,5106 @@
+{
+  "version": "0.4",
+  "as_of": "2026-10-25",
+  "window": {
+    "start": "2025-10-01",
+    "end": "2026-09-30"
+  },
+  "scope": "公开证据样本，不是全市场普查；低样本金额不等于低市场关注",
+  "topics": [
+    {
+      "id": "foundation",
+      "name": "基础模型训练",
+      "layer": "基模",
+      "boundary": "预训练企业融资参照；技术检索不合格，暂不排名"
+    },
+    {
+      "id": "inference",
+      "name": "推理优化与服务",
+      "layer": "算力",
+      "boundary": "LLM推理、推测解码与KV缓存；融资为关联平台整体资金"
+    },
+    {
+      "id": "memory",
+      "name": "Agent 长期记忆",
+      "layer": "Agent",
+      "boundary": "Agent与语言模型长期记忆，排除脑科学与物理存储器"
+    },
+    {
+      "id": "evaluation",
+      "name": "模型评测与审计",
+      "layer": "工具",
+      "boundary": "LLM评测、judge与审计，企业可延伸至训练环境"
+    },
+    {
+      "id": "identity",
+      "name": "Agent 身份与授权",
+      "layer": "工具",
+      "boundary": "Agent安全、身份与授权；不将泛AI安全全部纳入"
+    },
+    {
+      "id": "synthetic",
+      "name": "合成数据",
+      "layer": "数据",
+      "boundary": "合成训练数据，含仿真数据；细分用途异质性较大"
+    },
+    {
+      "id": "science",
+      "name": "自主实验室",
+      "layer": "应用",
+      "boundary": "self-driving / autonomous laboratory，不含一般检验流水线"
+    },
+    {
+      "id": "embodied",
+      "name": "机器人基础模型",
+      "layer": "模型",
+      "boundary": "VLA及机器人基础模型；部分论文含自动驾驶"
+    }
+  ],
+  "papers": [
+    {
+      "topic": "embodied",
+      "region": "cn",
+      "url": "https://api.openalex.org/works?filter=from_publication_date%3A2025-10-01%2Cto_publication_date%3A2026-09-30%2Ctitle.search%3A%22vision-language-action%22+OR+%22robot+foundation+model%22%2Cauthorships.institutions.country_code%3Acn&per-page=20&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cauthorships%2Cprimary_location&sort=cited_by_count%3Adesc",
+      "query": "\"vision-language-action\" OR \"robot foundation model\"",
+      "retrieved_at": "2026-10-25",
+      "count": 436,
+      "records": [
+        {
+          "id": "https://openalex.org/W4398796510",
+          "title": "A Survey on Vision--Language--Action Models for Embodied AI",
+          "date": "2026-04-28",
+          "url": "https://doi.org/10.1109/tnnls.2025.3650584",
+          "institutions": [
+            "Huawei Technologies (China)",
+            "Chinese University of Hong Kong",
+            "University of Bristol"
+          ],
+          "countries": [
+            "GB",
+            "HK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7126053009",
+          "title": "Information-theoretic graph fusion with vision-language-action model for policy reasoning and dual robotic control",
+          "date": "2026-01-29",
+          "url": "https://doi.org/10.1016/j.inffus.2026.104193",
+          "institutions": [
+            "Hunan University",
+            "Hangzhou Dianzi University",
+            "University of New Mexico",
+            "University of Alabama at Birmingham",
+            "George Washington University",
+            "Politecnico di Milano",
+            "University of Oxford"
+          ],
+          "countries": [
+            "GB",
+            "US",
+            "IT",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7123340428",
+          "title": "PointVLA: Injecting the 3D World Into Vision-Language-Action Models",
+          "date": "2026-01-12",
+          "url": "https://doi.org/10.1109/lra.2026.3653303",
+          "institutions": [
+            "Shanghai University",
+            "Midea Group (China)"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7131081286",
+          "title": "A Survey on Vision-Language-Action Models for Autonomous Driving",
+          "date": "2025-10-19",
+          "url": "https://doi.org/10.1109/iccvw69036.2025.00476",
+          "institutions": [
+            "McGill University",
+            "University of Minnesota",
+            "University of Wisconsin–Madison",
+            "Xiaomi (China)",
+            "Tsinghua University"
+          ],
+          "countries": [
+            "CN",
+            "US",
+            "CA"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7128590487",
+          "title": "What matters in building vision–language–action models for generalist robots",
+          "date": "2026-02-11",
+          "url": "https://doi.org/10.1038/s42256-025-01168-7",
+          "institutions": [
+            "Shanghai Jiao Tong University",
+            "Institute of Automation",
+            "National University of Singapore",
+            "Beijing Academy of Artificial Intelligence",
+            "Beijing University of Posts and Telecommunications",
+            "ByteDance (China)",
+            "Tsinghua University"
+          ],
+          "countries": [
+            "SG",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7138040144",
+          "title": "DexGraspVLA: A Vision-Language-Action Framework Towards General Dexterous Grasping",
+          "date": "2026-03-14",
+          "url": "https://doi.org/10.1609/aaai.v40i22.38953",
+          "institutions": [
+            "University of Pennsylvania",
+            "The Hong Kong University of Science and Technology (Guangzhou)",
+            "Peking University"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7138067574",
+          "title": "MoLe-VLA: Dynamic Layer-skipping Vision Language Action Model via Mixture-of-Layers for Efficient Robot Manipulation",
+          "date": "2026-03-14",
+          "url": "https://doi.org/10.1609/aaai.v40i22.38945",
+          "institutions": [
+            "Hong Kong Polytechnic University",
+            "Hong Kong University of Science and Technology",
+            "Nanjing University",
+            "Peking University"
+          ],
+          "countries": [
+            "HK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4414763559",
+          "title": "Dita: Scaling Diffusion Transformer for Generalist Vision-Language-Action Policy",
+          "date": "2025-10-19",
+          "url": "https://doi.org/10.1109/iccv51701.2025.00721",
+          "institutions": [
+            "Zhejiang University",
+            "Peking University",
+            "Shanghai Artificial Intelligence Laboratory",
+            "Chinese Academy of Sciences",
+            "Chinese University of Hong Kong",
+            "Sensetime (China)",
+            "Tsinghua University"
+          ],
+          "countries": [
+            "HK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416748811",
+          "title": "PD-VLA: Accelerating Vision-Language-Action Model Integrated with Action Chunking via Parallel Decoding",
+          "date": "2025-10-01",
+          "url": "https://doi.org/10.1109/iros60139.2025.11247519",
+          "institutions": [
+            "Westlake University",
+            "Harbin Institute of Technology",
+            "The Hong Kong University of Science and Technology (Guangzhou)",
+            "Monash University"
+          ],
+          "countries": [
+            "AU",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7138226258",
+          "title": "VLA-Adapter: An Effective Paradigm for Tiny-Scale Vision-Language-Action Model",
+          "date": "2026-03-14",
+          "url": "https://doi.org/10.1609/aaai.v40i22.38931",
+          "institutions": [
+            "Zhejiang University",
+            "State Key Laboratory of Networking and Switching Technology",
+            "Hong Kong University of Science and Technology",
+            "Westlake University",
+            "Beijing University of Posts and Telecommunications"
+          ],
+          "countries": [
+            "HK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7160152850",
+          "title": "CoA-VLA: Improving Vision-Language-Action Models via Visual-Textual Chain-of-Affordance",
+          "date": "2025-10-19",
+          "url": "https://doi.org/10.1109/iccv51701.2025.00910",
+          "institutions": [
+            "Shanghai University",
+            "East China Normal University",
+            "Midea Group (China)"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4417102591",
+          "title": "FedVLA: Federated Vision-Language-Action Learning with Dual Gating Mixture-of-Experts for Robotic Manipulation",
+          "date": "2025-10-19",
+          "url": "https://doi.org/10.1109/iccv51701.2025.00649",
+          "institutions": [
+            "ByteDance (China)",
+            "Shenzhen MSU-BIT University",
+            "National University of Defense Technology",
+            "Guangdong Laboratory of Artificial Intelligence and Digital Economy (Shenzhen)"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7131219477",
+          "title": "PI-VLA: Adaptive Symmetry-Aware Decision-Making for Long-Horizon Vision–Language–Action Manipulation",
+          "date": "2026-02-24",
+          "url": "https://doi.org/10.3390/sym18030394",
+          "institutions": [
+            "Chinese Academy of Sciences",
+            "Chang'an University",
+            "Shenzhen Institutes of Advanced Technology",
+            "Columbia University"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4417462431",
+          "title": "MindDrive: A Vision-Language-Action Model for Autonomous Driving via Online Reinforcement Learning",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.1007/978-3-032-37026-6_28",
+          "institutions": [
+            "Xiaomi (China)",
+            "Huazhong University of Science and Technology"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416891949",
+          "title": "VQ-VLA: Improving Vision-Language-Action Models via Scaling Vector-Quantized Action Tokenizers",
+          "date": "2025-10-19",
+          "url": "https://doi.org/10.1109/iccv51701.2025.01032",
+          "institutions": [
+            "Tongji University",
+            "Shanghai Jiao Tong University",
+            "Shanghai Artificial Intelligence Laboratory"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7137985120",
+          "title": "ReconVLA: Reconstructive Vision-Language-Action Model as Effective Robot Perceiver",
+          "date": "2026-03-14",
+          "url": "https://doi.org/10.1609/aaai.v40i22.38921",
+          "institutions": [
+            "Westlake University",
+            "Zhejiang University",
+            "The Hong Kong University of Science and Technology (Guangzhou)",
+            "Monash University"
+          ],
+          "countries": [
+            "AU",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7138138930",
+          "title": "Towards Efficient and Robust Manipulation via Multi-Frame Vision-Language-Action Modeling",
+          "date": "2026-03-14",
+          "url": "https://doi.org/10.1609/aaai.v40i22.38903",
+          "institutions": [
+            "Chinese University of Hong Kong",
+            "Zhejiang University",
+            "University of Science and Technology of China",
+            "Shanghai Artificial Intelligence Laboratory"
+          ],
+          "countries": [
+            "HK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4417251871",
+          "title": "Semantically Guided Task Planning: Supervised Vision-Language-Action Model by Large Language Models",
+          "date": "2025-12-11",
+          "url": "https://doi.org/10.1109/tcsvt.2025.3642702",
+          "institutions": [
+            "Shandong University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7138009379",
+          "title": "GraphCoT-VLA: A 3D Spatial-Aware Reasoning Vision-Language-Action Model for Robotic Manipulation with Ambiguous Instructions",
+          "date": "2026-03-14",
+          "url": "https://doi.org/10.1609/aaai.v40i22.38896",
+          "institutions": [
+            "University of Science and Technology of China",
+            "Huawei Technologies (China)"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7129044640",
+          "title": "VLAbot: A human Vision–Language–Action models interaction framework for robotic assembly",
+          "date": "2026-02-16",
+          "url": "https://doi.org/10.1016/j.rcim.2026.103268",
+          "institutions": [
+            "Rochester Institute of Technology",
+            "Hong Kong University of Science and Technology",
+            "The Hong Kong University of Science and Technology (Guangzhou)",
+            "Hong Kong Polytechnic University"
+          ],
+          "countries": [
+            "US",
+            "HK",
+            "CN"
+          ]
+        }
+      ],
+      "sha256": "1c6450259b15cc725bc0812d3b26985789d772825ea04f3290c6bb22a3f277a6",
+      "quality": "关键词检索代理，非人工确认全量；排名可能受检索口径影响"
+    },
+    {
+      "topic": "embodied",
+      "region": "global",
+      "url": "https://api.openalex.org/works?filter=from_publication_date%3A2025-10-01%2Cto_publication_date%3A2026-09-30%2Ctitle.search%3A%22vision-language-action%22+OR+%22robot+foundation+model%22&per-page=20&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cauthorships%2Cprimary_location&sort=cited_by_count%3Adesc",
+      "query": "\"vision-language-action\" OR \"robot foundation model\"",
+      "retrieved_at": "2026-10-25",
+      "count": 1205,
+      "records": [
+        {
+          "id": "https://openalex.org/W4398796510",
+          "title": "A Survey on Vision--Language--Action Models for Embodied AI",
+          "date": "2026-04-28",
+          "url": "https://doi.org/10.1109/tnnls.2025.3650584",
+          "institutions": [
+            "Huawei Technologies (China)",
+            "Chinese University of Hong Kong",
+            "University of Bristol"
+          ],
+          "countries": [
+            "GB",
+            "HK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7126053009",
+          "title": "Information-theoretic graph fusion with vision-language-action model for policy reasoning and dual robotic control",
+          "date": "2026-01-29",
+          "url": "https://doi.org/10.1016/j.inffus.2026.104193",
+          "institutions": [
+            "Hunan University",
+            "Hangzhou Dianzi University",
+            "University of New Mexico",
+            "University of Alabama at Birmingham",
+            "George Washington University",
+            "Politecnico di Milano",
+            "University of Oxford"
+          ],
+          "countries": [
+            "GB",
+            "US",
+            "IT",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7138474371",
+          "title": "OpenDriveVLA: Towards End-to-end Autonomous Driving with Large Vision Language Action Model",
+          "date": "2026-03-14",
+          "url": "https://doi.org/10.1609/aaai.v40i16.38386",
+          "institutions": [
+            "Ludwig-Maximilians-Universität München",
+            "Technical University of Munich"
+          ],
+          "countries": [
+            "DE"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7123340428",
+          "title": "PointVLA: Injecting the 3D World Into Vision-Language-Action Models",
+          "date": "2026-01-12",
+          "url": "https://doi.org/10.1109/lra.2026.3653303",
+          "institutions": [
+            "Shanghai University",
+            "Midea Group (China)"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7131081286",
+          "title": "A Survey on Vision-Language-Action Models for Autonomous Driving",
+          "date": "2025-10-19",
+          "url": "https://doi.org/10.1109/iccvw69036.2025.00476",
+          "institutions": [
+            "McGill University",
+            "University of Minnesota",
+            "University of Wisconsin–Madison",
+            "Xiaomi (China)",
+            "Tsinghua University"
+          ],
+          "countries": [
+            "CN",
+            "US",
+            "CA"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7115589878",
+          "title": "Multimodal fusion with vision-language-action models for robotic manipulation: A systematic review",
+          "date": "2025-12-16",
+          "url": "https://doi.org/10.1016/j.inffus.2025.104062",
+          "institutions": [
+            "Universitat Politècnica de Catalunya",
+            "Khalifa University of Science and Technology"
+          ],
+          "countries": [
+            "AE",
+            "ES"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416748491",
+          "title": "RoboNurse-VLA: Robotic Scrub Nurse System based on Vision-Language-Action Model",
+          "date": "2025-10-19",
+          "url": "https://doi.org/10.1109/iros60139.2025.11246030",
+          "institutions": [
+            "Chinese University of Hong Kong",
+            "Italian Institute of Technology"
+          ],
+          "countries": [
+            "IT",
+            "HK"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7128590487",
+          "title": "What matters in building vision–language–action models for generalist robots",
+          "date": "2026-02-11",
+          "url": "https://doi.org/10.1038/s42256-025-01168-7",
+          "institutions": [
+            "Shanghai Jiao Tong University",
+            "Institute of Automation",
+            "National University of Singapore",
+            "Beijing Academy of Artificial Intelligence",
+            "Beijing University of Posts and Telecommunications",
+            "ByteDance (China)",
+            "Tsinghua University"
+          ],
+          "countries": [
+            "SG",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7138040144",
+          "title": "DexGraspVLA: A Vision-Language-Action Framework Towards General Dexterous Grasping",
+          "date": "2026-03-14",
+          "url": "https://doi.org/10.1609/aaai.v40i22.38953",
+          "institutions": [
+            "University of Pennsylvania",
+            "The Hong Kong University of Science and Technology (Guangzhou)",
+            "Peking University"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7138067574",
+          "title": "MoLe-VLA: Dynamic Layer-skipping Vision Language Action Model via Mixture-of-Layers for Efficient Robot Manipulation",
+          "date": "2026-03-14",
+          "url": "https://doi.org/10.1609/aaai.v40i22.38945",
+          "institutions": [
+            "Hong Kong Polytechnic University",
+            "Hong Kong University of Science and Technology",
+            "Nanjing University",
+            "Peking University"
+          ],
+          "countries": [
+            "HK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4414763559",
+          "title": "Dita: Scaling Diffusion Transformer for Generalist Vision-Language-Action Policy",
+          "date": "2025-10-19",
+          "url": "https://doi.org/10.1109/iccv51701.2025.00721",
+          "institutions": [
+            "Zhejiang University",
+            "Peking University",
+            "Shanghai Artificial Intelligence Laboratory",
+            "Chinese Academy of Sciences",
+            "Chinese University of Hong Kong",
+            "Sensetime (China)",
+            "Tsinghua University"
+          ],
+          "countries": [
+            "HK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416748811",
+          "title": "PD-VLA: Accelerating Vision-Language-Action Model Integrated with Action Chunking via Parallel Decoding",
+          "date": "2025-10-01",
+          "url": "https://doi.org/10.1109/iros60139.2025.11247519",
+          "institutions": [
+            "Westlake University",
+            "Harbin Institute of Technology",
+            "The Hong Kong University of Science and Technology (Guangzhou)",
+            "Monash University"
+          ],
+          "countries": [
+            "AU",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7138226258",
+          "title": "VLA-Adapter: An Effective Paradigm for Tiny-Scale Vision-Language-Action Model",
+          "date": "2026-03-14",
+          "url": "https://doi.org/10.1609/aaai.v40i22.38931",
+          "institutions": [
+            "Zhejiang University",
+            "State Key Laboratory of Networking and Switching Technology",
+            "Hong Kong University of Science and Technology",
+            "Westlake University",
+            "Beijing University of Posts and Telecommunications"
+          ],
+          "countries": [
+            "HK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7160152850",
+          "title": "CoA-VLA: Improving Vision-Language-Action Models via Visual-Textual Chain-of-Affordance",
+          "date": "2025-10-19",
+          "url": "https://doi.org/10.1109/iccv51701.2025.00910",
+          "institutions": [
+            "Shanghai University",
+            "East China Normal University",
+            "Midea Group (China)"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4404649934",
+          "title": "Exploring the Adversarial Vulnerabilities of Vision-Language-Action Models in Robotics",
+          "date": "2025-10-19",
+          "url": "https://doi.org/10.1109/iccv51701.2025.00653",
+          "institutions": [
+            "Rochester Institute of Technology",
+            "Rutgers, The State University of New Jersey",
+            "Lamar University",
+            "University of Missouri–Kansas City",
+            "United States Naval Research Laboratory",
+            "Meta (United States)",
+            "University of Rochester"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7160832405",
+          "title": "VLA-Touch: Enhancing Vision-Language-Action Model With Dual-Level Tactile Feedback",
+          "date": "2026-05-11",
+          "url": "https://doi.org/10.1109/lra.2026.3692345",
+          "institutions": [
+            "National University of Singapore"
+          ],
+          "countries": [
+            "SG"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4417102591",
+          "title": "FedVLA: Federated Vision-Language-Action Learning with Dual Gating Mixture-of-Experts for Robotic Manipulation",
+          "date": "2025-10-19",
+          "url": "https://doi.org/10.1109/iccv51701.2025.00649",
+          "institutions": [
+            "ByteDance (China)",
+            "Shenzhen MSU-BIT University",
+            "National University of Defense Technology",
+            "Guangdong Laboratory of Artificial Intelligence and Digital Economy (Shenzhen)"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7131219477",
+          "title": "PI-VLA: Adaptive Symmetry-Aware Decision-Making for Long-Horizon Vision–Language–Action Manipulation",
+          "date": "2026-02-24",
+          "url": "https://doi.org/10.3390/sym18030394",
+          "institutions": [
+            "Chinese Academy of Sciences",
+            "Chang'an University",
+            "Shenzhen Institutes of Advanced Technology",
+            "Columbia University"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4417462431",
+          "title": "MindDrive: A Vision-Language-Action Model for Autonomous Driving via Online Reinforcement Learning",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.1007/978-3-032-37026-6_28",
+          "institutions": [
+            "Xiaomi (China)",
+            "Huazhong University of Science and Technology"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416891949",
+          "title": "VQ-VLA: Improving Vision-Language-Action Models via Scaling Vector-Quantized Action Tokenizers",
+          "date": "2025-10-19",
+          "url": "https://doi.org/10.1109/iccv51701.2025.01032",
+          "institutions": [
+            "Tongji University",
+            "Shanghai Jiao Tong University",
+            "Shanghai Artificial Intelligence Laboratory"
+          ],
+          "countries": [
+            "CN"
+          ]
+        }
+      ],
+      "sha256": "10a6da064a278bf5e85daca5cad2d83640b5ed862e91b3e9f9f68e68784eec32",
+      "quality": "关键词检索代理，非人工确认全量；排名可能受检索口径影响"
+    },
+    {
+      "topic": "evaluation",
+      "region": "cn",
+      "url": "https://api.openalex.org/works?filter=from_publication_date%3A2025-10-01%2Cto_publication_date%3A2026-09-30%2Ctitle.search%3A%22LLM+evaluation%22+OR+%22language+model+evaluation%22+OR+%22LLM+judge%22%2Cauthorships.institutions.country_code%3Acn&per-page=20&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cauthorships%2Cprimary_location&sort=cited_by_count%3Adesc",
+      "query": "\"LLM evaluation\" OR \"language model evaluation\" OR \"LLM judge\"",
+      "retrieved_at": "2026-10-25",
+      "count": 75,
+      "records": [
+        {
+          "id": "https://openalex.org/W4388748472",
+          "title": "PsyEval: a comprehensive large language model evaluation benchmark for mental health",
+          "date": "2026-07-09",
+          "url": "https://doi.org/10.1038/s44184-026-00227-0",
+          "institutions": [
+            "Shanghai Jiao Tong University",
+            "The University of Texas at Arlington",
+            "Peking University",
+            "Shanghai Children's Hospital"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7124771218",
+          "title": "Large Language Models Evaluation of Medical Licensing Examination Using GPT-4.0, ERNIE Bot 4.0, and GPT-4o",
+          "date": "2026-01-17",
+          "url": "https://doi.org/10.3390/bioengineering13010113",
+          "institutions": [
+            "University of Saskatchewan",
+            "Fujian Medical University",
+            "First Affiliated Hospital of Fujian Medical University"
+          ],
+          "countries": [
+            "CA",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7117144337",
+          "title": "U-NIAH: Unified RAG and LLM Evaluation for Long Context Needle-in-a-Haystack",
+          "date": "2025-12-24",
+          "url": "https://doi.org/10.1145/3786609",
+          "institutions": [
+            "Nanjing University of Aeronautics and Astronautics",
+            "Tongji University",
+            "Fudan University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416516670",
+          "title": "Large Language Model Evaluation in Traditional Chinese Medicine for Stroke: Quantitative Benchmarking Study",
+          "date": "2025-11-21",
+          "url": "https://doi.org/10.2196/81545",
+          "institutions": [
+            "West China Hospital of Sichuan University",
+            "Southwest Medical University",
+            "Chengdu University of Traditional Chinese Medicine"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415291590",
+          "title": "Automated Esophageal Cancer Staging From Free-Text Radiology Reports: Large Language Model Evaluation Study",
+          "date": "2025-10-17",
+          "url": "https://doi.org/10.2196/75556",
+          "institutions": [
+            "Shanghai University",
+            "Fudan University",
+            "Shanghai Jiao Tong University",
+            "Shanghai Chest Hospital"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4414804516",
+          "title": "Can AI replace clinician-rated depression scales? The psychometric properties of HAMLET – Hamilton Large-Language-Model Evaluation Tool",
+          "date": "2025-10-04",
+          "url": "https://doi.org/10.1016/j.ajp.2025.104707",
+          "institutions": [
+            "Beijing HuiLongGuan Hospital",
+            "Peking University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7117546582",
+          "title": "Evaluating GPT-4 Responses on Scars or Keloids for Patient Education: Large Language Model Evaluation Study",
+          "date": "2025-12-30",
+          "url": "https://doi.org/10.2196/78838",
+          "institutions": [
+            "Guizhou Provincial People's Hospital"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7117325391",
+          "title": "Evolutionary-Algorithm-Based Automatic Prompt Generation for Vision-Language Model Evaluation",
+          "date": "2025-12-26",
+          "url": "https://doi.org/10.1109/access.2025.3648351",
+          "institutions": [
+            "The Third Institute of the Ministry of Public Security",
+            "Shanghai Academy of Spaceflight Technology"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7155108317",
+          "title": "CPJ: Explainable Agricultural Pest Diagnosis Via Caption–Prompt–Judge with LLM-Judged Refinement",
+          "date": "2026-04-21",
+          "url": "https://doi.org/10.1109/icassp55912.2026.11464859",
+          "institutions": [
+            "Shandong University of Technology",
+            "Macau Millennium College"
+          ],
+          "countries": [
+            "MO",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7164861680",
+          "title": "Augmenting clinical decision-making with large language models: evaluation across general and specialty tasks",
+          "date": "2026-04-02",
+          "url": "https://doi.org/10.1093/jamia/ocag053",
+          "institutions": [
+            "University of Chinese Academy of Sciences",
+            "Peking University Third Hospital",
+            "Chinese Academy of Sciences",
+            "Nanjing University of Science and Technology",
+            "Institute of Automation",
+            "Beihang University",
+            "City University of Macau"
+          ],
+          "countries": [
+            "MO",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7127341191",
+          "title": "Deep Reinforcement Learning-Driven Adaptive Prompting for Robust Medical LLM Evaluation",
+          "date": "2026-02-02",
+          "url": "https://doi.org/10.3390/app16031514",
+          "institutions": [
+            "Hefei Institutes of Physical Science",
+            "Chinese Academy of Sciences",
+            "Chinese University of Hong Kong",
+            "IFlyTek (China)",
+            "Institute of Intelligent Machines",
+            "Chinese University of Hong Kong, Shenzhen"
+          ],
+          "countries": [
+            "HK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7166879487",
+          "title": "Reasoning Model Is Superior LLM-Judge, Yet Suffers from Biases",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.evaleval-1.13",
+          "institutions": [
+            "Institute of Science Tokyo",
+            "The University of Osaka",
+            "Harbin Institute of Technology"
+          ],
+          "countries": [
+            "CN",
+            "JP"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7127045794",
+          "title": "Industrial-Scale Data Processing and LLM Evaluation for Coal Mine Safety",
+          "date": "2025-11-12",
+          "url": "https://doi.org/10.1145/3784833.3784879",
+          "institutions": [
+            "Peking University",
+            "China University of Mining and Technology - Beijing"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7215049327",
+          "title": "Optimal Design for Active Preference Learning with Biased LLM Judges",
+          "date": "2026-09-30",
+          "url": "https://doi.org/10.48550/arxiv.2609.38860",
+          "institutions": [
+            "Beihang University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7214909558",
+          "title": "Mubric: Mutation Testing-Guided Rubric Generation for LLM Evaluation",
+          "date": "2026-09-29",
+          "url": "https://doi.org/10.48550/arxiv.2609.37322",
+          "institutions": [
+            "Tsinghua University",
+            "King's College London",
+            "University of Illinois Urbana-Champaign"
+          ],
+          "countries": [
+            "US",
+            "GB",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7214714052",
+          "title": "JEV as a Judge for Agent Trace Security: An Empirical Comparison with Generative LLM Judges",
+          "date": "2026-09-28",
+          "url": "https://doi.org/10.48550/arxiv.2609.34862",
+          "institutions": [
+            "University of Science and Technology of China"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7214581139",
+          "title": "Backbone-Adaptive Evidence Routing for Robust Pairwise LLM Judging",
+          "date": "2026-09-25",
+          "url": "https://doi.org/10.48550/arxiv.2609.30751",
+          "institutions": [
+            "Shanghai Jiao Tong University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7214809183",
+          "title": "DIAL: Position-Debiased LLM Judges with Adaptive Human Preference Calibration",
+          "date": "2026-09-25",
+          "url": "https://arxiv.org/abs/2609.31215",
+          "institutions": [
+            "University of Hong Kong",
+            "Sun Yat-sen University"
+          ],
+          "countries": [
+            "HK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7213657840",
+          "title": "LLM Evaluation Measurement Integrity: Reproducibility Package",
+          "date": "2026-09-19",
+          "url": "https://doi.org/10.5281/zenodo.22846956",
+          "institutions": [
+            "Taiyuan University of Technology"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7213927937",
+          "title": "How Many Humans Are 32 LLM Judges Worth?",
+          "date": "2026-09-18",
+          "url": "https://doi.org/10.48550/arxiv.2609.21277",
+          "institutions": [
+            "University College London",
+            "Tsinghua University"
+          ],
+          "countries": [
+            "GB",
+            "CN"
+          ]
+        }
+      ],
+      "sha256": "70840c69ce94ac3f357b048a6fed53ef2f4d152deeaac5f8b4aa3bd2b639e735",
+      "quality": "关键词检索代理，非人工确认全量；排名可能受检索口径影响"
+    },
+    {
+      "topic": "evaluation",
+      "region": "global",
+      "url": "https://api.openalex.org/works?filter=from_publication_date%3A2025-10-01%2Cto_publication_date%3A2026-09-30%2Ctitle.search%3A%22LLM+evaluation%22+OR+%22language+model+evaluation%22+OR+%22LLM+judge%22&per-page=20&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cauthorships%2Cprimary_location&sort=cited_by_count%3Adesc",
+      "query": "\"LLM evaluation\" OR \"language model evaluation\" OR \"LLM judge\"",
+      "retrieved_at": "2026-10-25",
+      "count": 696,
+      "records": [
+        {
+          "id": "https://openalex.org/W4415776037",
+          "title": "Clinical Large Language Model Evaluation by Expert Review (CLEVER): Framework Development and Validation",
+          "date": "2025-11-02",
+          "url": "https://doi.org/10.2196/72153",
+          "institutions": [
+            "John Snow (United States)",
+            "George Mason University"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7134125905",
+          "title": "AI at the Sella Turcica: Multi-Model Large Language Model Evaluation in Pituitary Adenomas",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.1016/j.bas.2026.105997",
+          "institutions": [
+            "Denver Health Medical Center",
+            "University of Colorado Anschutz",
+            "Yeditepe University",
+            "University of Basel"
+          ],
+          "countries": [
+            "CH",
+            "TR",
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4388748472",
+          "title": "PsyEval: a comprehensive large language model evaluation benchmark for mental health",
+          "date": "2026-07-09",
+          "url": "https://doi.org/10.1038/s44184-026-00227-0",
+          "institutions": [
+            "Shanghai Jiao Tong University",
+            "The University of Texas at Arlington",
+            "Peking University",
+            "Shanghai Children's Hospital"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7124460067",
+          "title": "Artificial Authority: The Promise and Perils of LLM Judges in Healthcare",
+          "date": "2026-01-16",
+          "url": "https://doi.org/10.3390/bioengineering13010108",
+          "institutions": [
+            "Mayo Clinic in Florida",
+            "Mayo Clinic"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415223991",
+          "title": "Management of Patients With Comorbid Asthma and Obesity: A Large Language Model Evaluation of Clinical Documentation",
+          "date": "2025-10-15",
+          "url": "https://doi.org/10.1016/j.jaip.2025.10.004",
+          "institutions": [
+            "Brigham and Women's Hospital",
+            "Harvard University"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7124771218",
+          "title": "Large Language Models Evaluation of Medical Licensing Examination Using GPT-4.0, ERNIE Bot 4.0, and GPT-4o",
+          "date": "2026-01-17",
+          "url": "https://doi.org/10.3390/bioengineering13010113",
+          "institutions": [
+            "University of Saskatchewan",
+            "Fujian Medical University",
+            "First Affiliated Hospital of Fujian Medical University"
+          ],
+          "countries": [
+            "CA",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7117144337",
+          "title": "U-NIAH: Unified RAG and LLM Evaluation for Long Context Needle-in-a-Haystack",
+          "date": "2025-12-24",
+          "url": "https://doi.org/10.1145/3786609",
+          "institutions": [
+            "Nanjing University of Aeronautics and Astronautics",
+            "Tongji University",
+            "Fudan University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4400434060",
+          "title": "Anthropocentric Bias in Language Model Evaluation",
+          "date": "2025-11-25",
+          "url": "https://doi.org/10.1162/coli.a.582",
+          "institutions": [
+            "Forschungszentrum Jülich",
+            "University of Oxford"
+          ],
+          "countries": [
+            "GB",
+            "DE"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415456690",
+          "title": "PEARL: A Rubric-Driven Multi-Metric Framework for LLM Evaluation",
+          "date": "2025-10-22",
+          "url": "https://doi.org/10.3390/info16110926",
+          "institutions": [
+            "\"Dunarea de Jos\" University of Galati"
+          ],
+          "countries": [
+            "RO"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416516670",
+          "title": "Large Language Model Evaluation in Traditional Chinese Medicine for Stroke: Quantitative Benchmarking Study",
+          "date": "2025-11-21",
+          "url": "https://doi.org/10.2196/81545",
+          "institutions": [
+            "West China Hospital of Sichuan University",
+            "Southwest Medical University",
+            "Chengdu University of Traditional Chinese Medicine"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415291590",
+          "title": "Automated Esophageal Cancer Staging From Free-Text Radiology Reports: Large Language Model Evaluation Study",
+          "date": "2025-10-17",
+          "url": "https://doi.org/10.2196/75556",
+          "institutions": [
+            "Shanghai University",
+            "Fudan University",
+            "Shanghai Jiao Tong University",
+            "Shanghai Chest Hospital"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415016394",
+          "title": "A feature-engineered dataset of benign and phishing URLs for machine learning and large language models evaluation",
+          "date": "2025-10-10",
+          "url": "https://doi.org/10.1016/j.dib.2025.112162",
+          "institutions": [
+            "Posts and Telecommunications Institute of Technology",
+            "Saigon International University",
+            "Posts and Telecommunications Institute of Technology - Ho Chi Minh City"
+          ],
+          "countries": [
+            "VN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7170198474",
+          "title": "Post-hoc Interpretability of LDA on Hyperspectral Imagery: SHAP Attributions, Counterfactual Topic Flips, and LLM-judge Alignment under Token-Mass-Dispersion Asymmetry",
+          "date": "2026-07-23",
+          "url": "https://doi.org/10.5281/zenodo.21504113",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7125614065",
+          "title": "Disclaimers and Referral Patterns for Medical Advice Across Urgency Levels: Large Language Model Evaluation Study",
+          "date": "2026-01-22",
+          "url": "https://doi.org/10.2196/84668",
+          "institutions": [
+            "University of Würzburg",
+            "Humboldt-Universität zu Berlin",
+            "Charité – Universitätsmedizin Berlin",
+            "Max Delbrück Center"
+          ],
+          "countries": [
+            "DE"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7140101052",
+          "title": "When Can We Trust LLMs in Mental Health? Large-Scale Benchmarks for Reliable LLM Evaluation",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.eacl-long.180",
+          "institutions": [
+            "Dalhousie University",
+            "Izaak Walton Killam Health Centre",
+            "Vector Institute",
+            "York University",
+            "King's College London"
+          ],
+          "countries": [
+            "GB",
+            "CA"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4413155020",
+          "title": "NMR-Challenge for LLMs: Evaluating Chemical Reasoning in Humans and AI",
+          "date": "2026-05-21",
+          "url": "https://doi.org/10.1021/acs.jcim.6c00481",
+          "institutions": [
+            "University of Maryland, Baltimore County",
+            "Czech Academy of Sciences",
+            "Czech Academy of Sciences, Institute of Organic Chemistry and Biochemistry",
+            "Weizmann Institute of Science"
+          ],
+          "countries": [
+            "IL",
+            "US",
+            "CZ"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7140108392",
+          "title": "Don’t Judge Code by Its Cover: Exploring Biases in LLM Judges for Code Evaluation",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.findings-eacl.70",
+          "institutions": [
+            "LG AI Research (South Korea)",
+            "Seoul National University"
+          ],
+          "countries": [
+            "KR"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415318310",
+          "title": "AQUA-LLM: Evaluating Accuracy, Quantization, and Adversarial Robustness Trade-offs in LLMs for Cybersecurity Question Answering",
+          "date": "2025-12-03",
+          "url": "https://doi.org/10.1109/icmla66185.2025.00129",
+          "institutions": [
+            "University of California San Diego"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416633716",
+          "title": "A Review of Large Language Model Evaluation Metrics in Education",
+          "date": "2025-11-25",
+          "url": "https://doi.org/10.1007/978-981-95-4499-8_33",
+          "institutions": [
+            "Kasetsart University",
+            "Hong Kong Metropolitan University"
+          ],
+          "countries": [
+            "TH",
+            "HK"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415694039",
+          "title": "ENTERPRISE LARGE LANGUAGE MODEL EVALUATION BENCHMARK",
+          "date": "2025-10-25",
+          "url": "https://doi.org/10.5121/csit.2025.152001",
+          "institutions": [],
+          "countries": []
+        }
+      ],
+      "sha256": "55ca09112f5a1e13f4c5582c9b7775987fbd6b2d6768bcca45048fecbe742e3f",
+      "quality": "关键词检索代理，非人工确认全量；排名可能受检索口径影响"
+    },
+    {
+      "topic": "foundation",
+      "region": "cn",
+      "url": "https://api.openalex.org/works?filter=from_publication_date%3A2025-10-01%2Cto_publication_date%3A2026-09-30%2Ctitle.search%3A%28%22pretraining%22+OR+%22pre-training%22+OR+%22scaling%22%29+AND+%28%22language+model%22+OR+%22LLM%22%29%2Cauthorships.institutions.country_code%3Acn&per-page=20&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cauthorships%2Cprimary_location&sort=cited_by_count%3Adesc",
+      "query": "(\"pretraining\" OR \"pre-training\" OR \"scaling\") AND (\"language model\" OR \"LLM\")",
+      "retrieved_at": "2026-10-25",
+      "count": 626,
+      "records": [
+        {
+          "id": "https://openalex.org/W4415505032",
+          "title": "Current concerns and future directions of large language model ChatGPT in medicine: a machine-learning-driven global-scale bibliometric analysis",
+          "date": "2025-10-22",
+          "url": "https://doi.org/10.1097/js9.0000000000003668",
+          "institutions": [
+            "Southern Medical University",
+            "Guangdong Provincial People's Hospital",
+            "State Key Laboratory of Oncology in South China",
+            "Xinjiang Medical University",
+            "Jinan University",
+            "Guangdong Academy of Medical Sciences",
+            "Sun Yat-sen University Cancer Center",
+            "Sun Yat-sen University",
+            "The Seventh Affiliated Hospital of Sun Yat-sen University",
+            "Tumor Hospital of Xinjiang Medical University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4407570917",
+          "title": "AgentSociety: Large-scale simulation of LLM-driven generative agents advances understanding of human behaviors and society",
+          "date": "2026-07-01",
+          "url": "https://doi.org/10.26599/if.2026.9710004",
+          "institutions": [
+            "Tsinghua Shenzhen International Graduate School",
+            "Tsinghua University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4417015368",
+          "title": "Large language model ChatGPT in healthcare scenarios: a global-scale, cross-sectional, machine learning-based informatics study",
+          "date": "2025-12-04",
+          "url": "https://doi.org/10.1097/js9.0000000000004413",
+          "institutions": [
+            "Sun Yat-sen University Cancer Center",
+            "The Seventh Affiliated Hospital of Sun Yat-sen University",
+            "Sun Yat-sen University",
+            "State Key Laboratory of Oncology in South China"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415827485",
+          "title": "Large-scale chemical language models for accurate and interpretable prediction of reactivity and toxicity",
+          "date": "2025-11-03",
+          "url": "https://doi.org/10.1016/j.psep.2025.108113",
+          "institutions": [
+            "Sichuan Normal University",
+            "Sichuan University",
+            "The Engineering & Technical College of Chengdu University of Technology",
+            "Technical University of Denmark"
+          ],
+          "countries": [
+            "DK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7155622095",
+          "title": "Intelligent analysis of ship collision accidents via Low-Rank Adaptation-based fine-tuning of medium-scale Large Language Models",
+          "date": "2026-04-25",
+          "url": "https://doi.org/10.1016/j.ress.2026.112774",
+          "institutions": [
+            "Liverpool John Moores University",
+            "Hong Kong Polytechnic University",
+            "Guangdong Ocean University",
+            "Xijing University",
+            "Dokuz Eylül University",
+            "Dalian Maritime University",
+            "Istanbul Technical University"
+          ],
+          "countries": [
+            "CN",
+            "TR",
+            "HK",
+            "GB"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415321637",
+          "title": "CPLLM-WPF: A multi-scale prompting framework for generalizable wind power forecasting with LLMs",
+          "date": "2025-10-18",
+          "url": "https://doi.org/10.1016/j.apenergy.2025.126912",
+          "institutions": [
+            "University of Houston",
+            "State Grid Corporation of China (China)",
+            "University of Electronic Science and Technology of China"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7116972338",
+          "title": "A large-scale comparison of divergent creativity in humans and large language models",
+          "date": "2025-12-23",
+          "url": "https://doi.org/10.1038/s41562-025-02331-1",
+          "institutions": [
+            "Northwestern University",
+            "University of Chinese Academy of Sciences",
+            "University of Hong Kong",
+            "Chinese Academy of Sciences",
+            "Academy of Mathematics and Systems Science"
+          ],
+          "countries": [
+            "US",
+            "CN",
+            "HK"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7128526045",
+          "title": "EV-STLLM: Electric vehicle charging forecasting based on spatio-temporal large language models with multi-frequency and multi-scale information fusion",
+          "date": "2026-02-10",
+          "url": "https://doi.org/10.1016/j.eswa.2026.131620",
+          "institutions": [
+            "North China Electric Power University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7116666922",
+          "title": "RSynLLM: A risk-aware routing mixture-of-experts large language model for multi-energy load forecasting in large-scale distribution networks",
+          "date": "2025-12-22",
+          "url": "https://doi.org/10.1016/j.apenergy.2025.127227",
+          "institutions": [
+            "Wuhan University",
+            "University of Denver",
+            "South China University of Technology"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7133244348",
+          "title": "Scalable UAV Multi-Hop Networking via Multi-Agent Reinforcement Learning With Large Language Models",
+          "date": "2026-03-02",
+          "url": "https://doi.org/10.1109/tmc.2026.3669346",
+          "institutions": [
+            "Tsinghua Shenzhen International Graduate School",
+            "Tsinghua University",
+            "Jilin University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4414875577",
+          "title": "The scales of justitia: A comprehensive survey on safety evaluation of LLMs",
+          "date": "2026-06-28",
+          "url": "https://doi.org/10.1016/j.inffus.2026.104579",
+          "institutions": [
+            "China Academy of Information and Communications Technology",
+            "Beijing University of Posts and Telecommunications",
+            "Jinan University",
+            "Beijing Technology and Business University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7131181893",
+          "title": "RoleSimLLM: Towards large-scale and comprehensive social propagation simulation via role-based LLM-driven agents",
+          "date": "2026-02-23",
+          "url": "https://doi.org/10.1016/j.ipm.2026.104689",
+          "institutions": [
+            "Shanghai Jiao Tong University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7119508098",
+          "title": "A domain-specific language model for engineering-scale geological reasoning and mineral exploration in the Qin-Hang belt",
+          "date": "2026-01-08",
+          "url": "https://doi.org/10.1016/j.engappai.2025.113651",
+          "institutions": [
+            "Sun Yat-sen University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415259670",
+          "title": "RustMap: Towards Project-Scale C-to-Rust Migration via Program Analysis and LLM",
+          "date": "2025-10-16",
+          "url": "https://doi.org/10.1007/978-3-032-00828-2_16",
+          "institutions": [
+            "Singapore Management University",
+            "Beijing Jiaotong University",
+            "The Open University"
+          ],
+          "countries": [
+            "SG",
+            "CN",
+            "GB"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4389072228",
+          "title": "Controlling Large Language Model-Based Agents for Large-Scale Decision-Making: An Actor-Critic Approach",
+          "date": "2026-08-01",
+          "url": "https://doi.org/10.1109/case69030.2026.11704361",
+          "institutions": [
+            "Institute of Automation",
+            "Shanghai Jiao Tong University",
+            "Meituan (China)",
+            "Institute of Microelectronics",
+            "Chinese Academy of Sciences",
+            "Shandong University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7127352428",
+          "title": "CarbonGPT: Meta Causal Graph-Enhanced Large Language Models for Carbon Emission Forecasting in Large-Scale Power Distribution Networks",
+          "date": "2026-02-03",
+          "url": "https://doi.org/10.1109/tsg.2026.3660950",
+          "institutions": [
+            "South China University of Technology"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416451142",
+          "title": "Knots: A large-scale multi-agent enhanced expert-annotated dataset and LLM prompt optimization for NOTAM semantic parsing",
+          "date": "2025-11-21",
+          "url": "https://doi.org/10.1016/j.aei.2025.104086",
+          "institutions": [
+            "Beijing University of Posts and Telecommunications",
+            "Beihang University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415539787",
+          "title": "Genesis: A Large-Scale Benchmark for Multimodal Large Language Model in Emotional Causality Analysis",
+          "date": "2025-10-25",
+          "url": "https://doi.org/10.1145/3746027.3758202",
+          "institutions": [
+            "Xi’an Jiaotong-Liverpool University",
+            "Mohamed bin Zayed University of Artificial Intelligence",
+            "Monash University"
+          ],
+          "countries": [
+            "CN",
+            "AE",
+            "AU"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7135396719",
+          "title": "Integrating adaptive divide-and-conquer and large language model for scheduling large-scale tasks in electromagnetic satellite systems",
+          "date": "2026-03-14",
+          "url": "https://doi.org/10.1016/j.eswa.2026.131978",
+          "institutions": [
+            "Jiangsu University of Technology",
+            "Xidian University",
+            "Nanjing University of Science and Technology",
+            "Dalian Maritime University",
+            "PLA Academy of Military Science",
+            "Kyungpook National University"
+          ],
+          "countries": [
+            "CN",
+            "KR"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4399657688",
+          "title": "MSADM: Large Language Model (LLM) Assisted End-to-End Network Health Management Based on Multi-Scale Semanticization",
+          "date": "2026-02-27",
+          "url": "https://doi.org/10.1109/tmc.2026.3668817",
+          "institutions": [
+            "Central South University",
+            "Tohoku University",
+            "Tsinghua University"
+          ],
+          "countries": [
+            "CN",
+            "JP"
+          ]
+        }
+      ],
+      "sha256": "a7e6c068024ce96384ca94871be87514d2e4170355b5c711858c8ca9b7252da2",
+      "quality": "低精度：抽查发现global-scale、非预训练等误匹配；不纳入技术百分位和象限，仅作融资参照"
+    },
+    {
+      "topic": "foundation",
+      "region": "global",
+      "url": "https://api.openalex.org/works?filter=from_publication_date%3A2025-10-01%2Cto_publication_date%3A2026-09-30%2Ctitle.search%3A%28%22pretraining%22+OR+%22pre-training%22+OR+%22scaling%22%29+AND+%28%22language+model%22+OR+%22LLM%22%29&per-page=20&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cauthorships%2Cprimary_location&sort=cited_by_count%3Adesc",
+      "query": "(\"pretraining\" OR \"pre-training\" OR \"scaling\") AND (\"language model\" OR \"LLM\")",
+      "retrieved_at": "2026-10-25",
+      "count": 3085,
+      "records": [
+        {
+          "id": "https://openalex.org/W7125799258",
+          "title": "Parameter-Efficient Fine-Tuning Methods for Pretrained Language Models: A Critical Review and Assessment",
+          "date": "2026-01-27",
+          "url": "https://doi.org/10.1109/tpami.2026.3657354",
+          "institutions": [
+            "Lingnan University",
+            "Hong Kong Metropolitan University"
+          ],
+          "countries": [
+            "HK"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415505032",
+          "title": "Current concerns and future directions of large language model ChatGPT in medicine: a machine-learning-driven global-scale bibliometric analysis",
+          "date": "2025-10-22",
+          "url": "https://doi.org/10.1097/js9.0000000000003668",
+          "institutions": [
+            "Southern Medical University",
+            "Guangdong Provincial People's Hospital",
+            "State Key Laboratory of Oncology in South China",
+            "Xinjiang Medical University",
+            "Jinan University",
+            "Guangdong Academy of Medical Sciences",
+            "Sun Yat-sen University Cancer Center",
+            "Sun Yat-sen University",
+            "The Seventh Affiliated Hospital of Sun Yat-sen University",
+            "Tumor Hospital of Xinjiang Medical University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4407570917",
+          "title": "AgentSociety: Large-scale simulation of LLM-driven generative agents advances understanding of human behaviors and society",
+          "date": "2026-07-01",
+          "url": "https://doi.org/10.26599/if.2026.9710004",
+          "institutions": [
+            "Tsinghua Shenzhen International Graduate School",
+            "Tsinghua University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4417015368",
+          "title": "Large language model ChatGPT in healthcare scenarios: a global-scale, cross-sectional, machine learning-based informatics study",
+          "date": "2025-12-04",
+          "url": "https://doi.org/10.1097/js9.0000000000004413",
+          "institutions": [
+            "Sun Yat-sen University Cancer Center",
+            "The Seventh Affiliated Hospital of Sun Yat-sen University",
+            "Sun Yat-sen University",
+            "State Key Laboratory of Oncology in South China"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415827485",
+          "title": "Large-scale chemical language models for accurate and interpretable prediction of reactivity and toxicity",
+          "date": "2025-11-03",
+          "url": "https://doi.org/10.1016/j.psep.2025.108113",
+          "institutions": [
+            "Sichuan Normal University",
+            "Sichuan University",
+            "The Engineering & Technical College of Chengdu University of Technology",
+            "Technical University of Denmark"
+          ],
+          "countries": [
+            "DK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7155622095",
+          "title": "Intelligent analysis of ship collision accidents via Low-Rank Adaptation-based fine-tuning of medium-scale Large Language Models",
+          "date": "2026-04-25",
+          "url": "https://doi.org/10.1016/j.ress.2026.112774",
+          "institutions": [
+            "Liverpool John Moores University",
+            "Hong Kong Polytechnic University",
+            "Guangdong Ocean University",
+            "Xijing University",
+            "Dokuz Eylül University",
+            "Dalian Maritime University",
+            "Istanbul Technical University"
+          ],
+          "countries": [
+            "CN",
+            "TR",
+            "HK",
+            "GB"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415460301",
+          "title": "Harnessing Large Language Models for Scalable and Effective Formative Assessment in Higher Education: A Review",
+          "date": "2025-10-22",
+          "url": "https://doi.org/10.3390/higheredu4040065",
+          "institutions": [
+            "Georgia Institute of Technology",
+            "University of Toronto Scarborough",
+            "University of Oxford",
+            "University of Toronto"
+          ],
+          "countries": [
+            "US",
+            "CA",
+            "GB"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415321637",
+          "title": "CPLLM-WPF: A multi-scale prompting framework for generalizable wind power forecasting with LLMs",
+          "date": "2025-10-18",
+          "url": "https://doi.org/10.1016/j.apenergy.2025.126912",
+          "institutions": [
+            "University of Houston",
+            "State Grid Corporation of China (China)",
+            "University of Electronic Science and Technology of China"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7140218227",
+          "title": "Intelligent Recommendation Systems Using Multi-Scale LoRA Fine-Tuning and Large Language Models",
+          "date": "2025-12-26",
+          "url": "https://doi.org/10.1109/aibdf67964.2025.11440777",
+          "institutions": [
+            "Northwestern University",
+            "University of Toronto",
+            "Stevens Institute of Technology",
+            "Syracuse University",
+            "Carnegie Mellon University",
+            "Johns Hopkins University"
+          ],
+          "countries": [
+            "US",
+            "CA"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7131125571",
+          "title": "A large-scale randomized study of large language model feedback in peer review",
+          "date": "2026-02-23",
+          "url": "https://doi.org/10.1038/s42256-026-01188-x",
+          "institutions": [
+            "Stanford University",
+            "Google (United States)",
+            "Columbia University",
+            "University of California, Los Angeles",
+            "University of California San Diego",
+            "Georgia Institute of Technology"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7140192390",
+          "title": "Structure-Aware Decoding Mechanisms for Complex Entity Extraction with Large-Scale Language Models",
+          "date": "2025-12-26",
+          "url": "https://doi.org/10.1109/eccst68196.2025.11441170",
+          "institutions": [
+            "Washington University in St. Louis",
+            "University of Pennsylvania",
+            "University of Southern California",
+            "Stevens Institute of Technology"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7116972338",
+          "title": "A large-scale comparison of divergent creativity in humans and large language models",
+          "date": "2025-12-23",
+          "url": "https://doi.org/10.1038/s41562-025-02331-1",
+          "institutions": [
+            "Northwestern University",
+            "University of Chinese Academy of Sciences",
+            "University of Hong Kong",
+            "Chinese Academy of Sciences",
+            "Academy of Mathematics and Systems Science"
+          ],
+          "countries": [
+            "US",
+            "CN",
+            "HK"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416535529",
+          "title": "Evaluating Pretrained Protein Language Model Embeddings as Proxies for Functional Similarity",
+          "date": "2025-11-22",
+          "url": "https://doi.org/10.1007/s00239-025-10282-4",
+          "institutions": [
+            "University of Arizona"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7140116110",
+          "title": "X-Cell: Scaling Causal Perturbation Prediction Across Diverse Cellular Contexts via Diffusion Language Models",
+          "date": "2026-03-20",
+          "url": "https://doi.org/10.64898/2026.03.18.712807",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7128526045",
+          "title": "EV-STLLM: Electric vehicle charging forecasting based on spatio-temporal large language models with multi-frequency and multi-scale information fusion",
+          "date": "2026-02-10",
+          "url": "https://doi.org/10.1016/j.eswa.2026.131620",
+          "institutions": [
+            "North China Electric Power University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7151946402",
+          "title": "Compute-Optimal Resource Allocation for Distributed Large Language Model Inference in Cloud-Scale Intelligent Systems",
+          "date": "2026-03-19",
+          "url": "https://doi.org/10.1109/isdfs69419.2026.11458958",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7116666922",
+          "title": "RSynLLM: A risk-aware routing mixture-of-experts large language model for multi-energy load forecasting in large-scale distribution networks",
+          "date": "2025-12-22",
+          "url": "https://doi.org/10.1016/j.apenergy.2025.127227",
+          "institutions": [
+            "Wuhan University",
+            "University of Denver",
+            "South China University of Technology"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4417531260",
+          "title": "codonGPT: reinforcement learning on a generative language model enables scalable mRNA design",
+          "date": "2025-11-15",
+          "url": "https://doi.org/10.1093/nar/gkaf1345",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7131117487",
+          "title": "Multi-Scale Feature Fusion and Graph Neural Network Integration for Text Classification with Large Language Models",
+          "date": "2025-11-07",
+          "url": "https://doi.org/10.1109/icairc68035.2025.11385211",
+          "institutions": [
+            "Dartmouth College",
+            "University of Pennsylvania",
+            "University of Southern California",
+            "Georgia Institute of Technology",
+            "University of Michigan"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415762705",
+          "title": "Toward construction-specialized, small language models: The interplay of domain adaptation, model scale and data volume",
+          "date": "2025-11-01",
+          "url": "https://doi.org/10.1016/j.aei.2025.104035",
+          "institutions": [
+            "Hanyang University",
+            "Nanyang Technological University"
+          ],
+          "countries": [
+            "SG",
+            "KR"
+          ]
+        }
+      ],
+      "sha256": "6af67c40e638550d78aae8cf0b6c95bc61cb8f9ca28b7258281e06e3e898550f",
+      "quality": "低精度：抽查发现global-scale、非预训练等误匹配；不纳入技术百分位和象限，仅作融资参照"
+    },
+    {
+      "topic": "identity",
+      "region": "cn",
+      "url": "https://api.openalex.org/works?filter=from_publication_date%3A2025-10-01%2Cto_publication_date%3A2026-09-30%2Ctitle.search%3A%22agent+security%22+OR+%22agent+authorization%22+OR+%22agent+identity%22%2Cauthorships.institutions.country_code%3Acn&per-page=20&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cauthorships%2Cprimary_location&sort=cited_by_count%3Adesc",
+      "query": "\"agent security\" OR \"agent authorization\" OR \"agent identity\"",
+      "retrieved_at": "2026-10-25",
+      "count": 17,
+      "records": [
+        {
+          "id": "https://openalex.org/W7139929317",
+          "title": "Generative AI-Empowered Signal Processing for Collaborative Embodied Agents: A Survey on Agentic Security",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.1109/tccn.2026.3676045",
+          "institutions": [
+            "Beijing Institute of Technology"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7160700413",
+          "title": "LLM agents security duality: a comprehensive survey of self-security and empowered cybersecurity",
+          "date": "2026-05-09",
+          "url": "https://doi.org/10.1007/s10462-026-11563-0",
+          "institutions": [
+            "Wuhan University",
+            "University at Buffalo, State University of New York"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7160999798",
+          "title": "The Granularity Mismatch in Agent Security: Argument-Level Provenance Solves Enforcement and Isolates the LLM Reasoning Bottleneck",
+          "date": "2026-05-11",
+          "url": "https://doi.org/10.48550/arxiv.2605.11039",
+          "institutions": [
+            "Dongbei University of Finance and Economics",
+            "University of Science and Technology of China",
+            "Renmin University of China",
+            "King Abdullah University of Science and Technology"
+          ],
+          "countries": [
+            "SA",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416358427",
+          "title": "Effects of Agent Identity on Patients’ Intention to Comply in Online Medical Consultations: The Mediating Role of Perceived Decision-Maker Autonomy",
+          "date": "2025-11-19",
+          "url": "https://doi.org/10.1080/10447318.2025.2586812",
+          "institutions": [
+            "East China Normal University",
+            "Chongqing Normal University",
+            "Shandong Jiaotong University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7214769095",
+          "title": "CoSec: Benchmarking Agent Security in Communities",
+          "date": "2026-09-28",
+          "url": "https://doi.org/10.48550/arxiv.2609.34790",
+          "institutions": [
+            "Zhejiang Sci-Tech University",
+            "Zhejiang University",
+            "Xi'an Jiaotong University",
+            "Sun Yat-sen University",
+            "Southeast University",
+            "Beihang University",
+            "Nanjing University",
+            "Tsinghua University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7213272176",
+          "title": "Vulnerability Localization Benchmark: Measuring Agentic Security Analysis at Repository Scale",
+          "date": "2026-09-14",
+          "url": "https://doi.org/10.48550/arxiv.2609.15939",
+          "institutions": [
+            "Cisco Systems (United States)",
+            "Carnegie Mellon University",
+            "Cisco Systems (China)",
+            "Yale University"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7172217606",
+          "title": "A focused survey of code agent security: Attacks, defenses, and evaluation",
+          "date": "2026-08-02",
+          "url": "https://doi.org/10.1016/j.infsof.2026.108288",
+          "institutions": [
+            "Hunan University",
+            "Jiangsu College of Engineering and Technology",
+            "Jilin University",
+            "Anyang Normal University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7171498368",
+          "title": "Accountable yet Anonymous AI Agents - Split-Knowledge Binding in National Agent-Identity Layer in China",
+          "date": "2026-07-25",
+          "url": "https://doi.org/10.48550/arxiv.2607.23207",
+          "institutions": [
+            "China Internet Network Information Center"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7168384404",
+          "title": "Teacher Educators as Sustainability Change Agents: Identity, Agency, and Disciplinary Cultures in EFL and Social Sciences Programmes",
+          "date": "2026-07-15",
+          "url": "https://doi.org/10.1111/ejed.70766",
+          "institutions": [
+            "Jilin International Studies University",
+            "Shiraz University of Medical Sciences"
+          ],
+          "countries": [
+            "IR",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7163509813",
+          "title": "What If Prompt Injection Never Left? Rethinking Agent Security through Cross-Session Stored Prompt Injection",
+          "date": "2026-06-03",
+          "url": "https://doi.org/10.48550/arxiv.2606.04425",
+          "institutions": [
+            "Chinese Academy of Sciences",
+            "Institute of Information Engineering",
+            "University of Chinese Academy of Sciences"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7155995157",
+          "title": "ARuleCon: Agentic Security Rule Conversion",
+          "date": "2026-04-12",
+          "url": "https://doi.org/10.1145/3774904.3792458",
+          "institutions": [
+            "Fudan University",
+            "National University of Singapore"
+          ],
+          "countries": [
+            "SG",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7152447797",
+          "title": "ARuleCon: Agentic Security Rule Conversion",
+          "date": "2026-04-08",
+          "url": "https://doi.org/10.48550/arxiv.2604.06762",
+          "institutions": [
+            "Fudan University",
+            "National University of Singapore"
+          ],
+          "countries": [
+            "SG",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7153670816",
+          "title": "ARuleCon: Agentic Security Rule Conversion",
+          "date": "2026-04-08",
+          "url": "http://arxiv.org/abs/2604.06762",
+          "institutions": [
+            "Fudan University",
+            "National University of Singapore"
+          ],
+          "countries": [
+            "SG",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7118160009",
+          "title": "Efficient Exploration for Multi-Agent Diversity With Agent Identity",
+          "date": "2026-01-05",
+          "url": "https://doi.org/10.1109/tpami.2025.3650500",
+          "institutions": [
+            "Nanjing University of Aeronautics and Astronautics"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7161827308",
+          "title": "A Multi-agent Security Testing Framework on Software-Defined Space-Based Network",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.1007/978-981-95-8450-5_6",
+          "institutions": [
+            "PLA Academy of Military Science"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7214893389",
+          "title": "A survey on AI agent security: Reasoning, Acting, and Self-Evolving",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.59717/ipj.aiplus.2026.100004",
+          "institutions": [
+            "Oldham Council",
+            "Huazhong University of Science and Technology",
+            "University of Hong Kong",
+            "Delft University of Technology",
+            "Zhejiang University",
+            "Universitat Rovira i Virgili",
+            "IBM (United States)",
+            "Beihang University",
+            "Wuhan University",
+            "University of Aberdeen",
+            "Zhejiang Gongshang University",
+            "South China University of Technology",
+            "Peng Cheng Laboratory",
+            "University of St Andrews",
+            "City University of Hong Kong",
+            "Guangzhou University",
+            "Nanyang Technological University"
+          ],
+          "countries": [
+            "US",
+            "HK",
+            "SG",
+            "NL",
+            "CN",
+            "GB",
+            "ES"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7220927327",
+          "title": "RACE-SOC: Risk-Constrained Auditable Coordination Evaluation for LLM-Based Multi-Agent Security Operations",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.32604/cmc.2026.088835",
+          "institutions": [
+            "Tongji University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        }
+      ],
+      "sha256": "d087804010823a0e6997ee2eb6b9dcbc75370c8d21c982e49e92806d64fca760",
+      "quality": "关键词检索代理，非人工确认全量；排名可能受检索口径影响"
+    },
+    {
+      "topic": "identity",
+      "region": "global",
+      "url": "https://api.openalex.org/works?filter=from_publication_date%3A2025-10-01%2Cto_publication_date%3A2026-09-30%2Ctitle.search%3A%22agent+security%22+OR+%22agent+authorization%22+OR+%22agent+identity%22&per-page=20&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cauthorships%2Cprimary_location&sort=cited_by_count%3Adesc",
+      "query": "\"agent security\" OR \"agent authorization\" OR \"agent identity\"",
+      "retrieved_at": "2026-10-25",
+      "count": 208,
+      "records": [
+        {
+          "id": "https://openalex.org/W7134192978",
+          "title": "DRC-369: A Soulbound NFT Standard for Persistent AI Agent Identity",
+          "date": "2026-02-02",
+          "url": "https://doi.org/10.5281/zenodo.18910927",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7139929317",
+          "title": "Generative AI-Empowered Signal Processing for Collaborative Embodied Agents: A Survey on Agentic Security",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.1109/tccn.2026.3676045",
+          "institutions": [
+            "Beijing Institute of Technology"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416195470",
+          "title": "A Blockchain-Based Multi-Agent Security Framework for E-Commerce Systems",
+          "date": "2025-11-14",
+          "url": "https://doi.org/10.65278/ijtaci.2025.15",
+          "institutions": [
+            "University of Toronto"
+          ],
+          "countries": [
+            "CA"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7160700413",
+          "title": "LLM agents security duality: a comprehensive survey of self-security and empowered cybersecurity",
+          "date": "2026-05-09",
+          "url": "https://doi.org/10.1007/s10462-026-11563-0",
+          "institutions": [
+            "Wuhan University",
+            "University at Buffalo, State University of New York"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7141330659",
+          "title": "AIP: Agent Identity Protocol for Verifiable Delegation Across MCP and A2A",
+          "date": "2026-03-25",
+          "url": "https://doi.org/10.48550/arxiv.2603.24775",
+          "institutions": [
+            "Indian School of Business"
+          ],
+          "countries": [
+            "IN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7125375372",
+          "title": "Towards agentic security in the emerging European Union AI policy",
+          "date": "2026-01-21",
+          "url": "https://doi.org/10.1080/13523260.2025.2612518",
+          "institutions": [
+            "Vilnius University"
+          ],
+          "countries": [
+            "LT"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7169596598",
+          "title": "Agentic Identity Workspaces: A Theory-Building Review of Life Design Interventions",
+          "date": "2026-07-01",
+          "url": "https://doi.org/10.5465/amproc.2026.20838abstract",
+          "institutions": [
+            "NOVA School of Business and Economics",
+            "University of St.Gallen",
+            "University of Lisbon"
+          ],
+          "countries": [
+            "CH",
+            "PT"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7166650035",
+          "title": "Effects of Empathetic Responses, Agent Identity, and Gender Match on Users’ Self-Disclosure of Depression and Perceptions in Human–Chatbot Interactions",
+          "date": "2026-06-30",
+          "url": "https://doi.org/10.1080/10447318.2026.2692012",
+          "institutions": [
+            "University of Kansas"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7162445454",
+          "title": "Reframing LLM Agent Security as an Agent-Human Interaction Problem",
+          "date": "2026-05-23",
+          "url": "https://doi.org/10.48550/arxiv.2605.24309",
+          "institutions": [
+            "University of California, Los Angeles"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7160999798",
+          "title": "The Granularity Mismatch in Agent Security: Argument-Level Provenance Solves Enforcement and Isolates the LLM Reasoning Bottleneck",
+          "date": "2026-05-11",
+          "url": "https://doi.org/10.48550/arxiv.2605.11039",
+          "institutions": [
+            "Dongbei University of Finance and Economics",
+            "University of Science and Technology of China",
+            "Renmin University of China",
+            "King Abdullah University of Science and Technology"
+          ],
+          "countries": [
+            "SA",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7222954158",
+          "title": "Public Comment on the NIST NCCoE Concept Paper, Accelerating the Adoption of Software and AI Agent Identity and Authorization",
+          "date": "2026-04-01",
+          "url": "https://doi.org/10.5281/zenodo.23463207",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7166297746",
+          "title": "NCCoE Response: Software and AI Agent Identity and Authorization",
+          "date": "2026-03-30",
+          "url": "https://doi.org/10.5281/zenodo.20974261",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7124450225",
+          "title": "From Implementer to Strategic Agent: Identity Work of Middle Managers amid AI Infusion",
+          "date": "2026-01-16",
+          "url": "https://doi.org/10.63808/iod.v2i1.269",
+          "institutions": [
+            "Lincoln University College"
+          ],
+          "countries": [
+            "MY"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7167842420",
+          "title": "From Agent Identity to Agent Economy: Measuring the Operational Readiness of ERC-8004 AI Agents",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.2139/ssrn.6932138",
+          "institutions": [
+            "Western Sydney University"
+          ],
+          "countries": [
+            "AU"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7213764129",
+          "title": "Jev at the Agent Authorization Boundary: Evaluating TypeSafe's Decision Model and Its Reported RLCD Approach",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.2139/ssrn.7495638",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W4416358427",
+          "title": "Effects of Agent Identity on Patients’ Intention to Comply in Online Medical Consultations: The Mediating Role of Perceived Decision-Maker Autonomy",
+          "date": "2025-11-19",
+          "url": "https://doi.org/10.1080/10447318.2025.2586812",
+          "institutions": [
+            "East China Normal University",
+            "Chongqing Normal University",
+            "Shandong Jiaotong University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416437131",
+          "title": "DIAP: A Decentralized Agent Identity Protocol with Zero-Knowledge Proofs and a Hybrid P2P Stack",
+          "date": "2025-11-06",
+          "url": "https://doi.org/10.48550/arxiv.2511.11619",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7214739585",
+          "title": "AI Accountability Literacy: An Integrated Framework for Agent Identity, Authorization, Auditability, Institutional Observation, and Research Provenance",
+          "date": "2026-09-29",
+          "url": "https://doi.org/10.6084/m9.figshare.34027278",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7214580669",
+          "title": "Ethics Does Not Live in the AI Model: Rogue-Agent Incidents, the Agentic-Security Gap, and the Community-Level Correction It Requires",
+          "date": "2026-09-28",
+          "url": "https://doi.org/10.13140/rg.2.2.13028.54409",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7214758974",
+          "title": "Continuous Assurance of Agentic Security Auditors for Software Delivery Decision Gates",
+          "date": "2026-09-28",
+          "url": "https://doi.org/10.48550/arxiv.2609.35266",
+          "institutions": [
+            "Swinburne University of Technology",
+            "Commonwealth Scientific and Industrial Research Organisation",
+            "City University of Hong Kong"
+          ],
+          "countries": [
+            "HK",
+            "AU"
+          ]
+        }
+      ],
+      "sha256": "585c046f126b4a8aeb321b00d8ec860252ce1266c49e99eaf7ae8abd422bdf57",
+      "quality": "关键词检索代理，非人工确认全量；排名可能受检索口径影响"
+    },
+    {
+      "topic": "inference",
+      "region": "cn",
+      "url": "https://api.openalex.org/works?filter=from_publication_date%3A2025-10-01%2Cto_publication_date%3A2026-09-30%2Ctitle.search%3A%22LLM+inference%22+OR+%22speculative+decoding%22+OR+%22KV+cache%22%2Cauthorships.institutions.country_code%3Acn&per-page=20&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cauthorships%2Cprimary_location&sort=cited_by_count%3Adesc",
+      "query": "\"LLM inference\" OR \"speculative decoding\" OR \"KV cache\"",
+      "retrieved_at": "2026-10-25",
+      "count": 731,
+      "records": [
+        {
+          "id": "https://openalex.org/W4414736038",
+          "title": "Characterizing Mobile SoC for Accelerating Heterogeneous LLM Inference",
+          "date": "2025-10-01",
+          "url": "https://doi.org/10.1145/3731569.3764808",
+          "institutions": [
+            "Sensetime (China)",
+            "Shanghai Jiao Tong University",
+            "Tsinghua University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7138433923",
+          "title": "TokenPowerBench: Benchmarking the Power Consumption of LLM Inference",
+          "date": "2026-03-14",
+          "url": "https://doi.org/10.1609/aaai.v40i38.40535",
+          "institutions": [
+            "Texas Advanced Computing Center",
+            "Texas Tech University",
+            "Southeast University"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7138192222",
+          "title": "StreamKV: Streaming Video Question-Answering with Segment-based KV Cache Retrieval and Compression",
+          "date": "2026-03-14",
+          "url": "https://doi.org/10.1609/aaai.v40i4.37305",
+          "institutions": [
+            "Alibaba Group (China)",
+            "Peking University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7154017053",
+          "title": "FlexSpec: Frozen Drafts Meet Evolving Targets in Edge-Cloud Collaborative LLM Speculative Decoding",
+          "date": "2026-04-13",
+          "url": "https://doi.org/10.1109/tmc.2026.3683574",
+          "institutions": [
+            "Wilfrid Laurier University",
+            "Shanghai Jiao Tong University",
+            "Baidu (China)",
+            "KTH Royal Institute of Technology",
+            "Shenzhen Research Institute of Big Data"
+          ],
+          "countries": [
+            "SE",
+            "CA",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415159602",
+          "title": "Towards Efficient Large Language Model Serving: A Survey on System-Aware KV Cache Optimization",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.findings-acl.1916",
+          "institutions": [
+            "The University of Melbourne",
+            "Huazhong University of Science and Technology"
+          ],
+          "countries": [
+            "CN",
+            "AU"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7125917322",
+          "title": "Communication-Efficient Collaborative LLM Inference via Distributed Speculative Decoding",
+          "date": "2025-10-23",
+          "url": "https://doi.org/10.1109/wcsp68525.2025.1010651",
+          "institutions": [
+            "Peng Cheng Laboratory"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7118619038",
+          "title": "KVC-Q: A high-fidelity and dynamic KV Cache quantization framework for long-context large language models",
+          "date": "2026-01-07",
+          "url": "https://doi.org/10.1016/j.sysarc.2026.103699",
+          "institutions": [
+            "Fujian University of Technology"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416429769",
+          "title": "Tasa: Thermal-aware 3D-Stacked Architecture Design with Bandwidth Sharing for LLM Inference",
+          "date": "2025-10-26",
+          "url": "https://doi.org/10.1109/iccad66269.2025.11240805",
+          "institutions": [
+            "Peking University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415285478",
+          "title": "AxCore: A Quantization-Aware Approximate GEMM Unit for LLM Inference",
+          "date": "2025-10-17",
+          "url": "https://doi.org/10.1145/3725843.3756094",
+          "institutions": [
+            "The Hong Kong University of Science and Technology (Guangzhou)"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7201981040",
+          "title": "CLARI: Constrained reflective LLM inference for few-shot soft sensing under operating-condition drift",
+          "date": "2026-08-08",
+          "url": "https://doi.org/10.1016/j.conengprac.2026.107187",
+          "institutions": [
+            "State Key Laboratory of Industrial Control Technology",
+            "Zhejiang University",
+            "Huzhou Normal University",
+            "Hangzhou Normal University",
+            "Beihang University",
+            "Guangdong University of Petrochemical Technology"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7155497146",
+          "title": "SkyWalker: A Locality-Aware Cross-Region Load Balancer for LLM Inference",
+          "date": "2026-04-24",
+          "url": "https://doi.org/10.1145/3767295.3769353",
+          "institutions": [
+            "International Computer Science Institute",
+            "University of California, Berkeley",
+            "Renmin University of China",
+            "Rice University"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7138092506",
+          "title": "SlimInfer: Accelerating Long-Context LLM Inference via Dynamic Token Pruning",
+          "date": "2026-03-14",
+          "url": "https://doi.org/10.1609/aaai.v40i38.40502",
+          "institutions": [
+            "Beihang University",
+            "Hong Kong University of Science and Technology"
+          ],
+          "countries": [
+            "HK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7118199371",
+          "title": "Joint Optimization of Dynamic Batching and Adaptive Partitioning for Distributed LLMs Inference in Mobile Edge Computing",
+          "date": "2026-01-05",
+          "url": "https://doi.org/10.1109/tmc.2026.3650838",
+          "institutions": [
+            "Hohai University",
+            "Northeastern University",
+            "China United Network Communications Group (China)",
+            "Shenyang Aerospace University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7123863483",
+          "title": "AdaSpec: Adaptive Speculative Decoding for Fast, SLO-Aware Large Language Model Serving",
+          "date": "2025-11-19",
+          "url": "https://doi.org/10.1145/3772052.3772239",
+          "institutions": [
+            "Tongji University",
+            "Huazhong University of Science and Technology",
+            "Shenzhen Research Institute of Big Data",
+            "Chinese University of Hong Kong, Shenzhen"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7125897746",
+          "title": "EfficientEdit: Accelerating Code Editing via Edit-Oriented Speculative Decoding",
+          "date": "2025-11-16",
+          "url": "https://doi.org/10.1109/ase63991.2025.00215",
+          "institutions": [
+            "Beihang University",
+            "Huawei Technologies (China)",
+            "Tsinghua University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416146691",
+          "title": "Towards Efficient LLM Inference via Collective and Adaptive Speculative Decoding",
+          "date": "2025-11-12",
+          "url": "https://doi.org/10.1145/3712285.3759834",
+          "institutions": [
+            "Beihang University",
+            "University of Science and Technology of China",
+            "Sensetime (China)"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7104034764",
+          "title": "Accelerating LLM Inference via Low-Bit Fine-Grained Quantization Algorithm and Bit-Level Accelerator Co-Design",
+          "date": "2025-11-05",
+          "url": "https://doi.org/10.1109/tc.2025.3628629",
+          "institutions": [
+            "Beihang University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7117876068",
+          "title": "BucketServe: Bucket-Based Dynamic Batching for Smart and Efficient LLM Inference Serving",
+          "date": "2025-10-30",
+          "url": "https://doi.org/10.1109/ithings-greencom-cpscom-smartdata-cybermatics67059.2025.00041",
+          "institutions": [
+            "Chinese Academy of Sciences",
+            "Shenzhen Institutes of Advanced Technology",
+            "Southern University of Science and Technology"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416429538",
+          "title": "SpecMamba: Accelerating Mamba Inference on FPGA with Speculative Decoding",
+          "date": "2025-10-26",
+          "url": "https://doi.org/10.1109/iccad66269.2025.11240945",
+          "institutions": [
+            "Peking University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4414688324",
+          "title": "Frontier: Simulating the Next Generation of LLM Inference Systems",
+          "date": "2025-10-01",
+          "url": "https://doi.org/10.1145/3766882.3767173",
+          "institutions": [
+            "StepFun AI (China)",
+            "Chinese University of Hong Kong"
+          ],
+          "countries": [
+            "HK",
+            "CN"
+          ]
+        }
+      ],
+      "sha256": "9e50db69a38575cab2a6f1935b6eade068f30030f893eed57a031c20a041061b",
+      "quality": "关键词检索代理，非人工确认全量；排名可能受检索口径影响"
+    },
+    {
+      "topic": "inference",
+      "region": "global",
+      "url": "https://api.openalex.org/works?filter=from_publication_date%3A2025-10-01%2Cto_publication_date%3A2026-09-30%2Ctitle.search%3A%22LLM+inference%22+OR+%22speculative+decoding%22+OR+%22KV+cache%22&per-page=20&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cauthorships%2Cprimary_location&sort=cited_by_count%3Adesc",
+      "query": "\"LLM inference\" OR \"speculative decoding\" OR \"KV cache\"",
+      "retrieved_at": "2026-10-25",
+      "count": 2399,
+      "records": [
+        {
+          "id": "https://openalex.org/W7161556515",
+          "title": "DeepServeCB: SLO-Aware and Cost-Aware Elastic Scheduling for Serverless Multi-Tenant LLM Inference",
+          "date": "2026-03-27",
+          "url": "https://doi.org/10.1109/gaiis69281.2026.11519206",
+          "institutions": [
+            "University of Pennsylvania",
+            "Northeastern University",
+            "Columbia University",
+            "New York University",
+            "Carnegie Mellon University"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4414736038",
+          "title": "Characterizing Mobile SoC for Accelerating Heterogeneous LLM Inference",
+          "date": "2025-10-01",
+          "url": "https://doi.org/10.1145/3731569.3764808",
+          "institutions": [
+            "Sensetime (China)",
+            "Shanghai Jiao Tong University",
+            "Tsinghua University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7127686171",
+          "title": "H 3 : H ybrid Architecture Using H igh Bandwidth Memory and H igh Bandwidth Flash for Cost-Efficient LLM Inference",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.1109/lca.2026.3660969",
+          "institutions": [
+            "SK Hynix (South Korea)"
+          ],
+          "countries": [
+            "KR"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7151441618",
+          "title": "The Lyra Technique: Cognitive Geometry in Transformer KV-Caches — From Metacognition to Misalignment Detection",
+          "date": "2026-04-04",
+          "url": "https://doi.org/10.5281/zenodo.19423493",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7138433923",
+          "title": "TokenPowerBench: Benchmarking the Power Consumption of LLM Inference",
+          "date": "2026-03-14",
+          "url": "https://doi.org/10.1609/aaai.v40i38.40535",
+          "institutions": [
+            "Texas Advanced Computing Center",
+            "Texas Tech University",
+            "Southeast University"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7202137368",
+          "title": "CacheRoute: KV-Cache-Aware Routing for LLM Backend Services on Kubernetes",
+          "date": "2026-06-01",
+          "url": "https://doi.org/10.1109/eitce70137.2026.11634378",
+          "institutions": [
+            "Northeastern University",
+            "Carnegie Mellon University"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7152101543",
+          "title": "Distributed Adaptive Speculative Decoding: Accelerating Large Language Model Inference With Context-Aware Draft Selection",
+          "date": "2026-03-19",
+          "url": "https://doi.org/10.1109/isdfs69419.2026.11459120",
+          "institutions": [
+            "Institute of Electrical and Electronics Engineers"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7138192222",
+          "title": "StreamKV: Streaming Video Question-Answering with Segment-based KV Cache Retrieval and Compression",
+          "date": "2026-03-14",
+          "url": "https://doi.org/10.1609/aaai.v40i4.37305",
+          "institutions": [
+            "Alibaba Group (China)",
+            "Peking University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7118084042",
+          "title": "Accelerating language giants: A survey of optimization strategies for LLM inference on hardware platforms",
+          "date": "2026-01-03",
+          "url": "https://doi.org/10.1016/j.sysarc.2026.103690",
+          "institutions": [
+            "Seoul National University of Science and Technology"
+          ],
+          "countries": [
+            "KR"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4406450001",
+          "title": "Characterizing LLM Inference Energy-Performance Tradeoffs Across Workloads and GPU Scaling",
+          "date": "2026-05-01",
+          "url": "https://doi.org/10.1109/ccgrid68966.2026.00013",
+          "institutions": [
+            "University of Amsterdam",
+            "TU Wien"
+          ],
+          "countries": [
+            "NL",
+            "AT"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416429926",
+          "title": "Confidential LLM Inference: Performance and Cost Across CPU and GPU TEEs",
+          "date": "2025-10-12",
+          "url": "https://doi.org/10.1109/iiswc66894.2025.00017",
+          "institutions": [
+            "ETH Zurich"
+          ],
+          "countries": [
+            "CH"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7164860173",
+          "title": "SW-SpeedDLM: Sliding Window Speculative Decoding for Diffusion Language Models Under Long Context Constraints",
+          "date": "2026-06-15",
+          "url": "https://doi.org/10.3390/math14122137",
+          "institutions": [
+            "Northeastern University",
+            "Carnegie Mellon University",
+            "University of Illinois Urbana-Champaign"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7154017053",
+          "title": "FlexSpec: Frozen Drafts Meet Evolving Targets in Edge-Cloud Collaborative LLM Speculative Decoding",
+          "date": "2026-04-13",
+          "url": "https://doi.org/10.1109/tmc.2026.3683574",
+          "institutions": [
+            "Wilfrid Laurier University",
+            "Shanghai Jiao Tong University",
+            "Baidu (China)",
+            "KTH Royal Institute of Technology",
+            "Shenzhen Research Institute of Big Data"
+          ],
+          "countries": [
+            "SE",
+            "CA",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415159602",
+          "title": "Towards Efficient Large Language Model Serving: A Survey on System-Aware KV Cache Optimization",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.findings-acl.1916",
+          "institutions": [
+            "The University of Melbourne",
+            "Huazhong University of Science and Technology"
+          ],
+          "countries": [
+            "CN",
+            "AU"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7166826313",
+          "title": "HERMES: KV Cache as Hierarchical Memory for Efficient Streaming Video Understanding",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.acl-long.381",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W4416927400",
+          "title": "Optimal Scheduling Algorithms for LLM Inference: Theory and Practice",
+          "date": "2025-12-01",
+          "url": "https://doi.org/10.1145/3771574",
+          "institutions": [
+            "The University of Texas at Austin"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7106164093",
+          "title": "LEAP: LLM Inference on Scalable PIM-NoC Architecture with Balanced Dataflow and Fine-Grained Parallelism",
+          "date": "2025-10-26",
+          "url": "https://doi.org/10.1109/iccad66269.2025.11240722",
+          "institutions": [
+            "National University of Singapore"
+          ],
+          "countries": [
+            "SG"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7125917322",
+          "title": "Communication-Efficient Collaborative LLM Inference via Distributed Speculative Decoding",
+          "date": "2025-10-23",
+          "url": "https://doi.org/10.1109/wcsp68525.2025.1010651",
+          "institutions": [
+            "Peng Cheng Laboratory"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7169883707",
+          "title": "CacheCast: Learning-Guided KV Cache Placement for Multi-Tenant Cloud LLM Serving",
+          "date": "2026-05-01",
+          "url": "https://doi.org/10.1109/iotaai70471.2026.11607731",
+          "institutions": [
+            "Northeastern University",
+            "Columbia University",
+            "Syracuse University",
+            "University at Buffalo, State University of New York",
+            "Carnegie Mellon University"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7171526626",
+          "title": "CacheCast: Learning-Guided KV Cache Placement for Multi-Tenant Cloud LLM Serving",
+          "date": "2026-05-01",
+          "url": "https://doi.org/10.1109/mrai70020.2026.11621074",
+          "institutions": [
+            "Northeastern University",
+            "Columbia University",
+            "Syracuse University",
+            "University at Buffalo, State University of New York",
+            "Carnegie Mellon University"
+          ],
+          "countries": [
+            "US"
+          ]
+        }
+      ],
+      "sha256": "7c98db726685278fd720b03d266c9d5df72fc4d8b21a711fa1b26792e2a089cb",
+      "quality": "关键词检索代理，非人工确认全量；排名可能受检索口径影响"
+    },
+    {
+      "topic": "memory",
+      "region": "cn",
+      "url": "https://api.openalex.org/works?filter=from_publication_date%3A2025-10-01%2Cto_publication_date%3A2026-09-30%2Ctitle.search%3A%22agent+memory%22+OR+%28%22long-term+memory%22+AND+%28%22LLM%22+OR+%22language+model%22+OR+%22agent%22%29%29%2Cauthorships.institutions.country_code%3Acn&per-page=20&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cauthorships%2Cprimary_location&sort=cited_by_count%3Adesc",
+      "query": "\"agent memory\" OR (\"long-term memory\" AND (\"LLM\" OR \"language model\" OR \"agent\"))",
+      "retrieved_at": "2026-10-25",
+      "count": 137,
+      "records": [
+        {
+          "id": "https://openalex.org/W7166825402",
+          "title": "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.acl-long.981",
+          "institutions": [
+            "Alibaba Group (China)",
+            "Wuhan University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7166823182",
+          "title": "From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.findings-acl.2069",
+          "institutions": [
+            "Hong Kong University of Science and Technology",
+            "South China Normal University",
+            "Hong Kong Baptist University",
+            "University of Science and Technology Beijing",
+            "National University of Singapore"
+          ],
+          "countries": [
+            "CN",
+            "HK",
+            "SG"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7118847430",
+          "title": "Agentic Memory Enhanced Recursive Reasoning for Root Cause Localization in Microservices",
+          "date": "2026-04-12",
+          "url": "https://doi.org/10.1145/3786583.3786853",
+          "institutions": [
+            "Alibaba Group (China)",
+            "Tsinghua University",
+            "Peking University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7166829819",
+          "title": "Lightweight LLM Agent Memory with Small Language Models",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.acl-long.588",
+          "institutions": [
+            "University of Oxford",
+            "City University of Hong Kong",
+            "Kyung Hee University",
+            "University of Electronic Science and Technology of China"
+          ],
+          "countries": [
+            "CN",
+            "HK",
+            "KR",
+            "GB"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7160853194",
+          "title": "From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms",
+          "date": "2026-05-07",
+          "url": "https://doi.org/10.48550/arxiv.2605.06716",
+          "institutions": [
+            "Hong Kong University of Science and Technology",
+            "South China Normal University",
+            "Hong Kong Baptist University",
+            "University of Science and Technology Beijing",
+            "National University of Singapore"
+          ],
+          "countries": [
+            "CN",
+            "HK",
+            "SG"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7159724551",
+          "title": "Contextual Agentic Memory is a Memo, Not True Memory",
+          "date": "2026-04-30",
+          "url": "https://doi.org/10.48550/arxiv.2604.27707",
+          "institutions": [
+            "Chinese University of Hong Kong",
+            "Zhejiang University"
+          ],
+          "countries": [
+            "CN",
+            "HK"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7155058168",
+          "title": "FadeMem: Biologically-Inspired Forgetting for Efficient Agent Memory",
+          "date": "2026-04-21",
+          "url": "https://doi.org/10.1109/icassp55912.2026.11462095",
+          "institutions": [
+            "Alibaba Group (China)",
+            "Peking University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7154021503",
+          "title": "RECALLbot: Designing Agentic Memory and Reciprocal Disclosure for Human–Chatbot Relationships",
+          "date": "2026-04-13",
+          "url": "https://doi.org/10.1145/3772318.3790714",
+          "institutions": [
+            "Zhejiang University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416437242",
+          "title": "LiCoMemory: Lightweight and Cognitive Agentic Memory for Efficient Long-Term Reasoning",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.findings-acl.1835",
+          "institutions": [
+            "Beijing Institute of Technology",
+            "Hong Kong University of Science and Technology",
+            "Chinese University of Hong Kong, Shenzhen",
+            "Harbin Institute of Technology"
+          ],
+          "countries": [
+            "CN",
+            "HK"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7166845515",
+          "title": "GAM: Hierarchical Graph-based Agentic Memory for LLM Agents",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.acl-long.1600",
+          "institutions": [
+            "Rutgers, The State University of New Jersey",
+            "Zhejiang University",
+            "University of Illinois Chicago",
+            "McGill University",
+            "Mohamed bin Zayed University of Artificial Intelligence"
+          ],
+          "countries": [
+            "US",
+            "AE",
+            "CN",
+            "CA"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7166848924",
+          "title": "Mem2ActBench: A Benchmark for Evaluating Long-Term Memory Utilization in Task-Oriented Autonomous Agents",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.acl-long.370",
+          "institutions": [
+            "Institute of Information Engineering",
+            "University of Chinese Academy of Sciences",
+            "Chinese Academy of Sciences"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7117994185",
+          "title": "From Storage to Interpretation: User Perceptions, Practices, and Challenges with Long-term Memory in Agents",
+          "date": "2025-11-10",
+          "url": "https://doi.org/10.1145/3765766.3765843",
+          "institutions": [
+            "NAVER Cloud (South Korea)",
+            "Naver (South Korea)",
+            "University of Toronto",
+            "Xi’an Jiaotong-Liverpool University"
+          ],
+          "countries": [
+            "CN",
+            "CA",
+            "KR"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4414825653",
+          "title": "LMcast: A pretrained language model guided long-term memory transformer for precipitation nowcasting",
+          "date": "2025-10-05",
+          "url": "https://doi.org/10.1016/j.neunet.2025.108168",
+          "institutions": [
+            "Harbin Institute of Technology"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7215057055",
+          "title": "Action Conditioned Bisimulation For GUI Agent Memory",
+          "date": "2026-09-30",
+          "url": "https://doi.org/10.48550/arxiv.2609.38778",
+          "institutions": [
+            "University of Southern California",
+            "East China Normal University",
+            "Peking University"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7214955683",
+          "title": "How Can Recommendation Feedback Evolve Agent Memory?",
+          "date": "2026-09-29",
+          "url": "https://doi.org/10.48550/arxiv.2609.37544",
+          "institutions": [
+            "Alibaba Group (China)",
+            "Chinese Academy of Sciences",
+            "Harbin Institute of Technology",
+            "Institute of Automation"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7214974117",
+          "title": "UpliftMem: Learning Set-Level Uplift for Agent Memory Retrieval",
+          "date": "2026-09-29",
+          "url": "https://doi.org/10.48550/arxiv.2609.36805",
+          "institutions": [
+            "Beihang University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7214988691",
+          "title": "Long-Term Memory-Guided Enhancement for Target Perception in Audio-Language Models",
+          "date": "2026-09-29",
+          "url": "https://doi.org/10.48550/arxiv.2609.36577",
+          "institutions": [
+            "Beijing University of Posts and Telecommunications",
+            "Nanyang Technological University"
+          ],
+          "countries": [
+            "CN",
+            "SG"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7214707419",
+          "title": "RoutePrism: Tracing Construction Order Effects in Agent Memory",
+          "date": "2026-09-28",
+          "url": "https://doi.org/10.48550/arxiv.2609.34160",
+          "institutions": [
+            "University of Nottingham Ningbo China",
+            "Shenzhen University",
+            "University of Nottingham"
+          ],
+          "countries": [
+            "CN",
+            "GB"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7214766919",
+          "title": "Just-In-Time Agent Memory with Runtime Agentic Research",
+          "date": "2026-09-28",
+          "url": "https://doi.org/10.48550/arxiv.2609.34385",
+          "institutions": [
+            "Peking University",
+            "Hong Kong Polytechnic University",
+            "Beijing Academy of Artificial Intelligence"
+          ],
+          "countries": [
+            "CN",
+            "HK"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7214604187",
+          "title": "A Benchmark and Diagnostic Study of Epistemic Admission in Shared Agent Memory",
+          "date": "2026-09-25",
+          "url": "https://doi.org/10.48550/arxiv.2609.30813",
+          "institutions": [
+            "Meta (United States)",
+            "University of Southern Queensland",
+            "UNSW Sydney",
+            "Nanjing University",
+            "Meta (United Kingdom)"
+          ],
+          "countries": [
+            "US",
+            "CN",
+            "GB",
+            "AU"
+          ]
+        }
+      ],
+      "sha256": "7a5e508ac1887c5f9afdea5efce02b1a55b0310a7d01b1534efb9cbbfb41ca1a",
+      "quality": "关键词检索代理，非人工确认全量；排名可能受检索口径影响"
+    },
+    {
+      "topic": "memory",
+      "region": "global",
+      "url": "https://api.openalex.org/works?filter=from_publication_date%3A2025-10-01%2Cto_publication_date%3A2026-09-30%2Ctitle.search%3A%22agent+memory%22+OR+%28%22long-term+memory%22+AND+%28%22LLM%22+OR+%22language+model%22+OR+%22agent%22%29%29&per-page=20&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cauthorships%2Cprimary_location&sort=cited_by_count%3Adesc",
+      "query": "\"agent memory\" OR (\"long-term memory\" AND (\"LLM\" OR \"language model\" OR \"agent\"))",
+      "retrieved_at": "2026-10-25",
+      "count": 525,
+      "records": [
+        {
+          "id": "https://openalex.org/W4415428439",
+          "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+          "date": "2025-10-21",
+          "url": "https://doi.org/10.3233/faia251160",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7147040153",
+          "title": "Cognitive Modeling for Long-Horizon Agent Learning via Integrated Long-Term Memory and Reasoning",
+          "date": "2026-01-30",
+          "url": "https://doi.org/10.1109/cnml68938.2026.11452287",
+          "institutions": [
+            "University of Illinois Urbana-Champaign",
+            "University of California, Irvine",
+            "University of Chicago",
+            "Georgia Institute of Technology",
+            "New York University",
+            "Arizona State University"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7166825402",
+          "title": "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.acl-long.981",
+          "institutions": [
+            "Alibaba Group (China)",
+            "Wuhan University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7128371373",
+          "title": "Agentic memory-augmented retrieval and evidence grounding for medical question-answering tasks",
+          "date": "2026-02-07",
+          "url": "https://doi.org/10.1016/j.ijmedinf.2026.106339",
+          "institutions": [
+            "Boston University"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7166823182",
+          "title": "From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.findings-acl.2069",
+          "institutions": [
+            "Hong Kong University of Science and Technology",
+            "South China Normal University",
+            "Hong Kong Baptist University",
+            "University of Science and Technology Beijing",
+            "National University of Singapore"
+          ],
+          "countries": [
+            "CN",
+            "HK",
+            "SG"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7118847430",
+          "title": "Agentic Memory Enhanced Recursive Reasoning for Root Cause Localization in Microservices",
+          "date": "2026-04-12",
+          "url": "https://doi.org/10.1145/3786583.3786853",
+          "institutions": [
+            "Alibaba Group (China)",
+            "Tsinghua University",
+            "Peking University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7133519884",
+          "title": "Agent Memory Infrastructure: Byzantine-Resilient Institutional Memory for Multi-Agent Systems",
+          "date": "2026-03-04",
+          "url": "https://doi.org/10.5281/zenodo.18856657",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7166829819",
+          "title": "Lightweight LLM Agent Memory with Small Language Models",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.acl-long.588",
+          "institutions": [
+            "University of Oxford",
+            "City University of Hong Kong",
+            "Kyung Hee University",
+            "University of Electronic Science and Technology of China"
+          ],
+          "countries": [
+            "CN",
+            "HK",
+            "KR",
+            "GB"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7166853577",
+          "title": "MAGMA: A Multi-Graph based Agentic Memory Architecture for AI Agents",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.acl-long.1709",
+          "institutions": [
+            "University of Florida",
+            "The University of Texas at Dallas"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7166889077",
+          "title": "From Recall to Forgetting: Benchmarking Long-Term Memory for Personalized Agents",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.18653/v1/2026.findings-acl.1337",
+          "institutions": [
+            "University of Arizona",
+            "Arizona State University"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7221193348",
+          "title": "YSocial hybrid human-AI community experiment: platform activity, agent memory, agent interviews, browser telemetry and configuration under visible versus hidden AI labels",
+          "date": "2026-09-25",
+          "url": "https://doi.org/10.5281/zenodo.22964196",
+          "institutions": [
+            "University of Novi Sad",
+            "Institute of Physics Belgrade"
+          ],
+          "countries": [
+            "RS"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7213995952",
+          "title": "Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents",
+          "date": "2026-09-21",
+          "url": "https://doi.org/10.48550/arxiv.2609.23986",
+          "institutions": [
+            "The University of Texas at Dallas"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7204722346",
+          "title": "Spare capacity, narrow surface: the exposure record of a production agent-memory system",
+          "date": "2026-08-30",
+          "url": "https://doi.org/10.5281/zenodo.22181414",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7197026882",
+          "title": "Insecure Coding Preferences in Long-Term Memory: Security Risks for LLM-Based Code Generation",
+          "date": "2026-08-06",
+          "url": "https://doi.org/10.5281/zenodo.21818615",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7169676276",
+          "title": "Provenance Is Not Independence: The False-Corroboration Exclusion Rule for Multi-Agent Memory",
+          "date": "2026-07-18",
+          "url": "https://doi.org/10.5281/zenodo.21431716",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7160853194",
+          "title": "From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms",
+          "date": "2026-05-07",
+          "url": "https://doi.org/10.48550/arxiv.2605.06716",
+          "institutions": [
+            "Hong Kong University of Science and Technology",
+            "South China Normal University",
+            "Hong Kong Baptist University",
+            "University of Science and Technology Beijing",
+            "National University of Singapore"
+          ],
+          "countries": [
+            "CN",
+            "HK",
+            "SG"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7159724551",
+          "title": "Contextual Agentic Memory is a Memo, Not True Memory",
+          "date": "2026-04-30",
+          "url": "https://doi.org/10.48550/arxiv.2604.27707",
+          "institutions": [
+            "Chinese University of Hong Kong",
+            "Zhejiang University"
+          ],
+          "countries": [
+            "CN",
+            "HK"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7155058168",
+          "title": "FadeMem: Biologically-Inspired Forgetting for Efficient Agent Memory",
+          "date": "2026-04-21",
+          "url": "https://doi.org/10.1109/icassp55912.2026.11462095",
+          "institutions": [
+            "Alibaba Group (China)",
+            "Peking University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7153856605",
+          "title": "Towards Usable, Privacy Respecting Long-Term Memory for LLM-based Conversational Agents",
+          "date": "2026-04-13",
+          "url": "https://doi.org/10.1145/3772363.3799198",
+          "institutions": [
+            "University College London"
+          ],
+          "countries": [
+            "GB"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7154021503",
+          "title": "RECALLbot: Designing Agentic Memory and Reciprocal Disclosure for Human–Chatbot Relationships",
+          "date": "2026-04-13",
+          "url": "https://doi.org/10.1145/3772318.3790714",
+          "institutions": [
+            "Zhejiang University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        }
+      ],
+      "sha256": "e16b18cdf70a1238eb33c914d24da4591fc85e745fa0f462caf7dd57529ed721",
+      "quality": "关键词检索代理，非人工确认全量；排名可能受检索口径影响"
+    },
+    {
+      "topic": "science",
+      "region": "cn",
+      "url": "https://api.openalex.org/works?filter=from_publication_date%3A2025-10-01%2Cto_publication_date%3A2026-09-30%2Ctitle.search%3A%22self-driving+lab%22+OR+%22autonomous+laboratory%22%2Cauthorships.institutions.country_code%3Acn&per-page=20&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cauthorships%2Cprimary_location&sort=cited_by_count%3Adesc",
+      "query": "\"self-driving lab\" OR \"autonomous laboratory\"",
+      "retrieved_at": "2026-10-25",
+      "count": 5,
+      "records": [
+        {
+          "id": "https://openalex.org/W4416839669",
+          "title": "Integration of materials science and artificial intelligence: From high‐throughput screening to autonomous laboratories",
+          "date": "2025-11-30",
+          "url": "https://doi.org/10.1002/mgea.70036",
+          "institutions": [
+            "Queensland University of Technology",
+            "Tianjin University"
+          ],
+          "countries": [
+            "AU",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415658256",
+          "title": "Building an affordable self-driving lab: Practical machine learning experiments for physics education using Internet-of-Things",
+          "date": "2025-10-29",
+          "url": "https://doi.org/10.1063/5.0283529",
+          "institutions": [
+            "Xidian University",
+            "University of Delaware",
+            "Instituto de Ciencia de Materiales de Madrid",
+            "Consejo Superior de Investigaciones Científicas"
+          ],
+          "countries": [
+            "CN",
+            "US",
+            "ES"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7203985307",
+          "title": "Machine Learning‐Triggered Auto‐Discovery and Promotion of Luminescent Materials: From Predictive Modeling to Autonomous Laboratories",
+          "date": "2026-08-01",
+          "url": "https://doi.org/10.1002/adom.202503353",
+          "institutions": [
+            "State Key Laboratory of Modern Optical Instruments",
+            "Guangzhou Medical University",
+            "Zhejiang University",
+            "Ningbo University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7171811055",
+          "title": "Reaction: Self-driving labs need models of the chemical world",
+          "date": "2026-07-30",
+          "url": "https://doi.org/10.1016/j.chempr.2026.103196",
+          "institutions": [
+            "University of Science and Technology of China"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7124895923",
+          "title": "Application of Advanced Computing and Intelligent Robotics in Autonomous Laboratory Systems: A Case Study in the Coatings Industry",
+          "date": "2025-11-07",
+          "url": "https://doi.org/10.1109/acira67680.2025.11334952",
+          "institutions": [
+            "Guangzhou Quality Supervision, Inspection and Research Institute"
+          ],
+          "countries": [
+            "CN"
+          ]
+        }
+      ],
+      "sha256": "5405f82bd195c5d87555b4f05d27054b0ab61a0b2a122fdfc9eca967905d1fde",
+      "quality": "关键词检索代理，非人工确认全量；排名可能受检索口径影响"
+    },
+    {
+      "topic": "science",
+      "region": "global",
+      "url": "https://api.openalex.org/works?filter=from_publication_date%3A2025-10-01%2Cto_publication_date%3A2026-09-30%2Ctitle.search%3A%22self-driving+lab%22+OR+%22autonomous+laboratory%22&per-page=20&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cauthorships%2Cprimary_location&sort=cited_by_count%3Adesc",
+      "query": "\"self-driving lab\" OR \"autonomous laboratory\"",
+      "retrieved_at": "2026-10-25",
+      "count": 150,
+      "records": [
+        {
+          "id": "https://openalex.org/W4416839669",
+          "title": "Integration of materials science and artificial intelligence: From high‐throughput screening to autonomous laboratories",
+          "date": "2025-11-30",
+          "url": "https://doi.org/10.1002/mgea.70036",
+          "institutions": [
+            "Queensland University of Technology",
+            "Tianjin University"
+          ],
+          "countries": [
+            "AU",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4414973859",
+          "title": "Benchmarking self-driving labs",
+          "date": "2025-10-09",
+          "url": "https://doi.org/10.1039/d5dd00337g",
+          "institutions": [
+            "Boston University"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7130656780",
+          "title": "The ADePT framework for assessing autonomous laboratory robotics",
+          "date": "2026-02-20",
+          "url": "https://doi.org/10.1038/s42004-026-01932-9",
+          "institutions": [
+            "Loughborough University"
+          ],
+          "countries": [
+            "GB"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4414705873",
+          "title": "Self-driving labs for biotechnology",
+          "date": "2025-10-01",
+          "url": "https://doi.org/10.1038/s43588-025-00885-8",
+          "institutions": [
+            "Harvard University",
+            "Harvard–MIT Division of Health Sciences and Technology",
+            "Koch Institute for Integrative Cancer Research At MIT",
+            "Massachusetts Institute of Technology"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7124675362",
+          "title": "Author Correction: An autonomous laboratory for the accelerated synthesis of inorganic materials",
+          "date": "2026-01-19",
+          "url": "https://doi.org/10.1038/s41586-025-09992-y",
+          "institutions": [
+            "University of California, Berkeley",
+            "Lawrence Berkeley National Laboratory",
+            "Google DeepMind (United Kingdom)"
+          ],
+          "countries": [
+            "US",
+            "GB"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7155170905",
+          "title": "Large language models for porous materials: from text mining to autonomous laboratory",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.1039/d5dd00578g",
+          "institutions": [
+            "Korea Advanced Institute of Science and Technology"
+          ],
+          "countries": [
+            "KR"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4417162908",
+          "title": "Self-driving lab discovers principles for steering spontaneous emission beyond conventional Fourier optics",
+          "date": "2025-12-09",
+          "url": "https://doi.org/10.1038/s41467-025-66916-0",
+          "institutions": [
+            "Center for Integrated Nanotechnologies",
+            "Sandia National Laboratories"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7196965849",
+          "title": "Towards Human-Led, Agent-Driven Autonomous Laboratories for the Life Sciences",
+          "date": "2026-08-05",
+          "url": "https://doi.org/10.20944/preprints202608.0273.v1",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7165129968",
+          "title": "Qualification of proxy experiments for accelerated electrochemical testing in self-driving labs",
+          "date": "2026-06-19",
+          "url": "https://doi.org/10.1007/s00216-026-06609-9",
+          "institutions": [
+            "Federal Institute For Materials Research and Testing"
+          ],
+          "countries": [
+            "DE"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7143465528",
+          "title": "Inside the ‘self-driving’ lab revolution",
+          "date": "2026-03-30",
+          "url": "https://doi.org/10.1038/d41586-026-00974-2",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7155015329",
+          "title": "WeChemSynOntology: semantic modeling of wet chemical syntheses in a self-driving lab for nano- and advanced materials",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.1039/d6dd00058d",
+          "institutions": [
+            "Federal Institute For Materials Research and Testing"
+          ],
+          "countries": [
+            "DE"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7163426584",
+          "title": "A modular approach to studying polymer processing using a self-driving lab",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.1039/d6dd00146g",
+          "institutions": [
+            "Boston University",
+            "Combat Capabilities Development Command Soldier Center"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7116056275",
+          "title": "Multi-stage Bayesian optimisation for dynamic decision-making in self-driving labs",
+          "date": "2025-12-17",
+          "url": "https://doi.org/10.48550/arxiv.2512.15483",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7202285983",
+          "title": "Autonomous Laboratory-Scale Smart Factory with Internet of Things Demonstrating Industry 4.0",
+          "date": "2026-07-01",
+          "url": "https://doi.org/10.1109/icecet65726.2026.11632379",
+          "institutions": [
+            "American University of Kuwait"
+          ],
+          "countries": [
+            "KW"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7166554288",
+          "title": "From Automated to Autonomous Laboratory: Are We There Yet?",
+          "date": "2026-06-29",
+          "url": "https://doi.org/10.1021/acsenergylett.6c01834",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7165146842",
+          "title": "Additive manufacturing enabled autonomous laboratory for materials discovery and concurrent design of materials and shape",
+          "date": "2026-06-01",
+          "url": "https://doi.org/10.1557/s43577-026-01078-y",
+          "institutions": [
+            "Center for Advanced Non-Ferrous Structural Alloys",
+            "Iowa State University"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7162075891",
+          "title": "Self-driving labs for research and development in industry",
+          "date": "2026-05-22",
+          "url": "https://doi.org/10.1038/s44160-026-01084-7",
+          "institutions": [],
+          "countries": []
+        },
+        {
+          "id": "https://openalex.org/W7141021682",
+          "title": "Smart Exploration of Perovskite Photovoltaics: From AI Driven Discovery to Autonomous Laboratories",
+          "date": "2026-03-27",
+          "url": "https://doi.org/10.1002/aenm.202506803",
+          "institutions": [
+            "Sungkyunkwan University"
+          ],
+          "countries": [
+            "KR"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7139002593",
+          "title": "Benchmarking Bayesian Optimization Frameworks and Acquisition Strategies for Materials Discovery and Autonomous Laboratories",
+          "date": "2026-03-01",
+          "url": "https://doi.org/10.64631/zkvt6687",
+          "institutions": [
+            "University of Akron",
+            "KBR (United States)",
+            "Glenn Research Center"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7126272334",
+          "title": "Qualification of Proxy Experiments for Accelerated Electrochemical Testing in Self-Driving Labs",
+          "date": "2026-01-30",
+          "url": "https://doi.org/10.5281/zenodo.18432035",
+          "institutions": [
+            "Federal Institute For Materials Research and Testing"
+          ],
+          "countries": [
+            "DE"
+          ]
+        }
+      ],
+      "sha256": "19f6e75cb8dec9c2434a4e382f410de4c4b854a0098836e988510be2983ff6bc",
+      "quality": "关键词检索代理，非人工确认全量；排名可能受检索口径影响"
+    },
+    {
+      "topic": "synthetic",
+      "region": "cn",
+      "url": "https://api.openalex.org/works?filter=from_publication_date%3A2025-10-01%2Cto_publication_date%3A2026-09-30%2Ctitle.search%3A%22synthetic+data%22%2Cauthorships.institutions.country_code%3Acn&per-page=20&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cauthorships%2Cprimary_location&sort=cited_by_count%3Adesc",
+      "query": "\"synthetic data\"",
+      "retrieved_at": "2026-10-25",
+      "count": 165,
+      "records": [
+        {
+          "id": "https://openalex.org/W7125682377",
+          "title": "Synthetic data augmentation and Integrated prediction framework for low-carbon recycled concrete: Leveraging CTGAN and multiple ML models stacking",
+          "date": "2026-01-26",
+          "url": "https://doi.org/10.1016/j.jclepro.2026.147599",
+          "institutions": [
+            "Zhejiang University",
+            "Southeast University",
+            "Nanjing Tech University",
+            "Tongji University",
+            "Shenyang Jianzhu University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415828363",
+          "title": "Zoom-Anomaly: Multimodal vision-Language fusion industrial anomaly detection with synthetic data",
+          "date": "2025-11-03",
+          "url": "https://doi.org/10.1016/j.inffus.2025.103910",
+          "institutions": [
+            "Politecnico di Milano",
+            "Yanshan University"
+          ],
+          "countries": [
+            "IT",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4403570206",
+          "title": "SynFER: Towards Boosting Facial Expression Recognition With Synthetic Data",
+          "date": "2025-10-19",
+          "url": "https://doi.org/10.1109/iccv51701.2025.00949",
+          "institutions": [
+            "Chinese University of Hong Kong",
+            "King Abdullah University of Science and Technology",
+            "Monash University",
+            "Mohamed bin Zayed University of Artificial Intelligence",
+            "Shenzhen University",
+            "University of Exeter"
+          ],
+          "countries": [
+            "SA",
+            "HK",
+            "CN",
+            "AU",
+            "GB",
+            "AE"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7160318567",
+          "title": "A synthetic data generation framework for deep learning-based LiDAR forest structure analysis",
+          "date": "2026-05-02",
+          "url": "https://doi.org/10.1016/j.rse.2026.115436",
+          "institutions": [
+            "Xi'an Jiaotong University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416808957",
+          "title": "Real-time synthetic data generation and segmentation of railway fasteners using an attention guided dual-phase diffusion-aided model",
+          "date": "2025-11-29",
+          "url": "https://doi.org/10.1016/j.measurement.2025.119874",
+          "institutions": [
+            "Guangxi Transport Vocational and Technical College",
+            "Central South University",
+            "University of Massachusetts Amherst"
+          ],
+          "countries": [
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416529362",
+          "title": "Transfer learning from building information model-based synthetic data for three-dimensional module detection in point clouds of modular-integrated construction hoisting",
+          "date": "2025-11-21",
+          "url": "https://doi.org/10.1016/j.engappai.2025.113243",
+          "institutions": [
+            "Huazhong University of Science and Technology",
+            "University of Hong Kong"
+          ],
+          "countries": [
+            "HK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7160047058",
+          "title": "Scaling Tumor Segmentation: Best Lessons from Real and Synthetic Data",
+          "date": "2025-10-19",
+          "url": "https://doi.org/10.1109/iccv51701.2025.02225",
+          "institutions": [
+            "Shanghai Jiao Tong University",
+            "University of Chinese Academy of Sciences",
+            "Qilu Hospital of Shandong University",
+            "Shanghai Artificial Intelligence Laboratory",
+            "University of Cambridge",
+            "Sichuan University",
+            "Westlake University",
+            "Johns Hopkins University"
+          ],
+          "countries": [
+            "GB",
+            "US",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7160157223",
+          "title": "MR-FIQA: Face Image Quality Assessment with Multi-Reference Representations from Synthetic Data Generation",
+          "date": "2025-10-19",
+          "url": "https://doi.org/10.1109/iccv51701.2025.01200",
+          "institutions": [
+            "City University of Hong Kong",
+            "Nankai University",
+            "Lingnan University"
+          ],
+          "countries": [
+            "HK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7125630168",
+          "title": "Deep Learning-Based Denoising of Partial Discharge Measurements: From Synthetic Data to Real-World Validation",
+          "date": "2026-01-23",
+          "url": "https://doi.org/10.1109/tpwrd.2026.3657366",
+          "institutions": [
+            "Northwest University",
+            "Xi'an Jiaotong University",
+            "State Key Laboratory of Electrical Insulation and Power Equipment"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7118083742",
+          "title": "Advancing seismic facies analysis and reservoir characterization: A synthetic data-augmented CNN and transfer learning workflow integrated with real seismic data",
+          "date": "2026-01-02",
+          "url": "https://doi.org/10.1016/j.jgsce.2025.205831",
+          "institutions": [
+            "State Key Laboratory of Geomechanics and Geotechnical Engineering",
+            "Research Institute of Petroleum Exploration and Development",
+            "Chinese Academy of Sciences",
+            "Bahria University",
+            "China University of Geosciences",
+            "Institute of Rock and Soil Mechanics",
+            "Yunnan University"
+          ],
+          "countries": [
+            "PK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7131785474",
+          "title": "LesionDiff: Synthetic data via lesion information transfer diffusion model facilitates plant disease diagnosis",
+          "date": "2026-02-27",
+          "url": "https://doi.org/10.1016/j.cj.2026.01.011",
+          "institutions": [
+            "University of Peradeniya",
+            "Tsinghua University",
+            "Guizhou University"
+          ],
+          "countries": [
+            "LK",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7125858724",
+          "title": "Improving small-sample performance in portable LIBS analysis with transfer learning and synthetic data-driven CNN models",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.1039/d5ja00490j",
+          "institutions": [
+            "Hunan University of Science and Technology"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7115932293",
+          "title": "Industrial Camera Calibration Using Synthetic Data Augmentation and FSC-McCNN in Froth Flotation Process",
+          "date": "2025-12-18",
+          "url": "https://doi.org/10.1109/tii.2025.3640684",
+          "institutions": [
+            "Central South University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416408323",
+          "title": "PU-Mamba: A point cloud upsampling network to enhance semantic segmentation of MEP scenes using synthetic data",
+          "date": "2025-11-20",
+          "url": "https://doi.org/10.1016/j.aei.2025.104087",
+          "institutions": [
+            "Hohai University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7172522551",
+          "title": "Computer vision-based detection of ship hull coating peeling defects using real-texture-constrained synthetic data",
+          "date": "2026-08-05",
+          "url": "https://doi.org/10.1016/j.oceaneng.2026.127253",
+          "institutions": [
+            "Hunan University",
+            "Shanghai Maritime University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7154834254",
+          "title": "SurfSyn: Domain foundation model for pixel-level surface defect detection driven by synthetic data",
+          "date": "2026-04-18",
+          "url": "https://doi.org/10.1016/j.patcog.2026.113709",
+          "institutions": [
+            "Shanghai University",
+            "Hangzhou Dianzi University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7126053992",
+          "title": "Predicting postoperative delirium after lung cancer resection: the utility of synthetic data and LIME algorithm for model interpretation",
+          "date": "2026-01-29",
+          "url": "https://doi.org/10.1038/s41598-025-24848-1",
+          "institutions": [
+            "First Affiliated Hospital of Zhengzhou University",
+            "Zhengzhou University",
+            "Central People's Hospital of Zhanjiang"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7125185968",
+          "title": "Bridging the Sim2Real Gap in UAV Remote Sensing: A High-Fidelity Synthetic Data Framework for Vehicle Detection",
+          "date": "2026-01-21",
+          "url": "https://doi.org/10.3390/rs18020361",
+          "institutions": [
+            "Lanzhou University",
+            "Hangzhou Dianzi University",
+            "Hunan Institute of Science and Technology",
+            "Northwestern Polytechnical University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7147005773",
+          "title": "Layout-Controlled Synthetic Data Generation for Remote Sensing Object Detection",
+          "date": "2026-01-01",
+          "url": "https://doi.org/10.1109/tgrs.2026.3679408",
+          "institutions": [
+            "Chang'an University",
+            "Northwest University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4417039290",
+          "title": "Synthetic data generation for joint electric vehicle driving and charging events via deep generative networks",
+          "date": "2025-12-05",
+          "url": "https://doi.org/10.1016/j.trc.2025.105481",
+          "institutions": [
+            "Hong Kong Polytechnic University",
+            "New York University Shanghai",
+            "New York University Abu Dhabi",
+            "New York University",
+            "Shanghai Electric (China)"
+          ],
+          "countries": [
+            "US",
+            "HK",
+            "AE",
+            "CN"
+          ]
+        }
+      ],
+      "sha256": "3c56f9e71db117b4aa997b086271c9c88bd3fcecf12638427191df9059987173",
+      "quality": "关键词检索代理，非人工确认全量；排名可能受检索口径影响"
+    },
+    {
+      "topic": "synthetic",
+      "region": "global",
+      "url": "https://api.openalex.org/works?filter=from_publication_date%3A2025-10-01%2Cto_publication_date%3A2026-09-30%2Ctitle.search%3A%22synthetic+data%22&per-page=20&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cauthorships%2Cprimary_location&sort=cited_by_count%3Adesc",
+      "query": "\"synthetic data\"",
+      "retrieved_at": "2026-10-25",
+      "count": 2409,
+      "records": [
+        {
+          "id": "https://openalex.org/W7125682377",
+          "title": "Synthetic data augmentation and Integrated prediction framework for low-carbon recycled concrete: Leveraging CTGAN and multiple ML models stacking",
+          "date": "2026-01-26",
+          "url": "https://doi.org/10.1016/j.jclepro.2026.147599",
+          "institutions": [
+            "Zhejiang University",
+            "Southeast University",
+            "Nanjing Tech University",
+            "Tongji University",
+            "Shenyang Jianzhu University"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416854221",
+          "title": "Synthetic data, synthetic trust: navigating data challenges in the digital revolution",
+          "date": "2025-11-01",
+          "url": "https://doi.org/10.1016/j.landig.2025.100924",
+          "institutions": [
+            "National Institute on Minority Health and Health Disparities",
+            "National Institutes of Health",
+            "Stanford Medicine",
+            "Stanford University"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4414925401",
+          "title": "Synthetic data in medical imaging within the EHDS: a path forward for ethics, regulation, and standards",
+          "date": "2025-10-08",
+          "url": "https://doi.org/10.3389/fdgth.2025.1620270",
+          "institutions": [
+            "Comprehensive Health Research Centre",
+            "Universidade Nova de Lisboa"
+          ],
+          "countries": [
+            "PT"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4417189962",
+          "title": "Review of generative AI for synthetic data generation: a healthcare perspective",
+          "date": "2025-12-10",
+          "url": "https://doi.org/10.1007/s10462-025-11440-2",
+          "institutions": [
+            "Université Paris-Saclay",
+            "Laboratoire d'Intégration des Systèmes et des Technologies",
+            "University of Warwick",
+            "Commissariat à l'Énergie Atomique et aux Énergies Alternatives",
+            "University of Birmingham"
+          ],
+          "countries": [
+            "GB",
+            "FR"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7125949208",
+          "title": "Synthetic Data for Predictive Maintenance: A Systematic Review and Framework for Industry 4.0 Applications",
+          "date": "2026-01-28",
+          "url": "https://doi.org/10.1007/s10845-026-02795-6",
+          "institutions": [
+            "Lappeenranta-Lahti University of Technology",
+            "Savonia University of Applied Sciences"
+          ],
+          "countries": [
+            "FI"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416700663",
+          "title": "Rethinking Privacy in Medical Imaging AI: From Metadata and Pixel-Level Identification Risks to Federated Learning and Synthetic Data Challenges",
+          "date": "2025-11-26",
+          "url": "https://doi.org/10.1148/ryai.250273",
+          "institutions": [
+            "Hellenic Mediterranean University",
+            "FORTH Institute of Computer Science",
+            "Karolinska Institutet",
+            "University of Crete",
+            "Foundation for Research and Technology Hellas",
+            "University Hospital of Heraklion"
+          ],
+          "countries": [
+            "SE",
+            "GR"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415961059",
+          "title": "LLMCARE: early detection of cognitive impairment via transformer models enhanced by LLM-generated synthetic data",
+          "date": "2025-11-06",
+          "url": "https://doi.org/10.3389/frai.2025.1669896",
+          "institutions": [
+            "University of Wisconsin–Milwaukee",
+            "Columbia University Irving Medical Center",
+            "Columbia University",
+            "University of Tehran",
+            "University of Florida"
+          ],
+          "countries": [
+            "US",
+            "IR"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4391421212",
+          "title": "Enhancing EEG Signal-Based Emotion Recognition With Synthetic Data: Diffusion Model Approach",
+          "date": "2025-12-09",
+          "url": "https://doi.org/10.1109/tai.2025.3641576",
+          "institutions": [
+            "Osaka Metropolitan University"
+          ],
+          "countries": [
+            "JP"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7159676202",
+          "title": "Synthetic Data Meets Finance: Generative Models for Privacy Preserving Analytics",
+          "date": "2026-04-21",
+          "url": "https://doi.org/10.55220/2576-6821.v10.928",
+          "institutions": [
+            "University of Southern California",
+            "Carnegie Mellon University"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4417538946",
+          "title": "A Scoping Review of Synthetic Data Generation by Language Models in Biomedical Research and Application: Data Utility and Quality Perspectives",
+          "date": "2026-02-02",
+          "url": "https://doi.org/10.1007/s41666-026-00229-9",
+          "institutions": [
+            "University of Memphis",
+            "Florida State University",
+            "St. Jude Children's Research Hospital",
+            "University of Illinois Urbana-Champaign"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7104178883",
+          "title": "An efficient computational approach for generating synthetic data to train neural networks in concrete bridge monitoring",
+          "date": "2025-11-06",
+          "url": "https://doi.org/10.1016/j.compstruc.2025.107995",
+          "institutions": [
+            "Sapienza University of Rome"
+          ],
+          "countries": [
+            "IT"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4415828363",
+          "title": "Zoom-Anomaly: Multimodal vision-Language fusion industrial anomaly detection with synthetic data",
+          "date": "2025-11-03",
+          "url": "https://doi.org/10.1016/j.inffus.2025.103910",
+          "institutions": [
+            "Politecnico di Milano",
+            "Yanshan University"
+          ],
+          "countries": [
+            "IT",
+            "CN"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7130659492",
+          "title": "Synthetic Data Augmentation for Imbalanced Tabular Data: A Comparative Study of Generation Methods",
+          "date": "2026-02-20",
+          "url": "https://doi.org/10.3390/electronics15040883",
+          "institutions": [
+            "Sunchon National University",
+            "Wonkwang University"
+          ],
+          "countries": [
+            "KR"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7130753532",
+          "title": "Artificial intelligence-generated synthetic data for cancer research and clinical trials",
+          "date": "2026-02-20",
+          "url": "https://doi.org/10.1038/s41568-026-00912-4",
+          "institutions": [
+            "University Hospital Carl Gustav Carus",
+            "Technische Universität Dresden",
+            "Helmholtz-Zentrum Dresden-Rossendorf",
+            "National Center for Tumor Diseases",
+            "Nationales Centrum für Tumorerkrankungen Dresden",
+            "Center for Scalable Data Analytics and Artificial Intelligence",
+            "Else Kröner Fresenius Center for Digital Health",
+            "German Cancer Research Center",
+            "German Cancer Consortium (DKTK) Dresden",
+            "Fondazione IRCCS Istituto Nazionale dei Tumori"
+          ],
+          "countries": [
+            "DE",
+            "IT"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7117150036",
+          "title": "Synthetic data generation methods for longitudinal and time series health data: a systematic review",
+          "date": "2025-12-24",
+          "url": "https://doi.org/10.1186/s12911-025-03326-8",
+          "institutions": [
+            "Bern University of Applied Sciences"
+          ],
+          "countries": [
+            "CH"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416667083",
+          "title": "The Role of Synthetic Data and Generative AI in Breast Imaging: Promise, Pitfalls, and Pathways Forward",
+          "date": "2025-11-25",
+          "url": "https://doi.org/10.3390/diagnostics15232996",
+          "institutions": [
+            "Sapienza University of Rome",
+            "Azienda Ospedaliera Sant'Andrea",
+            "European Institute of Oncology",
+            "Fondazione IRCCS Ca' Granda Ospedale Maggiore Policlinico",
+            "University of Milan"
+          ],
+          "countries": [
+            "IT"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416397362",
+          "title": "Synthetic data generation and energy consumption prediction in district building energy modeling",
+          "date": "2025-11-20",
+          "url": "https://doi.org/10.1016/j.enbuild.2025.116716",
+          "institutions": [
+            "Özyeğin University"
+          ],
+          "countries": [
+            "TR"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W4416750745",
+          "title": "Synthetica: Large Scale Synthetic Data Generation for Robot Perception",
+          "date": "2025-10-19",
+          "url": "https://doi.org/10.1109/iros60139.2025.11247126",
+          "institutions": [
+            "University of Toronto",
+            "Nvidia (United Kingdom)",
+            "Nvidia (United States)",
+            "Carnegie Mellon University"
+          ],
+          "countries": [
+            "GB",
+            "CA",
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7134985483",
+          "title": "Synthetic data-driven deep learning for label-free autonomous atomic force microscopy",
+          "date": "2026-03-10",
+          "url": "https://doi.org/10.1038/s41467-026-70421-3",
+          "institutions": [
+            "Oak Ridge National Laboratory",
+            "Center for Nanophase Materials Sciences",
+            "University of Sheffield"
+          ],
+          "countries": [
+            "GB",
+            "US"
+          ]
+        },
+        {
+          "id": "https://openalex.org/W7126165319",
+          "title": "Synthetic data in the clinical laboratory: methods, applications, and future prospects",
+          "date": "2026-01-30",
+          "url": "https://doi.org/10.1016/j.cca.2026.120878",
+          "institutions": [
+            "University of Pretoria",
+            "University of Cape Town",
+            "National Health Laboratory Service"
+          ],
+          "countries": [
+            "ZA"
+          ]
+        }
+      ],
+      "sha256": "c1e94df5ca8680cf3da0022378bdb4205fdb7af04a5c7eeb148779ce3ce681b0",
+      "quality": "关键词检索代理，非人工确认全量；排名可能受检索口径影响"
+    }
+  ],
+  "funding": [
+    {
+      "id": "anthropic-g",
+      "company": "Anthropic",
+      "topic": "foundation",
+      "country": "US",
+      "date": "2026-02-12",
+      "amount": 30000,
+      "currency": "USD",
+      "amount_kind": "exact",
+      "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+      "quote": "We have raised $30 billion in Series G funding",
+      "source_hash": "193db46d1c8fec5dbb99be0d2e09e43ac3d62d55f2360974cb547e743b702152",
+      "note": "包含此前宣布的微软/NVIDIA部分投资，不重复另计；公司整体融资，不代表全部用于预训练。",
+      "valuation": 380000,
+      "valuation_type": "post-money",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": 30000
+    },
+    {
+      "id": "anthropic-h",
+      "company": "Anthropic",
+      "topic": "foundation",
+      "country": "US",
+      "date": "2026-05-28",
+      "amount": 65000,
+      "currency": "USD",
+      "amount_kind": "exact",
+      "url": "https://www.anthropic.com/news/series-h",
+      "quote": "Anthropic has raised $65 billion in Series H funding",
+      "source_hash": "14e29a288337ad6f8ba0e2afbe8c062d40083a4645b5d2f77e865a118ad4a1c3",
+      "note": "包含150亿美元已承诺的hyperscaler投资，不重复另计。",
+      "valuation": 965000,
+      "valuation_type": "post-money",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": 65000
+    },
+    {
+      "id": "moonshot-may",
+      "company": "Moonshot AI",
+      "topic": "foundation",
+      "country": "CN",
+      "date": "2026-05-07",
+      "amount": 2000,
+      "currency": "USD",
+      "amount_kind": "approx",
+      "url": "https://techcrunch.com/2026/05/07/chinas-moonshot-ai-raises-2b-at-20b-valuation-as-demand-for-open-source-ai-skyrockets/",
+      "quote": "has raised about $2 billion at a valuation of $20 billion",
+      "source_hash": "38d41ec166e715f2d0b4e4faa086d9b7f2f423293af4bd3a6e029a6620d568ff",
+      "note": "报道引述融资顾问及领投方；约数，不是精确银行交割金额。",
+      "valuation": 20000,
+      "valuation_type": "未说明",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": 2000
+    },
+    {
+      "id": "fireworks-c",
+      "company": "Fireworks AI",
+      "topic": "inference",
+      "country": "US",
+      "date": "2025-10-28",
+      "amount": 250,
+      "currency": "USD",
+      "amount_kind": "mixed-secondary",
+      "url": "https://fireworks.ai/blog/fireworks-ai-series-c-funding",
+      "quote": "This round, which includes primary and secondary funding",
+      "source_hash": "65ac190f159b95313d3a8fd04c439315eb45892e3a5ccf04a11fe8ad07dbe158",
+      "note": "新股与老股混合，无法拆分，默认不纳入新增融资金额与有效事件数。",
+      "valuation": 4000,
+      "valuation_type": "未说明",
+      "status": "excluded",
+      "retrieved_at": "2026-10-25",
+      "usd_m": 250
+    },
+    {
+      "id": "fireworks-d",
+      "company": "Fireworks AI",
+      "topic": "inference",
+      "country": "US",
+      "date": "2026-07-15",
+      "amount": 1505,
+      "currency": "USD",
+      "amount_kind": "exact",
+      "url": "https://fireworks.ai/blog/fireworks-series-d-funding",
+      "quote": "Fireworks announced a $1.505 billion Series D at a $17.5 billion valuation",
+      "source_hash": "afccfa97698f6137ef9cc8e1412f8f464ceece9e33bc2e6b71fc69a44204a323",
+      "note": "按公司公告金额1505百万美元，不用新闻标题的四舍五入1500。",
+      "valuation": 17500,
+      "valuation_type": "未说明",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": 1505
+    },
+    {
+      "id": "siliconflow-b",
+      "company": "硅基流动",
+      "topic": "inference",
+      "country": "CN",
+      "date": "2026-06-16",
+      "amount": 2000,
+      "currency": "CNY",
+      "amount_kind": "lower-bound",
+      "url": "https://www.21jingji.com/article/20260616/herald/66474a56fcc6d4037f0f3bafdc8af90e.html",
+      "quote": "完成超20亿元人民币B轮融资",
+      "source_hash": "8409b64c2554b0928daf9ed6d98741cfda81593cff2ffac26a5fc702ab7d536e",
+      "note": "金额记下界，图中合计为已核验金额下界；不能当行业总融资。",
+      "valuation": null,
+      "valuation_type": "未说明",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": 296.01563
+    },
+    {
+      "id": "mem0-a",
+      "company": "Mem0",
+      "topic": "memory",
+      "country": "US",
+      "date": "2025-10-28",
+      "amount": 20,
+      "currency": "USD",
+      "amount_kind": "exact",
+      "url": "https://techcrunch.com/2025/10/28/mem0-raises-24m-from-yc-peak-xv-and-basis-set-to-build-the-memory-layer-for-ai-apps/",
+      "quote": "a $20 million Series A",
+      "source_hash": "517a0fedd94d9ed35fb490554f7fce6aaa59d2376c0ca9dd133043c0e811e7b4",
+      "note": "2400万美元标题含未公告的历史种子轮；本轮仅计2000万美元。",
+      "valuation": null,
+      "valuation_type": "未说明",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": 20
+    },
+    {
+      "id": "memtensor-prea",
+      "company": "记忆张量 MemTensor",
+      "topic": "memory",
+      "country": "CN",
+      "date": "2026-07-20",
+      "amount": null,
+      "currency": "CNY",
+      "amount_kind": "coarse",
+      "url": "https://www.leiphone.com/category/industrynews/opQqNuktWFDh1i0X.html",
+      "quote": "宣布完成亿元 Pre-A 轮融资",
+      "source_hash": "9343e2d9e6cbecc68de6c297c437dbe512bd00e301928e52ed3077bde6a42837",
+      "note": "亿元级不擅自变成精确1亿元；只计1个已核验事件。主营记忆基础设施，也开发基模，完整归类仅作关联公司统计，不是用途分摊。",
+      "valuation": null,
+      "valuation_type": "未说明",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": null
+    },
+    {
+      "id": "patronus-b",
+      "company": "Patronus AI",
+      "topic": "evaluation",
+      "country": "US",
+      "date": "2026-06-25",
+      "amount": 50,
+      "currency": "USD",
+      "amount_kind": "exact",
+      "url": "https://www.patronus.ai/news/announcing-our-50m-series-b",
+      "quote": "announce our $50M Series B",
+      "source_hash": "5a02b69953d69726343e322125d118eab01338b6dd624fc6843c91d93075652a",
+      "note": "公司从静态评测延伸至训练仿真环境；归类边界存在变化。",
+      "valuation": null,
+      "valuation_type": "未说明",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": 50
+    },
+    {
+      "id": "lmarena-a",
+      "company": "LMArena",
+      "topic": "evaluation",
+      "country": "US",
+      "date": "2026-01-06",
+      "amount": 150,
+      "currency": "USD",
+      "amount_kind": "exact",
+      "url": "https://techcrunch.com/2026/01/06/lmarena-lands-1-7b-valuation-four-months-after-launching-its-product/",
+      "quote": "raised a $150 million Series A at a post-money valuation of $1.7 billion",
+      "source_hash": "697d3fb00befc4cb5c095d9357dfb892efc0d70a8ca6e83078afcc5dd14255fe",
+      "note": "2025年5月1亿美元种子轮在窗口外，不计入。",
+      "valuation": 1700,
+      "valuation_type": "post-money",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": 150
+    },
+    {
+      "id": "unipat-talk",
+      "company": "UniPat AI",
+      "topic": "evaluation",
+      "country": "CN",
+      "date": "2026-09-11",
+      "amount": 300,
+      "currency": "USD",
+      "amount_kind": "proposed",
+      "url": "https://www.36kr.com/p/3977467794069126",
+      "quote": "交易仍在谈判，具体条款尚未最终确定",
+      "source_hash": "430012401982de71da8da7b220efcea220313ab47ccf46d9c5a739671585e776",
+      "note": "报道的拟融资3亿美元、拟估值25亿美元，不计已完成融资或已实现估值。",
+      "valuation": 2500,
+      "valuation_type": "未说明",
+      "status": "watch",
+      "retrieved_at": "2026-10-25",
+      "usd_m": 300
+    },
+    {
+      "id": "hush-a",
+      "company": "Hush Security",
+      "topic": "identity",
+      "country": "IL",
+      "date": "2026-07-28",
+      "amount": 30,
+      "currency": "USD",
+      "amount_kind": "exact",
+      "url": "https://www.securityweek.com/hush-security-raises-30-million-for-ai-agent-governance/",
+      "quote": "raising $30 million in a Series A funding round",
+      "source_hash": "4da173dd98ef31bc0fd3f0342cdba9ff3c563afcbd2d8a53629832d85f6975b3",
+      "note": "累计4100万美元不重复计；产品涉及Agent权限、注册与kill switch，非纯撤销证明。",
+      "valuation": null,
+      "valuation_type": "未说明",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": 30
+    },
+    {
+      "id": "cymphony-a",
+      "company": "Cymphony",
+      "topic": "identity",
+      "country": "US/IL",
+      "date": "2026-09-10",
+      "amount": 25,
+      "currency": "USD",
+      "amount_kind": "exact",
+      "url": "https://finance.yahoo.com/technology/ai/articles/cymphony-raises-25m-agent-identity-092720701.html",
+      "quote": "Cymphony has secured $25 million in Series A funding",
+      "source_hash": "d785c0c9d662a139cccbb7bee210f8276e0efe6c00d1152ce4d23f21e99348fa",
+      "note": "媒体报道，公司跨纽约/特拉维夫；超过1亿美元投后估值是下界，未作为精确估值纳入。",
+      "valuation": null,
+      "valuation_type": "未说明",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": 25
+    },
+    {
+      "id": "realai-b",
+      "company": "瑞莱智慧",
+      "topic": "identity",
+      "country": "CN",
+      "date": "2026-07-21",
+      "amount": null,
+      "currency": "CNY",
+      "amount_kind": "coarse",
+      "url": "https://news.pedaily.cn/202607/566619.shtml",
+      "quote": "数亿元规模的B1轮和B2轮",
+      "source_hash": "1c0f92d1b8c998bf8b160d25ffd9e978523b7a16349ebb4316d64d0967d98f64",
+      "note": "相邻AI安全公司，包含对抗测试、隐私与AIGC检测；不足以把全部资金归给Agent身份授权，排除主统计。",
+      "valuation": null,
+      "valuation_type": "未说明",
+      "status": "adjacent",
+      "retrieved_at": "2026-10-25",
+      "usd_m": null
+    },
+    {
+      "id": "lightwheel-a",
+      "company": "光轮智能",
+      "topic": "synthetic",
+      "country": "CN",
+      "date": "2026-03-12",
+      "amount": 1000,
+      "currency": "CNY",
+      "amount_kind": "exact",
+      "url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202603/t20260312_240699.html",
+      "quote": "光轮智能完成10亿元A++及A+++轮融资",
+      "source_hash": "a43b77a5878dd59446a903a35071bf4dba0bb91dcdcc16f7363579ce491e87b1",
+      "note": "两个轮次合并公告，不拆成两个金额/两个公告事件。仿真、数据和评测复合业务，按数据基础设施主标签计一次。",
+      "valuation": null,
+      "valuation_type": "未说明",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": 145.581598
+    },
+    {
+      "id": "dataarc-new",
+      "company": "数创弧光 DataArc",
+      "topic": "synthetic",
+      "country": "CN",
+      "date": "2026-07-13",
+      "amount": null,
+      "currency": "CNY",
+      "amount_kind": "coarse",
+      "url": "https://finance.sina.com.cn/wm/2026-07-13/doc-inihspyr7506463.shtml",
+      "quote": "数千万元 级 新一轮融资",
+      "source_hash": "bc9155d4a4444180f28fe66af41b33d609b84f807334f8092cb3b7a673f13ba9",
+      "note": "金额与估值均只有数量级，不填精确值；文内历史种子轮累计不重复计。",
+      "valuation": null,
+      "valuation_type": "未说明",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": null
+    },
+    {
+      "id": "lila-extension",
+      "company": "Lila Sciences",
+      "topic": "science",
+      "country": "US",
+      "date": "2025-10-10",
+      "amount": 115,
+      "currency": "USD",
+      "amount_kind": "derived-increment",
+      "url": "https://www.lila.ai/news/announcing-the-close-of-our-series-a",
+      "quote": "close of our $350M Series A",
+      "source_hash": "da3becc85bf05a51dfe76c6cc5b9ab832cf2d9316f1fc70b582bed52b53596f2",
+      "note": "本期只计350−235=115百万美元增量；9月15日首关235在窗口外。官网显示10月10日，旧公告更新称10月15日，日期存在5天差异但均在窗口内。",
+      "valuation": null,
+      "valuation_type": "未说明",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "support_url": "https://www.lila.ai/news/series-a-235-million",
+      "usd_m": 115
+    },
+    {
+      "id": "dana-new",
+      "company": "戴纳科技",
+      "topic": "science",
+      "country": "CN",
+      "date": "2026-04-03",
+      "amount": null,
+      "currency": "CNY",
+      "amount_kind": "coarse",
+      "url": "https://eu.36kr.com/zh/p/3750417621795588",
+      "quote": "完成近亿元B+轮融资",
+      "source_hash": "05d7f46e6e4498907778169d54b803b4e76164c5729d1c29d22617028274eb7e",
+      "note": "按已读取正文日期4月3日，搜索发现页为4月2日；近亿元未定义为精确值。自动化实验室平台，不是纯异常处理模块。",
+      "valuation": null,
+      "valuation_type": "未说明",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": null
+    },
+    {
+      "id": "heguang-angel",
+      "company": "和光智成",
+      "topic": "science",
+      "country": "CN",
+      "date": "2026-08-06",
+      "amount": null,
+      "currency": "CNY",
+      "amount_kind": "coarse",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-08-06/doc-inimknci3838292.shtml",
+      "quote": "完成天使轮数千万融资",
+      "source_hash": "42d593c701544168042d577d31d89f97f085a7dddfd8fe613c55015e70ec0236",
+      "note": "金额模糊，只计事件；AI材料研发和自主实验室一体化。",
+      "valuation": null,
+      "valuation_type": "未说明",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": null
+    },
+    {
+      "id": "xsquare-app",
+      "company": "X Square Robot",
+      "topic": "embodied",
+      "country": "CN",
+      "date": "2026-01-13",
+      "amount": 140,
+      "currency": "USD",
+      "amount_kind": "exact",
+      "url": "https://www.finsmes.com/2026/01/x-square-robot-raises-140m-in-series-a-funding.html",
+      "quote": "raised $140M in Series A++ funding",
+      "source_hash": "48e5a11c909f71a90f400825ef06e1b7c70959582055838cc1098f33d1a32a3f",
+      "note": "通用具身模型及机器人平台，不能将金额当成纯模型研发预算。",
+      "valuation": null,
+      "valuation_type": "未说明",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": 140
+    },
+    {
+      "id": "giga-preb",
+      "company": "极佳视界",
+      "topic": "embodied",
+      "country": "CN",
+      "date": "2026-03-13",
+      "amount": null,
+      "currency": "CNY",
+      "amount_kind": "coarse",
+      "url": "https://www.ncsti.gov.cn/kjdt/yqdy/yqdt/202603/t20260313_240825.html",
+      "quote": "完成近10亿元Pre-B轮融资",
+      "source_hash": "03a7d1692655c737f373010d2de53d740b2411e2350e9fc6c89a1c61257ca85e",
+      "note": "近10亿元不是精确10亿元，金额不纳入；模型与本体复合公司。",
+      "valuation": null,
+      "valuation_type": "未说明",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": null
+    },
+    {
+      "id": "pi-nov",
+      "company": "Physical Intelligence",
+      "topic": "embodied",
+      "country": "US",
+      "date": "2025-11-21",
+      "amount": 600,
+      "currency": "USD",
+      "amount_kind": "exact",
+      "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-fintech-lambda/",
+      "quote": "raised $600 million in a funding round led by CapitalG",
+      "source_hash": "b4d15200997faf501bd99b9253e80b80b84baccb3f4557894a3c029fc3dee9e8",
+      "note": "按读取报道日期；正文估值单位缺漏，不擅自补成精确估值。",
+      "valuation": null,
+      "valuation_type": "未说明",
+      "status": "completed",
+      "retrieved_at": "2026-10-25",
+      "usd_m": 600
+    }
+  ],
+  "fx": {
+    "2026-06-16": {
+      "url": "https://api.frankfurter.dev/v1/2026-06-16?base=USD&symbols=CNY",
+      "rate": 6.7564,
+      "rate_date": "2026-06-16",
+      "source": "Frankfurter / ECB reference rate",
+      "sha256": "d6c2e1c7fec60b442728b0254078a7ebaeb43d619990012a783878fde993d16c"
+    },
+    "2026-03-12": {
+      "url": "https://api.frankfurter.dev/v1/2026-03-12?base=USD&symbols=CNY",
+      "rate": 6.869,
+      "rate_date": "2026-03-12",
+      "source": "Frankfurter / ECB reference rate",
+      "sha256": "9506e423d9fcf17fb1d03357bd68779e982945415a0faf4a92f8109373e4d476"
+    }
+  },
+  "limitations": [
+    "技术纵轴仅用OpenAlex检索命中量作为代理，尚未混入不可比的访谈/会议覆盖；不是实际采用率或成熟度。",
+    "中国论文口径为至少一个OpenAlex机构country_code=CN；全球含中国。不是按作者姓名、新闻语言或论文下载地点判定。缺失机构信息会漏记中国贡献。",
+    "OpenAlex publication_date可能是期刊正式出版时间而非首次预印本时间；只取聚合count，未做全库版本合并。",
+    "每个查询保留最多20条按引用量排序的记录供审阅，非随机样本，不能由样本精度推算全库准确率。基础模型检索发现污染，主动不落点。",
+    "融资为人工检索核验样本，公开披露选择偏差大。本文不声称任何方向融资覆盖完整，也不把未收录事件算作零。",
+    "每笔关联公司融资只分配一个主标签；金额是公司融资，不是该技术方向的预算。复合业务分类是研究判断。",
+    "金额总和为可计量已披露部分，含明确下界/约数，并非精确行业总额。数千万/亿元级等模糊披露不转换为数字。",
+    "没有两个同口径历史快照，不绘制趋势箭头或假增长率。融资估值不是市场容量，未计算无依据的TAM/CAGR/CR5。"
+  ],
+  "discussions": [
+    {
+      "title": "Embodied World Models for Decision Making",
+      "url": "https://neurips.cc/virtual/2025/workshop/109532",
+      "date": "2025-12",
+      "topics": [
+        "embodied"
+      ],
+      "type": "学术研讨会",
+      "scope": "NeurIPS全球会议旁证；不按举办地归为中国或美国技术贡献；仅表示主题有组织讨论",
+      "source_hash": "db40b15debb143bc51c0d8708ea640c6a16b01bc96b497abb573dba513470b3a"
+    },
+    {
+      "title": "AI4Mat-NeurIPS-2025: NeurIPS 2025 Workshop on AI for Accelerated Materials Design",
+      "url": "https://neurips.cc/virtual/2025/workshop/109538",
+      "date": "2025-12",
+      "topics": [
+        "science"
+      ],
+      "type": "学术研讨会",
+      "scope": "NeurIPS全球会议旁证；不按举办地归为中国或美国技术贡献；仅表示主题有组织讨论",
+      "source_hash": "dec27e8ea464c74691c75b084096f749a544222940cd3a42d8cfee32ae37ec0b"
+    },
+    {
+      "title": "ML for Systems",
+      "url": "https://neurips.cc/virtual/2025/workshop/109537",
+      "date": "2025-12",
+      "topics": [
+        "inference"
+      ],
+      "type": "学术研讨会",
+      "scope": "NeurIPS全球会议旁证；不按举办地归为中国或美国技术贡献；仅表示主题有组织讨论",
+      "source_hash": "f859699dfc178528b156420d6a854011e33ec58c4a1dd45169c69c8b81abdd5a"
+    },
+    {
+      "title": "Workshop on Multi-Turn Interactions in Large Language Models",
+      "url": "https://neurips.cc/virtual/2025/workshop/109539",
+      "date": "2025-12",
+      "topics": [
+        "memory"
+      ],
+      "type": "学术研讨会",
+      "scope": "NeurIPS全球会议旁证；不按举办地归为中国或美国技术贡献；仅表示主题有组织讨论",
+      "source_hash": "b8fc3a1bf12c30b7ee62c4a2d08efaee699e36a6453f734310def760e694bbd0"
+    },
+    {
+      "title": "The First Workshop on Efficient Reasoning",
+      "url": "https://neurips.cc/virtual/2025/workshop/109556",
+      "date": "2025-12",
+      "topics": [
+        "inference"
+      ],
+      "type": "学术研讨会",
+      "scope": "NeurIPS全球会议旁证；不按举办地归为中国或美国技术贡献；仅表示主题有组织讨论",
+      "source_hash": "b8985db504bded3e2f7e9be405cb23c2f8c2170a925fa8cba134b7e6da1347b2"
+    },
+    {
+      "title": "Workshop on Scaling Environments for Agents",
+      "url": "https://neurips.cc/virtual/2025/workshop/109540",
+      "date": "2025-12",
+      "topics": [
+        "evaluation",
+        "synthetic"
+      ],
+      "type": "学术研讨会",
+      "scope": "NeurIPS全球会议旁证；不按举办地归为中国或美国技术贡献；仅表示主题有组织讨论",
+      "source_hash": "aed1eaf307228f081bd243114f926e5bba1ab182541bfe7189b44873c235d131"
+    },
+    {
+      "title": "Evaluating the Evolving LLM Lifecycle:  Benchmarks, Emergent Abilities, and Scaling",
+      "url": "https://neurips.cc/virtual/2025/workshop/109549",
+      "date": "2025-12",
+      "topics": [
+        "evaluation"
+      ],
+      "type": "学术研讨会",
+      "scope": "NeurIPS全球会议旁证；不按举办地归为中国或美国技术贡献；仅表示主题有组织讨论",
+      "source_hash": "34d42bc7b086b4201a69035340867838cfce8fd61a3ca0a71bbfc8522c58ebeb"
+    },
+    {
+      "title": "AI for Science: The Reach and Limits of AI for Scientific Discovery",
+      "url": "https://neurips.cc/virtual/2025/workshop/109578",
+      "date": "2025-12",
+      "topics": [
+        "science"
+      ],
+      "type": "学术研讨会",
+      "scope": "NeurIPS全球会议旁证；不按举办地归为中国或美国技术贡献；仅表示主题有组织讨论",
+      "source_hash": "6cf72aa7c8ba87b079ac98b2b80dc9454f71589cb4ec71f8df02e504f4a01ff5"
+    },
+    {
+      "title": "记忆张量 MemTensor · 技术路线讨论",
+      "url": "https://www.leiphone.com/category/industrynews/opQqNuktWFDh1i0X.html",
+      "date": "2026-07-20",
+      "topics": [
+        "memory"
+      ],
+      "type": "企业技术材料",
+      "scope": "中国企业；与融资报道同文，不当作独立第二来源，不计入技术分数",
+      "source_hash": "9343e2d9e6cbecc68de6c297c437dbe512bd00e301928e52ed3077bde6a42837"
+    },
+    {
+      "title": "戴纳科技 · 技术路线讨论",
+      "url": "https://eu.36kr.com/zh/p/3750417621795588",
+      "date": "2026-04-03",
+      "topics": [
+        "science"
+      ],
+      "type": "创始人媒体访谈",
+      "scope": "中国企业；与融资报道同文，不当作独立第二来源，不计入技术分数",
+      "source_hash": "05d7f46e6e4498907778169d54b803b4e76164c5729d1c29d22617028274eb7e"
+    },
+    {
+      "title": "数创弧光 DataArc · 技术路线讨论",
+      "url": "https://finance.sina.com.cn/wm/2026-07-13/doc-inihspyr7506463.shtml",
+      "date": "2026-07-13",
+      "topics": [
+        "synthetic"
+      ],
+      "type": "创始人媒体访谈",
+      "scope": "中国企业；与融资报道同文，不当作独立第二来源，不计入技术分数",
+      "source_hash": "bc9155d4a4444180f28fe66af41b33d609b84f807334f8092cb3b7a673f13ba9"
+    },
+    {
+      "title": "硅基流动 · 技术路线讨论",
+      "url": "https://www.21jingji.com/article/20260616/herald/66474a56fcc6d4037f0f3bafdc8af90e.html",
+      "date": "2026-06-16",
+      "topics": [
+        "inference"
+      ],
+      "type": "企业技术材料",
+      "scope": "中国企业；与融资报道同文，不当作独立第二来源，不计入技术分数",
+      "source_hash": "8409b64c2554b0928daf9ed6d98741cfda81593cff2ffac26a5fc702ab7d536e"
+    }
+  ],
+  "conference_inventory": {
+    "source": "https://neurips.cc/virtual/2025/events/workshop",
+    "inventory_count": 56,
+    "reviewed_detail_count": 8,
+    "sha256": "ec4db1d10845cbc9b71730097d4d13aad135f69f0b5d15e0a618af41be89c527",
+    "note": "56个独立workshop标题清单，8项详情已读；不是全球研讨会普查"
+  }
+}

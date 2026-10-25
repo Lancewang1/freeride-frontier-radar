@@ -1,0 +1,23 @@
+﻿id,company,topic,country,date,amount,currency,amount_kind,usd_m,status,valuation,valuation_type,url,note
+anthropic-g,Anthropic,foundation,US,2026-02-12,30000,USD,exact,30000,completed,380000,post-money,https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation,包含此前宣布的微软/NVIDIA部分投资，不重复另计；公司整体融资，不代表全部用于预训练。
+anthropic-h,Anthropic,foundation,US,2026-05-28,65000,USD,exact,65000,completed,965000,post-money,https://www.anthropic.com/news/series-h,包含150亿美元已承诺的hyperscaler投资，不重复另计。
+moonshot-may,Moonshot AI,foundation,CN,2026-05-07,2000,USD,approx,2000,completed,20000,未说明,https://techcrunch.com/2026/05/07/chinas-moonshot-ai-raises-2b-at-20b-valuation-as-demand-for-open-source-ai-skyrockets/,报道引述融资顾问及领投方；约数，不是精确银行交割金额。
+fireworks-c,Fireworks AI,inference,US,2025-10-28,250,USD,mixed-secondary,250,excluded,4000,未说明,https://fireworks.ai/blog/fireworks-ai-series-c-funding,新股与老股混合，无法拆分，默认不纳入新增融资金额与有效事件数。
+fireworks-d,Fireworks AI,inference,US,2026-07-15,1505,USD,exact,1505,completed,17500,未说明,https://fireworks.ai/blog/fireworks-series-d-funding,按公司公告金额1505百万美元，不用新闻标题的四舍五入1500。
+siliconflow-b,硅基流动,inference,CN,2026-06-16,2000,CNY,lower-bound,296.01563,completed,,未说明,https://www.21jingji.com/article/20260616/herald/66474a56fcc6d4037f0f3bafdc8af90e.html,金额记下界，图中合计为已核验金额下界；不能当行业总融资。
+mem0-a,Mem0,memory,US,2025-10-28,20,USD,exact,20,completed,,未说明,https://techcrunch.com/2025/10/28/mem0-raises-24m-from-yc-peak-xv-and-basis-set-to-build-the-memory-layer-for-ai-apps/,2400万美元标题含未公告的历史种子轮；本轮仅计2000万美元。
+memtensor-prea,记忆张量 MemTensor,memory,CN,2026-07-20,,CNY,coarse,,completed,,未说明,https://www.leiphone.com/category/industrynews/opQqNuktWFDh1i0X.html,亿元级不擅自变成精确1亿元；只计1个已核验事件。主营记忆基础设施，也开发基模，完整归类仅作关联公司统计，不是用途分摊。
+patronus-b,Patronus AI,evaluation,US,2026-06-25,50,USD,exact,50,completed,,未说明,https://www.patronus.ai/news/announcing-our-50m-series-b,公司从静态评测延伸至训练仿真环境；归类边界存在变化。
+lmarena-a,LMArena,evaluation,US,2026-01-06,150,USD,exact,150,completed,1700,post-money,https://techcrunch.com/2026/01/06/lmarena-lands-1-7b-valuation-four-months-after-launching-its-product/,2025年5月1亿美元种子轮在窗口外，不计入。
+unipat-talk,UniPat AI,evaluation,CN,2026-09-11,300,USD,proposed,300,watch,2500,未说明,https://www.36kr.com/p/3977467794069126,报道的拟融资3亿美元、拟估值25亿美元，不计已完成融资或已实现估值。
+hush-a,Hush Security,identity,IL,2026-07-28,30,USD,exact,30,completed,,未说明,https://www.securityweek.com/hush-security-raises-30-million-for-ai-agent-governance/,累计4100万美元不重复计；产品涉及Agent权限、注册与kill switch，非纯撤销证明。
+cymphony-a,Cymphony,identity,US/IL,2026-09-10,25,USD,exact,25,completed,,未说明,https://finance.yahoo.com/technology/ai/articles/cymphony-raises-25m-agent-identity-092720701.html,媒体报道，公司跨纽约/特拉维夫；超过1亿美元投后估值是下界，未作为精确估值纳入。
+realai-b,瑞莱智慧,identity,CN,2026-07-21,,CNY,coarse,,adjacent,,未说明,https://news.pedaily.cn/202607/566619.shtml,相邻AI安全公司，包含对抗测试、隐私与AIGC检测；不足以把全部资金归给Agent身份授权，排除主统计。
+lightwheel-a,光轮智能,synthetic,CN,2026-03-12,1000,CNY,exact,145.581598,completed,,未说明,https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202603/t20260312_240699.html,两个轮次合并公告，不拆成两个金额/两个公告事件。仿真、数据和评测复合业务，按数据基础设施主标签计一次。
+dataarc-new,数创弧光 DataArc,synthetic,CN,2026-07-13,,CNY,coarse,,completed,,未说明,https://finance.sina.com.cn/wm/2026-07-13/doc-inihspyr7506463.shtml,金额与估值均只有数量级，不填精确值；文内历史种子轮累计不重复计。
+lila-extension,Lila Sciences,science,US,2025-10-10,115,USD,derived-increment,115,completed,,未说明,https://www.lila.ai/news/announcing-the-close-of-our-series-a,本期只计350−235=115百万美元增量；9月15日首关235在窗口外。官网显示10月10日，旧公告更新称10月15日，日期存在5天差异但均在窗口内。
+dana-new,戴纳科技,science,CN,2026-04-03,,CNY,coarse,,completed,,未说明,https://eu.36kr.com/zh/p/3750417621795588,按已读取正文日期4月3日，搜索发现页为4月2日；近亿元未定义为精确值。自动化实验室平台，不是纯异常处理模块。
+heguang-angel,和光智成,science,CN,2026-08-06,,CNY,coarse,,completed,,未说明,https://finance.sina.com.cn/tech/roll/2026-08-06/doc-inimknci3838292.shtml,金额模糊，只计事件；AI材料研发和自主实验室一体化。
+xsquare-app,X Square Robot,embodied,CN,2026-01-13,140,USD,exact,140,completed,,未说明,https://www.finsmes.com/2026/01/x-square-robot-raises-140m-in-series-a-funding.html,通用具身模型及机器人平台，不能将金额当成纯模型研发预算。
+giga-preb,极佳视界,embodied,CN,2026-03-13,,CNY,coarse,,completed,,未说明,https://www.ncsti.gov.cn/kjdt/yqdy/yqdt/202603/t20260313_240825.html,近10亿元不是精确10亿元，金额不纳入；模型与本体复合公司。
+pi-nov,Physical Intelligence,embodied,US,2025-11-21,600,USD,exact,600,completed,,未说明,https://news.crunchbase.com/venture/biggest-funding-rounds-ai-fintech-lambda/,按读取报道日期；正文估值单位缺漏，不擅自补成精确估值。
