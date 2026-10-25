@@ -9,6 +9,10 @@ with sync_playwright() as p:
     page.on('pageerror',lambda e:errors.append(str(e)))
     page.goto(os.environ.get('FR_DEMO_URL','http://127.0.0.1:8000'));page.wait_for_selector('#reading-ledger details',state='attached')
     assert page.locator('#deep-report h3').count()>=8
+    assert page.locator('#landscape').is_visible()
+    assert page.locator('#deepdive').is_visible()
+    assert page.locator('#market').is_visible()
+    assert page.locator('#landscape').evaluate('(e)=>!!(e.compareDocumentPosition(document.getElementById("deepdive")) & Node.DOCUMENT_POSITION_FOLLOWING)')
     assert page.locator('#reading-ledger details').count()==8
     page.locator('[data-view=reading]').click();assert page.locator('#paper-audit .source').count()==38
     page.locator('#paper-query').fill('SynFER');assert page.locator('#paper-audit .source').count()==1
@@ -43,7 +47,7 @@ with sync_playwright() as p:
     event.value.save_as(ROOT/'test-download.csv');assert len((ROOT/'test-download.csv').read_text(encoding='utf-8-sig').splitlines())==23
     with page.expect_download() as event:page.locator('#download-snapshot').click()
     event.value.save_as(ROOT/'test-download.json');assert len(json.loads((ROOT/'test-download.json').read_text(encoding='utf-8'))['funding'])==22
-    page.locator('[data-view=deepdive]').click();assert page.locator('#landscape').is_hidden();assert page.locator('#deep-report').is_visible()
+    page.locator('[data-view=deepdive]').click();assert page.locator('#landscape').is_visible();assert page.locator('#deep-report').is_visible()
     page.locator('[data-view=landscape]').click();page.locator('#radar-topic').select_option('synthetic');page.evaluate('scrollTo(0,0)')
     page.locator('[data-view=deepdive]').click();page.screenshot(path=str(ROOT/'desktop.png'),full_page=False);page.locator('[data-view=landscape]').click()
     page.locator('#radar-cn').scroll_into_view_if_needed();page.screenshot(path=str(ROOT/'charts.png'),full_page=False)
